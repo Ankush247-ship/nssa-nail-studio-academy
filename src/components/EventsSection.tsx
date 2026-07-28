@@ -33,7 +33,7 @@ export const EventsSection: React.FC<EventsSectionProps> = ({ currentLang, onOpe
       badge: 'GRADUATION CEREMONY',
       date: 'Annual Celebration',
       location: 'Grand Ballroom, Mumbai',
-      image: 'https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&q=80&w=800',
+      image: '/graduation-certificate-2.jpg',
       description: 'Awarding Government Authorised Diplomas to certified nail artists, recognizing top performers, and launching top alumni into luxury salon careers.'
     }
   ];

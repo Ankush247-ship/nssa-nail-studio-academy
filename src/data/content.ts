@@ -149,13 +149,25 @@ export const studioBranches: StudioBranch[] = [
     id: 'mumbai-andheri-sahar',
     city: 'Mumbai',
     areaKey: 'Andheri East (Main Branch)',
-    addressKey: 'Shop No. 2, Shri Sai Darshan Welfare Society, Sahar Road, Andheri East, Mumbai, Maharashtra',
+    addressKey: 'Shop No. 2, Shri Sai Darshan Welfare Society, Highway, Sai Wadi, Andheri East, Mumbai, Maharashtra 400069',
     phone: '9372233042',
     whatsapp: '919372233042',
     googleRating: 4.7,
     reviewCount: 186,
     timingKey: '10:00 AM – 7:00 PM (Mon - Sun)',
     image: '/studio-front.jpg'
+  },
+  {
+    id: 'mumbai-goregaon-west',
+    city: 'Mumbai',
+    areaKey: 'Goregaon West',
+    addressKey: '1st Floor, Phase 2, Kenorita Jewels, Shop No. 122 & 128, Kakaji Nagar, Jawahar Nagar, Goregaon West, Mumbai, Maharashtra 400104',
+    phone: '9372233042',
+    whatsapp: '919372233042',
+    googleRating: 4.7,
+    reviewCount: 186,
+    timingKey: '10:00 AM – 7:00 PM (Mon - Sun)',
+    image: 'https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&q=80&w=800'
   },
   {
     id: 'mumbai-andheri-west',

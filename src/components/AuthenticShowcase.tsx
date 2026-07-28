@@ -72,7 +72,7 @@ export const AuthenticShowcase: React.FC<AuthenticShowcaseProps> = ({ currentLan
     {
       title: 'Student Graduation Ceremony & Free Kit Handover',
       location: 'Certified Alumni',
-      image: 'https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&q=80&w=1200',
+      image: '/graduation-certificate-1.jpg',
       tag: 'Diploma Handover'
     }
   ];

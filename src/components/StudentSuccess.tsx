@@ -25,7 +25,7 @@ export const StudentSuccess: React.FC<StudentSuccessProps> = ({ currentLang }) =
       location: 'Guwahati Branch Alumni',
       outcome: 'Launched Her Own Studio - Earning ₹75,000/Month',
       avatar: 'https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&q=80&w=400',
-      workImage: 'https://images.unsplash.com/photo-1604654894610-df63bc536371?auto=format&fit=crop&q=80&w=600',
+      workImage: '/nail-art-stiletto-pink-1.jpg',
       quote: 'I had zero nail art experience before joining. The 30-day practical training gave me complete confidence. Within 60 days of graduation, I opened my studio in Guwahati!'
     },
     {
@@ -34,7 +34,7 @@ export const StudentSuccess: React.FC<StudentSuccessProps> = ({ currentLang }) =
       location: 'Mumbai Andheri Branch Alumni',
       outcome: 'Senior Artist at Lakme Salon - Starting Package ₹42,000/Mo',
       avatar: 'https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&q=80&w=400',
-      workImage: 'https://images.unsplash.com/photo-1632345031435-8727f6897d53?auto=format&fit=crop&q=80&w=600',
+      workImage: '/nail-art-stiletto-pink-2.jpg',
       quote: 'The placement team arranged 3 interviews for me before my final exam! I was recruited directly into Lakme Salon as a Senior Extensions Artist.'
     }
   ];
