@@ -11,12 +11,12 @@ export const EventsSection: React.FC<EventsSectionProps> = ({ currentLang, onOpe
   const events = [
     {
       id: 'exhibition-bhi',
-      title: 'National Beauty & Hair Exhibition (BHI Expo)',
+      title: 'StyleSpeak HBS - Hair & Beauty Show India (8th Edition)',
       badge: 'FEATURED EXHIBITOR',
-      date: 'Upcoming Grand Expo',
-      location: 'Bombay Exhibition Centre (BEC), Mumbai',
-      image: 'https://images.unsplash.com/photo-1519014816548-bf5fe059798b?auto=format&fit=crop&q=80&w=800',
-      description: 'Nail Style Studio Academy participating as official nail tech partner. Live demonstrations of 3D bridal sculpting, airbrushing, and salon franchise consultations by Founder Uma Goswami.'
+      date: '13th - 14th April 2026',
+      location: 'Stall No. F32, Hall No. 3, Bombay Exhibition Centre, Goregaon, Mumbai',
+      image: '/event-hbs-invite.jpg',
+      description: 'NSSA by Uma Goswami exhibiting at India\'s leading beauty expo — live nail art demonstrations, the 30-Day Basic to Advance Nail Course at ₹15,000 with EMI facility, and attractive discounts on nail products at our stall.'
     },
     {
       id: 'masterclass-3d',
@@ -24,7 +24,7 @@ export const EventsSection: React.FC<EventsSectionProps> = ({ currentLang, onOpe
       badge: 'SPECIAL WORKSHOP',
       date: 'Special Weekend Edition',
       location: 'Andheri East & Guwahati Academies',
-      image: 'https://images.unsplash.com/photo-1604654894610-df63bc536371?auto=format&fit=crop&q=80&w=800',
+      image: '/event-hbs-team.jpg',
       description: 'Intensive 2-day hands-on workshop focusing on Russian cuticle precision, speed extensions, and 3D floral encapsulation for practicing beauty technicians.'
     },
     {

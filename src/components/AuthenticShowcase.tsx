@@ -25,28 +25,28 @@ export const AuthenticShowcase: React.FC<AuthenticShowcaseProps> = ({ currentLan
   // Authentic gallery collections
   const salonWork: GalleryItem[] = [
     {
-      title: '3D Royal Bridal Nail Extensions with Swarovski & 24K Gold Leaf',
-      location: 'Mumbai - Lokhandwala Studio',
-      image: 'https://images.unsplash.com/photo-1519014816548-bf5fe059798b?auto=format&fit=crop&q=80&w=1200',
-      tag: 'Real Bridal Client'
+      title: '3D Rose & Crystal Bridal Nail Art with Gold Pearl Detailing',
+      location: 'NSSA by Uma Goswami - Andheri East',
+      image: '/nail-art-roses-3d.jpg',
+      tag: 'Real Client Work'
     },
     {
-      title: 'Mirror Chrome & Ombre Stiletto Luxury Nails',
-      location: 'Guwahati - GS Road Studio',
-      image: 'https://images.unsplash.com/photo-1599940824399-b87987ceb72a?auto=format&fit=crop&q=80&w=1200',
+      title: 'Handpainted Butterfly & Floral 3D Sculpted Nail Art',
+      location: 'NSSA by Uma Goswami - Andheri East',
+      image: '/nail-art-butterfly-floral.jpg',
       tag: 'Client Nails'
     },
     {
-      title: 'Polygel Sculpting & Encapsulated Foil Artistry',
-      location: 'Mumbai - Bandra Studio',
-      image: 'https://images.unsplash.com/photo-1632345031435-8727f6897d53?auto=format&fit=crop&q=80&w=1200',
+      title: 'Celestial Gold Foil & Crystal Star Nail Art',
+      location: 'NSSA by Uma Goswami - Andheri East',
+      image: '/nail-art-gold-star.jpg',
       tag: 'Handcrafted Result'
     },
     {
-      title: 'Nude Almond BIAB Natural Nail Overlay',
-      location: 'Guwahati - Zoo Road Studio',
-      image: 'https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&q=80&w=1200',
-      tag: 'Damage Recovery'
+      title: 'Nude Glitter Ombre Gel Overlay',
+      location: 'NSSA by Uma Goswami - Andheri East',
+      image: '/nail-art-glitter-pink.jpg',
+      tag: 'Client Nails'
     }
   ];
 

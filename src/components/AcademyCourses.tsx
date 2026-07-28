@@ -67,9 +67,8 @@ export const AcademyCourses: React.FC<AcademyCoursesProps> = ({
             <div className="md:col-span-4 flex flex-col items-center justify-center space-y-4">
               <div className="relative w-full h-36 rounded-2xl overflow-hidden border border-[#d4af37]/40 shadow-lg">
                 <img
-                  src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&q=80&w=600"
-                  alt="Toolkit Included"
-                  referrerPolicy="no-referrer"
+                  src="/nssa-product-collection.jpg"
+                  alt="NSSA Professional Nail Toolkit Collection"
                   className="w-full h-full object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex items-end p-3">

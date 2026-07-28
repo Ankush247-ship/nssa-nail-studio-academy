@@ -104,7 +104,7 @@ export const academyCourses: AcademyCourse[] = [
     kitValue: 3000,
     nextBatch: 'New Batch Starts Every Monday',
     seatsLeft: 4,
-    image: 'https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&q=80&w=800',
+    image: '/course-poster-15000.jpg',
     curriculumKeys: [
       'Basic Nail Art & Color Blending',
       'Nail Extensions (Gel & Acrylic)',
