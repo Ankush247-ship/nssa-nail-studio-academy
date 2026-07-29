@@ -40,19 +40,19 @@ export const StudentSuccess: React.FC<StudentSuccessProps> = ({ currentLang }) =
   ];
 
   return (
-    <section className="py-20 bg-[#0d0b0d] relative overflow-hidden border-t border-[#d4af37]/15">
+    <section className="py-20 bg-white relative overflow-hidden border-t border-[#d4af37]/15">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto space-y-4">
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-[#d4af37]/30 bg-[#161217] text-xs font-semibold text-[#d4af37]">
+          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-[#d4af37]/30 bg-white text-xs font-semibold text-[#d4af37]">
             <TrendingUp className="w-4 h-4" />
             <span>Alumni Career Success Cell</span>
           </div>
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-serif-luxury font-bold text-white">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-serif-luxury font-bold text-[#10201e]">
             {t('success.title')}
           </h2>
-          <p className="text-sm sm:text-base text-[#b0a5b5] leading-relaxed">
+          <p className="text-sm sm:text-base text-[#4a5c59] leading-relaxed">
             {t('success.subtitle')}
           </p>
         </div>
@@ -63,24 +63,24 @@ export const StudentSuccess: React.FC<StudentSuccessProps> = ({ currentLang }) =
             <div className="text-3xl font-serif-luxury font-bold text-gold-gradient">
               ₹35,000 - ₹55,000
             </div>
-            <div className="text-xs text-[#e0d8ce] font-semibold">Average Graduate Starting Package</div>
-            <div className="text-[11px] text-[#a095a5]">Placed at luxury salon chains within 30 days of course completion.</div>
+            <div className="text-xs text-[#10201e] font-semibold">Average Graduate Starting Package</div>
+            <div className="text-[11px] text-[#6b7d7a]">Placed at luxury salon chains within 30 days of course completion.</div>
           </div>
 
           <div className="glass-card p-6 rounded-3xl text-center space-y-2 border border-[#d4af37]/20">
             <div className="text-3xl font-serif-luxury font-bold text-gold-gradient">
               320+ Studio Launches
             </div>
-            <div className="text-xs text-[#e0d8ce] font-semibold">Alumni Entrepreneurship Rate</div>
-            <div className="text-[11px] text-[#a095a5]">Over 320 students opened their own nail salons earning ₹1 Lakh+/month.</div>
+            <div className="text-xs text-[#10201e] font-semibold">Alumni Entrepreneurship Rate</div>
+            <div className="text-[11px] text-[#6b7d7a]">Over 320 students opened their own nail salons earning ₹1 Lakh+/month.</div>
           </div>
 
           <div className="glass-card p-6 rounded-3xl text-center space-y-2 border border-[#d4af37]/20">
             <div className="text-3xl font-serif-luxury font-bold text-gold-gradient">
               100% Guaranteed
             </div>
-            <div className="text-xs text-[#e0d8ce] font-semibold">Interview Assistance</div>
-            <div className="text-[11px] text-[#a095a5]">Unlimited mock interviews, portfolio creation & direct employer referrals.</div>
+            <div className="text-xs text-[#10201e] font-semibold">Interview Assistance</div>
+            <div className="text-[11px] text-[#6b7d7a]">Unlimited mock interviews, portfolio creation & direct employer referrals.</div>
           </div>
         </div>
 
@@ -100,20 +100,20 @@ export const StudentSuccess: React.FC<StudentSuccessProps> = ({ currentLang }) =
                     className="w-16 h-16 rounded-full object-cover border-2 border-[#d4af37]"
                   />
                   <div>
-                    <h3 className="text-lg font-bold text-white group-hover:text-[#d4af37] transition-colors">
+                    <h3 className="text-lg font-bold text-[#10201e] group-hover:text-[#d4af37] transition-colors">
                       {story.name}
                     </h3>
                     <div className="text-xs text-[#d4af37] font-semibold">{story.course}</div>
-                    <div className="text-[11px] text-[#a095a5]">{story.location}</div>
+                    <div className="text-[11px] text-[#6b7d7a]">{story.location}</div>
                   </div>
                 </div>
 
-                <div className="px-4 py-2 rounded-xl bg-[#d4af37]/15 border border-[#d4af37]/30 text-xs font-bold text-[#f7e7ce] flex items-center gap-2">
+                <div className="px-4 py-2 rounded-xl bg-[#d4af37]/15 border border-[#d4af37]/30 text-xs font-bold text-[#0a6b62] flex items-center gap-2">
                   <Award className="w-4 h-4 text-[#d4af37] shrink-0" />
                   <span>{story.outcome}</span>
                 </div>
 
-                <p className="text-xs sm:text-sm text-[#d0c5b8] italic leading-relaxed relative pl-4 border-l-2 border-[#d4af37]">
+                <p className="text-xs sm:text-sm text-[#4a5c59] italic leading-relaxed relative pl-4 border-l-2 border-[#d4af37]">
                   "{story.quote}"
                 </p>
               </div>
@@ -145,12 +145,12 @@ export const StudentSuccess: React.FC<StudentSuccessProps> = ({ currentLang }) =
             {hiringPartners.map((partner, index) => (
               <div
                 key={index}
-                className="px-6 py-3 rounded-2xl bg-[#161217] border border-[#d4af37]/20 flex items-center gap-3 hover:border-[#d4af37] transition-colors"
+                className="px-6 py-3 rounded-2xl bg-white border border-[#d4af37]/20 flex items-center gap-3 hover:border-[#d4af37] transition-colors"
               >
                 <Building2 className="w-4 h-4 text-[#d4af37]" />
                 <div>
-                  <div className="text-xs font-bold text-white">{partner.name}</div>
-                  <div className="text-[10px] text-[#a095a5]">{partner.locations}</div>
+                  <div className="text-xs font-bold text-[#10201e]">{partner.name}</div>
+                  <div className="text-[10px] text-[#6b7d7a]">{partner.locations}</div>
                 </div>
               </div>
             ))}

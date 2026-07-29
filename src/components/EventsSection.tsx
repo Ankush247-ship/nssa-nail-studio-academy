@@ -39,17 +39,17 @@ export const EventsSection: React.FC<EventsSectionProps> = ({ currentLang, onOpe
   ];
 
   return (
-    <section id="events" className="py-24 bg-[#0d0b0d] relative overflow-hidden">
+    <section id="events" className="py-24 bg-white relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center max-w-3xl mx-auto space-y-4">
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-[#d4af37]/30 bg-[#161217] text-xs font-semibold text-[#d4af37]">
+          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-[#d4af37]/30 bg-white text-xs font-semibold text-[#d4af37]">
             <Calendar className="w-4 h-4" />
             <span>Exhibitions & Special Events</span>
           </div>
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-serif-luxury font-bold text-white">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-serif-luxury font-bold text-[#10201e]">
             Beauty Exhibitions & Masterclass Events
           </h2>
-          <p className="text-sm sm:text-base text-[#b0a5b5] leading-relaxed">
+          <p className="text-sm sm:text-base text-[#4a5c59] leading-relaxed">
             See Nail Style Studio Academy in action at major national beauty expos, masterclasses, and graduation ceremonies.
           </p>
         </div>
@@ -74,11 +74,11 @@ export const EventsSection: React.FC<EventsSectionProps> = ({ currentLang, onOpe
                 </div>
 
                 <div className="p-6 space-y-4">
-                  <h3 className="text-xl font-serif-luxury font-bold text-white group-hover:text-[#d4af37] transition-colors">
+                  <h3 className="text-xl font-serif-luxury font-bold text-[#10201e] group-hover:text-[#d4af37] transition-colors">
                     {evt.title}
                   </h3>
 
-                  <div className="space-y-2 text-xs text-[#c0b5a8]">
+                  <div className="space-y-2 text-xs text-[#4a5c59]">
                     <div className="flex items-center gap-2">
                       <Calendar className="w-4 h-4 text-[#d4af37] shrink-0" />
                       <span>{evt.date}</span>
@@ -89,7 +89,7 @@ export const EventsSection: React.FC<EventsSectionProps> = ({ currentLang, onOpe
                     </div>
                   </div>
 
-                  <p className="text-xs sm:text-sm text-[#b0a5b5] leading-relaxed">
+                  <p className="text-xs sm:text-sm text-[#4a5c59] leading-relaxed">
                     {evt.description}
                   </p>
                 </div>
@@ -98,7 +98,7 @@ export const EventsSection: React.FC<EventsSectionProps> = ({ currentLang, onOpe
               <div className="p-6 pt-0">
                 <button
                   onClick={onOpenAdmission}
-                  className="w-full py-3 rounded-full border border-[#d4af37]/40 bg-[#161217] text-xs font-bold text-[#f7e7ce] hover:bg-[#d4af37] hover:text-[#0d0b0d] transition-all flex items-center justify-center gap-2"
+                  className="w-full py-3 rounded-full border border-[#d4af37]/40 bg-white text-xs font-bold text-[#0a6b62] hover:bg-[#d4af37] hover:text-[#0d0b0d] transition-all flex items-center justify-center gap-2"
                 >
                   <span>Enquire For Workshop</span>
                   <ArrowRight className="w-3.5 h-3.5" />

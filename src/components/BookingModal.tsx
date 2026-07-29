@@ -53,7 +53,7 @@ export const BookingModal: React.FC<BookingModalProps> = ({ currentLang, initial
         <button
           onClick={onClose}
           aria-label="Close"
-          className="absolute top-4 right-4 p-2 text-[#a095a5] hover:text-[#d4af37] transition-colors"
+          className="absolute top-4 right-4 p-2 text-[#6b7d7a] hover:text-[#d4af37] transition-colors"
         >
           <X className="w-5 h-5" />
         </button>
@@ -63,10 +63,10 @@ export const BookingModal: React.FC<BookingModalProps> = ({ currentLang, initial
             <div className="w-16 h-16 rounded-full bg-emerald-500/20 text-emerald-400 border border-emerald-500 mx-auto flex items-center justify-center">
               <CheckCircle2 className="w-8 h-8" />
             </div>
-            <h3 className="text-2xl font-serif-luxury font-bold text-white">
+            <h3 className="text-2xl font-serif-luxury font-bold text-[#10201e]">
               Appointment Request Submitted!
             </h3>
-            <p className="text-xs text-[#b0a5b5] max-w-sm mx-auto">
+            <p className="text-xs text-[#4a5c59] max-w-sm mx-auto">
               {t('modal.success_msg')}
             </p>
           </div>
@@ -76,7 +76,7 @@ export const BookingModal: React.FC<BookingModalProps> = ({ currentLang, initial
               <span className="text-[10px] font-bold text-[#d4af37] uppercase tracking-wider">
                 Luxury Salon Concierge
               </span>
-              <h3 className="text-2xl font-serif-luxury font-bold text-white" id="booking-modal-title">
+              <h3 className="text-2xl font-serif-luxury font-bold text-[#10201e]" id="booking-modal-title">
                 {t('modal.book_title')}
               </h3>
             </div>
@@ -84,7 +84,7 @@ export const BookingModal: React.FC<BookingModalProps> = ({ currentLang, initial
             {/* Name & Phone */}
             <div className="space-y-3 pt-2">
               <div>
-                <label className="block text-xs font-semibold text-[#e0d8ce] mb-1">Full Name</label>
+                <label className="block text-xs font-semibold text-[#10201e] mb-1">Full Name</label>
                 <div className="relative">
                   <User className="w-4 h-4 text-[#d4af37] absolute left-3 top-3" />
                   <input
@@ -93,13 +93,13 @@ export const BookingModal: React.FC<BookingModalProps> = ({ currentLang, initial
                     placeholder="Enter your name"
                     value={formData.name}
                     onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                    className="w-full bg-[#161217] border border-[#d4af37]/20 rounded-xl pl-9 pr-4 py-2.5 text-xs text-white placeholder-[#807585] focus:border-[#d4af37] focus:outline-none"
+                    className="w-full bg-white border border-[#d4af37]/20 rounded-xl pl-9 pr-4 py-2.5 text-xs text-[#10201e] placeholder-[#94a19e] focus:border-[#d4af37] focus:outline-none"
                   />
                 </div>
               </div>
 
               <div>
-                <label className="block text-xs font-semibold text-[#e0d8ce] mb-1">Phone Number (WhatsApp)</label>
+                <label className="block text-xs font-semibold text-[#10201e] mb-1">Phone Number (WhatsApp)</label>
                 <div className="relative">
                   <Phone className="w-4 h-4 text-[#d4af37] absolute left-3 top-3" />
                   <input
@@ -108,7 +108,7 @@ export const BookingModal: React.FC<BookingModalProps> = ({ currentLang, initial
                     placeholder="+91 98200 00000"
                     value={formData.phone}
                     onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                    className="w-full bg-[#161217] border border-[#d4af37]/20 rounded-xl pl-9 pr-4 py-2.5 text-xs text-white placeholder-[#807585] focus:border-[#d4af37] focus:outline-none"
+                    className="w-full bg-white border border-[#d4af37]/20 rounded-xl pl-9 pr-4 py-2.5 text-xs text-[#10201e] placeholder-[#94a19e] focus:border-[#d4af37] focus:outline-none"
                   />
                 </div>
               </div>
@@ -116,7 +116,7 @@ export const BookingModal: React.FC<BookingModalProps> = ({ currentLang, initial
               {/* City & Studio Branch */}
               <div className="grid grid-cols-2 gap-3">
                 <div>
-                  <label className="block text-xs font-semibold text-[#e0d8ce] mb-1">Select City</label>
+                  <label className="block text-xs font-semibold text-[#10201e] mb-1">Select City</label>
                   <select
                     value={formData.city}
                     onChange={(e) => {
@@ -128,7 +128,7 @@ export const BookingModal: React.FC<BookingModalProps> = ({ currentLang, initial
                         branch: branchInCity ? branchInCity.id : studioBranches[0].id
                       });
                     }}
-                    className="w-full bg-[#161217] border border-[#d4af37]/20 rounded-xl px-3 py-2.5 text-xs text-white focus:border-[#d4af37] focus:outline-none"
+                    className="w-full bg-white border border-[#d4af37]/20 rounded-xl px-3 py-2.5 text-xs text-[#10201e] focus:border-[#d4af37] focus:outline-none"
                   >
                     <option value="Mumbai">Mumbai</option>
                     <option value="Guwahati">Guwahati</option>
@@ -136,11 +136,11 @@ export const BookingModal: React.FC<BookingModalProps> = ({ currentLang, initial
                 </div>
 
                 <div>
-                  <label className="block text-xs font-semibold text-[#e0d8ce] mb-1">Studio Branch</label>
+                  <label className="block text-xs font-semibold text-[#10201e] mb-1">Studio Branch</label>
                   <select
                     value={formData.branch}
                     onChange={(e) => setFormData({ ...formData, branch: e.target.value })}
-                    className="w-full bg-[#161217] border border-[#d4af37]/20 rounded-xl px-3 py-2.5 text-xs text-white focus:border-[#d4af37] focus:outline-none"
+                    className="w-full bg-white border border-[#d4af37]/20 rounded-xl px-3 py-2.5 text-xs text-[#10201e] focus:border-[#d4af37] focus:outline-none"
                   >
                     {studioBranches
                       .filter((b) => b.city === formData.city)
@@ -155,11 +155,11 @@ export const BookingModal: React.FC<BookingModalProps> = ({ currentLang, initial
 
               {/* Service Selection */}
               <div>
-                <label className="block text-xs font-semibold text-[#e0d8ce] mb-1">Select Service</label>
+                <label className="block text-xs font-semibold text-[#10201e] mb-1">Select Service</label>
                 <select
                   value={formData.serviceId}
                   onChange={(e) => setFormData({ ...formData, serviceId: e.target.value })}
-                  className="w-full bg-[#161217] border border-[#d4af37]/20 rounded-xl px-3 py-2.5 text-xs text-white focus:border-[#d4af37] focus:outline-none"
+                  className="w-full bg-white border border-[#d4af37]/20 rounded-xl px-3 py-2.5 text-xs text-[#10201e] focus:border-[#d4af37] focus:outline-none"
                 >
                   {salonServices.map((service) => (
                     <option key={service.id} value={service.id}>
@@ -172,22 +172,22 @@ export const BookingModal: React.FC<BookingModalProps> = ({ currentLang, initial
               {/* Date & Time */}
               <div className="grid grid-cols-2 gap-3">
                 <div>
-                  <label className="block text-xs font-semibold text-[#e0d8ce] mb-1">Preferred Date</label>
+                  <label className="block text-xs font-semibold text-[#10201e] mb-1">Preferred Date</label>
                   <input
                     type="date"
                     required
                     value={formData.date}
                     onChange={(e) => setFormData({ ...formData, date: e.target.value })}
-                    className="w-full bg-[#161217] border border-[#d4af37]/20 rounded-xl px-3 py-2.5 text-xs text-white focus:border-[#d4af37] focus:outline-none"
+                    className="w-full bg-white border border-[#d4af37]/20 rounded-xl px-3 py-2.5 text-xs text-[#10201e] focus:border-[#d4af37] focus:outline-none"
                   />
                 </div>
 
                 <div>
-                  <label className="block text-xs font-semibold text-[#e0d8ce] mb-1">Preferred Time</label>
+                  <label className="block text-xs font-semibold text-[#10201e] mb-1">Preferred Time</label>
                   <select
                     value={formData.time}
                     onChange={(e) => setFormData({ ...formData, time: e.target.value })}
-                    className="w-full bg-[#161217] border border-[#d4af37]/20 rounded-xl px-3 py-2.5 text-xs text-white focus:border-[#d4af37] focus:outline-none"
+                    className="w-full bg-white border border-[#d4af37]/20 rounded-xl px-3 py-2.5 text-xs text-[#10201e] focus:border-[#d4af37] focus:outline-none"
                   >
                     <option value="11:00 AM">11:00 AM</option>
                     <option value="01:00 PM">01:00 PM</option>
@@ -199,13 +199,13 @@ export const BookingModal: React.FC<BookingModalProps> = ({ currentLang, initial
               </div>
 
               <div>
-                <label className="block text-xs font-semibold text-[#e0d8ce] mb-1">Special Requests (Optional)</label>
+                <label className="block text-xs font-semibold text-[#10201e] mb-1">Special Requests (Optional)</label>
                 <textarea
                   rows={2}
                   placeholder="Bridal nail art details, length preference, etc."
                   value={formData.notes}
                   onChange={(e) => setFormData({ ...formData, notes: e.target.value })}
-                  className="w-full bg-[#161217] border border-[#d4af37]/20 rounded-xl p-3 text-xs text-white placeholder-[#807585] focus:border-[#d4af37] focus:outline-none"
+                  className="w-full bg-white border border-[#d4af37]/20 rounded-xl p-3 text-xs text-[#10201e] placeholder-[#94a19e] focus:border-[#d4af37] focus:outline-none"
                 />
               </div>
             </div>

@@ -80,7 +80,7 @@ export default function App() {
   };
 
   return (
-    <div className="min-h-screen bg-[#0d0b0d] text-[#f2ede4] font-sans relative selection:bg-[#d4af37] selection:text-[#0d0b0d]">
+    <div className="min-h-screen bg-white text-[#10201e] font-sans relative selection:bg-[#d4af37] selection:text-[#0d0b0d]">
       
       {/* Luxury Ambient Glow Cursor on Desktop */}
       <div

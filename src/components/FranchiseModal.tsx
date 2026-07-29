@@ -44,7 +44,7 @@ export const FranchiseModal: React.FC<FranchiseModalProps> = ({ currentLang, onC
         <button
           onClick={onClose}
           aria-label="Close"
-          className="absolute top-4 right-4 p-2 text-[#a095a5] hover:text-[#d4af37] transition-colors"
+          className="absolute top-4 right-4 p-2 text-[#6b7d7a] hover:text-[#d4af37] transition-colors"
         >
           <X className="w-5 h-5" />
         </button>
@@ -54,10 +54,10 @@ export const FranchiseModal: React.FC<FranchiseModalProps> = ({ currentLang, onC
             <div className="w-16 h-16 rounded-full bg-emerald-500/20 text-emerald-400 border border-emerald-500 mx-auto flex items-center justify-center">
               <CheckCircle2 className="w-8 h-8" />
             </div>
-            <h3 className="text-2xl font-serif-luxury font-bold text-white">
+            <h3 className="text-2xl font-serif-luxury font-bold text-[#10201e]">
               Franchise Enquiry Received!
             </h3>
-            <p className="text-xs text-[#b0a5b5] max-w-sm mx-auto">
+            <p className="text-xs text-[#4a5c59] max-w-sm mx-auto">
               Our Franchise Expansion Director will contact you within 24 hours.
             </p>
           </div>
@@ -67,14 +67,14 @@ export const FranchiseModal: React.FC<FranchiseModalProps> = ({ currentLang, onC
               <span className="text-[10px] font-bold text-[#d4af37] uppercase tracking-wider">
                 Pan-India Studio Partnership
               </span>
-              <h3 className="text-2xl font-serif-luxury font-bold text-white" id="franchise-modal-title">
+              <h3 className="text-2xl font-serif-luxury font-bold text-[#10201e]" id="franchise-modal-title">
                 {t('modal.franchise_title')}
               </h3>
             </div>
 
             <div className="space-y-3 pt-2">
               <div>
-                <label className="block text-xs font-semibold text-[#e0d8ce] mb-1">Applicant Name</label>
+                <label className="block text-xs font-semibold text-[#10201e] mb-1">Applicant Name</label>
                 <div className="relative">
                   <User className="w-4 h-4 text-[#d4af37] absolute left-3 top-3" />
                   <input
@@ -83,56 +83,56 @@ export const FranchiseModal: React.FC<FranchiseModalProps> = ({ currentLang, onC
                     placeholder="Enter full name"
                     value={formData.name}
                     onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                    className="w-full bg-[#161217] border border-[#d4af37]/20 rounded-xl pl-9 pr-4 py-2.5 text-xs text-white placeholder-[#807585] focus:border-[#d4af37] focus:outline-none"
+                    className="w-full bg-white border border-[#d4af37]/20 rounded-xl pl-9 pr-4 py-2.5 text-xs text-[#10201e] placeholder-[#94a19e] focus:border-[#d4af37] focus:outline-none"
                   />
                 </div>
               </div>
 
               <div className="grid grid-cols-2 gap-3">
                 <div>
-                  <label className="block text-xs font-semibold text-[#e0d8ce] mb-1">Phone</label>
+                  <label className="block text-xs font-semibold text-[#10201e] mb-1">Phone</label>
                   <input
                     type="tel"
                     required
                     placeholder="+91 98200 00000"
                     value={formData.phone}
                     onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                    className="w-full bg-[#161217] border border-[#d4af37]/20 rounded-xl px-3 py-2.5 text-xs text-white placeholder-[#807585] focus:border-[#d4af37] focus:outline-none"
+                    className="w-full bg-white border border-[#d4af37]/20 rounded-xl px-3 py-2.5 text-xs text-[#10201e] placeholder-[#94a19e] focus:border-[#d4af37] focus:outline-none"
                   />
                 </div>
 
                 <div>
-                  <label className="block text-xs font-semibold text-[#e0d8ce] mb-1">Email</label>
+                  <label className="block text-xs font-semibold text-[#10201e] mb-1">Email</label>
                   <input
                     type="email"
                     required
                     placeholder="investor@gmail.com"
                     value={formData.email}
                     onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                    className="w-full bg-[#161217] border border-[#d4af37]/20 rounded-xl px-3 py-2.5 text-xs text-white placeholder-[#807585] focus:border-[#d4af37] focus:outline-none"
+                    className="w-full bg-white border border-[#d4af37]/20 rounded-xl px-3 py-2.5 text-xs text-[#10201e] placeholder-[#94a19e] focus:border-[#d4af37] focus:outline-none"
                   />
                 </div>
               </div>
 
               <div className="grid grid-cols-2 gap-3">
                 <div>
-                  <label className="block text-xs font-semibold text-[#e0d8ce] mb-1">Proposed City</label>
+                  <label className="block text-xs font-semibold text-[#10201e] mb-1">Proposed City</label>
                   <input
                     type="text"
                     required
                     placeholder="e.g. Pune, Kolkata, Guwahati"
                     value={formData.city}
                     onChange={(e) => setFormData({ ...formData, city: e.target.value })}
-                    className="w-full bg-[#161217] border border-[#d4af37]/20 rounded-xl px-3 py-2.5 text-xs text-white placeholder-[#807585] focus:border-[#d4af37] focus:outline-none"
+                    className="w-full bg-white border border-[#d4af37]/20 rounded-xl px-3 py-2.5 text-xs text-[#10201e] placeholder-[#94a19e] focus:border-[#d4af37] focus:outline-none"
                   />
                 </div>
 
                 <div>
-                  <label className="block text-xs font-semibold text-[#e0d8ce] mb-1">Investment Budget</label>
+                  <label className="block text-xs font-semibold text-[#10201e] mb-1">Investment Budget</label>
                   <select
                     value={formData.investmentBudget}
                     onChange={(e) => setFormData({ ...formData, investmentBudget: e.target.value })}
-                    className="w-full bg-[#161217] border border-[#d4af37]/20 rounded-xl px-3 py-2.5 text-xs text-white focus:border-[#d4af37] focus:outline-none"
+                    className="w-full bg-white border border-[#d4af37]/20 rounded-xl px-3 py-2.5 text-xs text-[#10201e] focus:border-[#d4af37] focus:outline-none"
                   >
                     <option value="₹18 Lakhs - ₹25 Lakhs">₹18 Lakhs - ₹25 Lakhs</option>
                     <option value="₹25 Lakhs - ₹35 Lakhs">₹25 Lakhs - ₹35 Lakhs</option>
@@ -142,13 +142,13 @@ export const FranchiseModal: React.FC<FranchiseModalProps> = ({ currentLang, onC
               </div>
 
               <div>
-                <label className="block text-xs font-semibold text-[#e0d8ce] mb-1">Additional Details (Optional)</label>
+                <label className="block text-xs font-semibold text-[#10201e] mb-1">Additional Details (Optional)</label>
                 <textarea
                   rows={2}
                   placeholder="Location preference, business experience..."
                   value={formData.notes}
                   onChange={(e) => setFormData({ ...formData, notes: e.target.value })}
-                  className="w-full bg-[#161217] border border-[#d4af37]/20 rounded-xl p-3 text-xs text-white placeholder-[#807585] focus:border-[#d4af37] focus:outline-none"
+                  className="w-full bg-white border border-[#d4af37]/20 rounded-xl p-3 text-xs text-[#10201e] placeholder-[#94a19e] focus:border-[#d4af37] focus:outline-none"
                 />
               </div>
             </div>

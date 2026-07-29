@@ -18,7 +18,7 @@ export const AcademyCourses: React.FC<AcademyCoursesProps> = ({
   const t = (key: string) => translations[currentLang][key] || translations['en'][key] || key;
 
   return (
-    <section id="courses" className="py-24 bg-[#0d0b0d] relative overflow-hidden">
+    <section id="courses" className="py-24 bg-white relative overflow-hidden">
       {/* Glow Orbs */}
       <div className="absolute top-1/3 right-0 w-96 h-96 bg-[#d4af37]/10 rounded-full blur-[100px] pointer-events-none" />
 
@@ -26,40 +26,40 @@ export const AcademyCourses: React.FC<AcademyCoursesProps> = ({
         
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto space-y-4">
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-[#d4af37]/30 bg-[#161217] text-xs font-semibold text-[#d4af37]">
+          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-[#d4af37]/30 bg-white text-xs font-semibold text-[#d4af37]">
             <GraduationCap className="w-4 h-4" />
             <span>Government Authorised Skill Certification</span>
           </div>
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-serif-luxury font-bold text-white">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-serif-luxury font-bold text-[#10201e]">
             {t('courses.title')}
           </h2>
-          <p className="text-sm sm:text-base text-[#b0a5b5] leading-relaxed">
+          <p className="text-sm sm:text-base text-[#4a5c59] leading-relaxed">
             {t('courses.subtitle')}
           </p>
         </div>
 
         {/* Free Toolkit Highlight Banner */}
-        <div className="mt-12 p-6 sm:p-8 rounded-3xl bg-gradient-to-r from-[#211823] via-[#2d1e30] to-[#211823] border border-[#d4af37]/40 shadow-2xl relative overflow-hidden">
+        <div className="mt-12 p-6 sm:p-8 rounded-3xl bg-gradient-to-r from-[#f7fdfc] via-[#e6f7f5] to-[#f7fdfc] border border-[#d4af37]/40 shadow-2xl relative overflow-hidden">
           <div className="grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
             <div className="md:col-span-8 space-y-3">
               <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-[#d4af37]/20 border border-[#d4af37] text-xs font-extrabold text-[#d4af37]">
                 <Gift className="w-3.5 h-3.5" />
                 <span>INCLUDED FOR EVERY ENROLLED STUDENT</span>
               </div>
-              <h3 className="text-2xl sm:text-3xl font-serif-luxury font-bold text-white">
+              <h3 className="text-2xl sm:text-3xl font-serif-luxury font-bold text-[#10201e]">
                 Complete ₹15,000 International Professional Toolkit
               </h3>
-              <p className="text-xs sm:text-sm text-[#c0b5a8] leading-relaxed">
+              <p className="text-xs sm:text-sm text-[#4a5c59] leading-relaxed">
                 UV/LED Nail Lamp, Professional E-File Drill, Hard Gels, Acrylic Monomers, Polymer Powders, 3D Sculpting Brushes, Forms, and Rhinestone Kits—yours to keep forever!
               </p>
-              <div className="pt-2 flex flex-wrap gap-2 text-xs text-[#e0d8ce]">
-                <span className="bg-[#0d0b0d]/60 px-3 py-1.5 rounded-lg border border-[#d4af37]/20 flex items-center gap-1.5">
+              <div className="pt-2 flex flex-wrap gap-2 text-xs text-[#10201e]">
+                <span className="bg-white/70 px-3 py-1.5 rounded-lg border border-[#d4af37]/20 flex items-center gap-1.5">
                   <Check className="w-3.5 h-3.5 text-[#d4af37]" /> UV/LED 48W Lamp
                 </span>
-                <span className="bg-[#0d0b0d]/60 px-3 py-1.5 rounded-lg border border-[#d4af37]/20 flex items-center gap-1.5">
+                <span className="bg-white/70 px-3 py-1.5 rounded-lg border border-[#d4af37]/20 flex items-center gap-1.5">
                   <Check className="w-3.5 h-3.5 text-[#d4af37]" /> Electric E-File Drill
                 </span>
-                <span className="bg-[#0d0b0d]/60 px-3 py-1.5 rounded-lg border border-[#d4af37]/20 flex items-center gap-1.5">
+                <span className="bg-white/70 px-3 py-1.5 rounded-lg border border-[#d4af37]/20 flex items-center gap-1.5">
                   <Check className="w-3.5 h-3.5 text-[#d4af37]" /> 40+ Tools & Powders
                 </span>
               </div>
@@ -105,7 +105,7 @@ export const AcademyCourses: React.FC<AcademyCoursesProps> = ({
                   <div className="absolute top-3 left-3 bg-[#d4af37] text-[#0d0b0d] px-3 py-1 rounded-full text-[10px] font-extrabold uppercase tracking-wider shadow-lg">
                     {t(course.badgeKey)}
                   </div>
-                  <div className="absolute bottom-3 left-3 right-3 bg-[#0d0b0d]/85 backdrop-blur-md px-3 py-2 rounded-xl text-xs text-[#f7e7ce] flex items-center justify-between border border-[#d4af37]/20">
+                  <div className="absolute bottom-3 left-3 right-3 bg-white/85 backdrop-blur-md px-3 py-2 rounded-xl text-xs text-[#0a6b62] flex items-center justify-between border border-[#d4af37]/20">
                     <span className="flex items-center gap-1">
                       <Calendar className="w-3.5 h-3.5 text-[#d4af37]" />
                       <span>{course.durationDays} Days ({course.practicalHours} Hours)</span>
@@ -116,7 +116,7 @@ export const AcademyCourses: React.FC<AcademyCoursesProps> = ({
 
                 {/* Course Details */}
                 <div className="p-6 space-y-4">
-                  <h3 className="text-2xl font-serif-luxury font-bold text-white group-hover:text-[#d4af37] transition-colors">
+                  <h3 className="text-2xl font-serif-luxury font-bold text-[#10201e] group-hover:text-[#d4af37] transition-colors">
                     {t(course.titleKey)}
                   </h3>
 
@@ -126,9 +126,9 @@ export const AcademyCourses: React.FC<AcademyCoursesProps> = ({
                   </div>
 
                   {/* Pricing Breakdown */}
-                  <div className="p-4 rounded-2xl bg-[#161217] border border-[#d4af37]/20 flex items-center justify-between">
+                  <div className="p-4 rounded-2xl bg-white border border-[#d4af37]/20 flex items-center justify-between">
                     <div>
-                      <div className="text-[11px] text-[#a095a5] line-through">
+                      <div className="text-[11px] text-[#6b7d7a] line-through">
                         Original: ₹{course.originalFee.toLocaleString('en-IN')}
                       </div>
                       <div className="text-2xl font-bold text-gold-gradient">
@@ -142,11 +142,11 @@ export const AcademyCourses: React.FC<AcademyCoursesProps> = ({
 
                   {/* Curriculum Bullet Points */}
                   <div className="space-y-2 pt-2 border-t border-[#d4af37]/15">
-                    <span className="text-xs font-bold text-[#e0d8ce] block uppercase tracking-wider">
+                    <span className="text-xs font-bold text-[#10201e] block uppercase tracking-wider">
                       Practical Curriculum Highlights:
                     </span>
                     {course.curriculumKeys.map((item, idx) => (
-                      <div key={idx} className="flex items-start gap-2 text-xs text-[#c0b5a8]">
+                      <div key={idx} className="flex items-start gap-2 text-xs text-[#4a5c59]">
                         <CheckCircle2 className="w-3.5 h-3.5 text-[#d4af37] shrink-0 mt-0.5" />
                         <span>{item}</span>
                       </div>

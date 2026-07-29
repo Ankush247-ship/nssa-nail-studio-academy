@@ -13,10 +13,10 @@ export const StickyMobileBar: React.FC<StickyMobileBarProps> = ({ currentLang, o
   const t = (key: string) => translations[currentLang][key] || translations['en'][key] || key;
 
   return (
-    <div className="md:hidden fixed bottom-0 inset-x-0 z-40 bg-[#0d0b0d]/95 backdrop-blur-xl border-t border-[#d4af37]/30 p-2 px-3 shadow-2xl flex items-center justify-between gap-1.5">
+    <div className="md:hidden fixed bottom-0 inset-x-0 z-40 bg-white/95 backdrop-blur-xl border-t border-[#d4af37]/30 p-2 px-3 shadow-2xl flex items-center justify-between gap-1.5">
       <button
         onClick={onOpenBooking}
-        className="flex-1 py-2 px-2 rounded-xl border border-[#d4af37]/40 bg-[#161217] text-[10px] font-bold text-[#f7e7ce] flex items-center justify-center gap-1 shadow-md active:scale-95"
+        className="flex-1 py-2 px-2 rounded-xl border border-[#d4af37]/40 bg-white text-[10px] font-bold text-[#0a6b62] flex items-center justify-center gap-1 shadow-md active:scale-95"
       >
         <Calendar className="w-3.5 h-3.5 text-[#d4af37]" />
         <span>Book Salon</span>
@@ -32,7 +32,7 @@ export const StickyMobileBar: React.FC<StickyMobileBarProps> = ({ currentLang, o
 
       <a
         href="tel:9372233042"
-        className="w-9 h-9 rounded-xl bg-[#161217] border border-[#d4af37]/40 flex items-center justify-center text-[#d4af37] shrink-0 shadow-lg active:scale-95"
+        className="w-9 h-9 rounded-xl bg-white border border-[#d4af37]/40 flex items-center justify-center text-[#d4af37] shrink-0 shadow-lg active:scale-95"
         aria-label="Call Now"
       >
         <Phone className="w-4 h-4" />

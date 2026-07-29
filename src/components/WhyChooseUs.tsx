@@ -59,17 +59,17 @@ export const WhyChooseUs: React.FC<WhyChooseUsProps> = ({ currentLang }) => {
   ];
 
   return (
-    <section id="why-us" className="py-24 bg-[#0d0b0d] relative overflow-hidden">
+    <section id="why-us" className="py-24 bg-white relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center max-w-3xl mx-auto space-y-4">
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-[#d4af37]/30 bg-[#161217] text-xs font-semibold text-[#d4af37]">
+          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-[#d4af37]/30 bg-white text-xs font-semibold text-[#d4af37]">
             <Sparkles className="w-4 h-4" />
             <span>Why Nail Style Studio Academy?</span>
           </div>
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-serif-luxury font-bold text-white">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-serif-luxury font-bold text-[#10201e]">
             Excellence in Nail Artistry & Education
           </h2>
-          <p className="text-sm sm:text-base text-[#b0a5b5] leading-relaxed">
+          <p className="text-sm sm:text-base text-[#4a5c59] leading-relaxed">
             We don't just teach nail art—we build high-earning beauty entrepreneurs and deliver luxury salon results.
           </p>
         </div>
@@ -80,15 +80,15 @@ export const WhyChooseUs: React.FC<WhyChooseUsProps> = ({ currentLang }) => {
             return (
               <div
                 key={idx}
-                className="p-8 rounded-3xl bg-[#161217] border border-[#d4af37]/20 hover:border-[#d4af37]/60 transition-all hover:-translate-y-1 shadow-xl group"
+                className="p-8 rounded-3xl bg-white border border-[#d4af37]/20 hover:border-[#d4af37]/60 transition-all hover:-translate-y-1 shadow-xl group"
               >
                 <div className="w-12 h-12 rounded-2xl bg-[#d4af37]/10 border border-[#d4af37]/40 flex items-center justify-center mb-6 group-hover:bg-[#d4af37] transition-colors">
                   <Icon className="w-6 h-6 text-[#d4af37] group-hover:text-[#0d0b0d] transition-colors" />
                 </div>
-                <h3 className="text-xl font-serif-luxury font-bold text-white mb-3 group-hover:text-[#d4af37] transition-colors">
+                <h3 className="text-xl font-serif-luxury font-bold text-[#10201e] mb-3 group-hover:text-[#d4af37] transition-colors">
                   {feature.title}
                 </h3>
-                <p className="text-sm text-[#b0a5b5] leading-relaxed">
+                <p className="text-sm text-[#4a5c59] leading-relaxed">
                   {feature.description}
                 </p>
               </div>

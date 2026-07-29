@@ -11,7 +11,7 @@ export const Footer: React.FC<FooterProps> = ({ currentLang }) => {
   const t = (key: string) => translations[currentLang][key] || translations['en'][key] || key;
 
   return (
-    <footer className="bg-[#080608] border-t border-[#d4af37]/20 pt-16 pb-24 md:pb-12 text-[#a095a5]">
+    <footer className="bg-[#f7fdfc] border-t border-[#d4af37]/20 pt-16 pb-24 md:pb-12 text-[#6b7d7a]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 pb-12 border-b border-[#d4af37]/15">
           
@@ -24,7 +24,7 @@ export const Footer: React.FC<FooterProps> = ({ currentLang }) => {
                 </div>
               </div>
               <div>
-                <span className="font-serif-luxury text-lg font-bold text-white block">
+                <span className="font-serif-luxury text-lg font-bold text-[#10201e] block">
                   NAIL STYLE STUDIO
                 </span>
                 <span className="text-[10px] tracking-widest text-[#d4af37] uppercase font-semibold block -mt-1">
@@ -32,7 +32,7 @@ export const Footer: React.FC<FooterProps> = ({ currentLang }) => {
                 </span>
               </div>
             </div>
-            <p className="text-xs leading-relaxed text-[#b0a5b5]">
+            <p className="text-xs leading-relaxed text-[#4a5c59]">
               {t('footer.about')}
             </p>
             <div className="flex items-center gap-2 text-xs text-[#d4af37]">
@@ -43,7 +43,7 @@ export const Footer: React.FC<FooterProps> = ({ currentLang }) => {
 
           {/* Quick Links */}
           <div className="space-y-3">
-            <h4 className="text-sm font-bold text-white uppercase tracking-wider">Quick Links</h4>
+            <h4 className="text-sm font-bold text-[#10201e] uppercase tracking-wider">Quick Links</h4>
             <ul className="space-y-2 text-xs">
               <li><a href="#services" className="hover:text-[#d4af37] transition-colors">{t('nav.salon_services')}</a></li>
               <li><a href="#courses" className="hover:text-[#d4af37] transition-colors">{t('nav.academy_courses')}</a></li>
@@ -55,7 +55,7 @@ export const Footer: React.FC<FooterProps> = ({ currentLang }) => {
 
           {/* Studio Locations */}
           <div className="space-y-3">
-            <h4 className="text-sm font-bold text-white uppercase tracking-wider">Studios & Academies</h4>
+            <h4 className="text-sm font-bold text-[#10201e] uppercase tracking-wider">Studios & Academies</h4>
             <div className="space-y-2 text-xs">
               <div className="flex items-start gap-2">
                 <MapPin className="w-4 h-4 text-[#d4af37] shrink-0 mt-0.5" />
@@ -70,19 +70,19 @@ export const Footer: React.FC<FooterProps> = ({ currentLang }) => {
 
           {/* Contact & Socials */}
           <div className="space-y-3">
-            <h4 className="text-sm font-bold text-white uppercase tracking-wider">Connect With Us</h4>
+            <h4 className="text-sm font-bold text-[#10201e] uppercase tracking-wider">Connect With Us</h4>
             <div className="text-xs space-y-1">
               <div>Phone: +91 98200 12345 / +91 88110 54321</div>
               <div>Email: info@nailstylestudio.com</div>
             </div>
             <div className="flex items-center gap-3 pt-2">
-              <a href="#" aria-label="Follow us on Instagram" className="w-8 h-8 rounded-full bg-[#161217] border border-[#d4af37]/30 flex items-center justify-center text-[#d4af37] hover:border-[#d4af37]">
+              <a href="#" aria-label="Follow us on Instagram" className="w-8 h-8 rounded-full bg-white border border-[#d4af37]/30 flex items-center justify-center text-[#d4af37] hover:border-[#d4af37]">
                 <Instagram className="w-4 h-4" aria-hidden="true" />
               </a>
-              <a href="#" aria-label="Follow us on Facebook" className="w-8 h-8 rounded-full bg-[#161217] border border-[#d4af37]/30 flex items-center justify-center text-[#d4af37] hover:border-[#d4af37]">
+              <a href="#" aria-label="Follow us on Facebook" className="w-8 h-8 rounded-full bg-white border border-[#d4af37]/30 flex items-center justify-center text-[#d4af37] hover:border-[#d4af37]">
                 <Facebook className="w-4 h-4" aria-hidden="true" />
               </a>
-              <a href="#" aria-label="Subscribe on YouTube" className="w-8 h-8 rounded-full bg-[#161217] border border-[#d4af37]/30 flex items-center justify-center text-[#d4af37] hover:border-[#d4af37]">
+              <a href="#" aria-label="Subscribe on YouTube" className="w-8 h-8 rounded-full bg-white border border-[#d4af37]/30 flex items-center justify-center text-[#d4af37] hover:border-[#d4af37]">
                 <Youtube className="w-4 h-4" aria-hidden="true" />
               </a>
             </div>
@@ -91,7 +91,7 @@ export const Footer: React.FC<FooterProps> = ({ currentLang }) => {
         </div>
 
         {/* Bottom Rights */}
-        <div className="pt-8 text-center text-xs text-[#807585]">
+        <div className="pt-8 text-center text-xs text-[#6b7d7a]">
           {t('footer.rights')}
         </div>
       </div>

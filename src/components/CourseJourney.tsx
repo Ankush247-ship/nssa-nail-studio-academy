@@ -44,16 +44,16 @@ export const CourseJourney: React.FC<CourseJourneyProps> = ({ currentLang }) => 
   ];
 
   return (
-    <section className="py-24 bg-[#0d0b0d] relative overflow-hidden border-t border-[#d4af37]/15">
+    <section className="py-24 bg-white relative overflow-hidden border-t border-[#d4af37]/15">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto space-y-4">
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-[#d4af37]/30 bg-[#161217] text-xs font-semibold text-[#d4af37]">
+          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-[#d4af37]/30 bg-white text-xs font-semibold text-[#d4af37]">
             <Compass className="w-4 h-4" />
             <span>Structured Learning Roadmap</span>
           </div>
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-serif-luxury font-bold text-white">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-serif-luxury font-bold text-[#10201e]">
             {t('journey.title')}
           </h2>
         </div>
@@ -79,10 +79,10 @@ export const CourseJourney: React.FC<CourseJourneyProps> = ({ currentLang }) => 
                   </div>
 
                   {/* Title & Desc */}
-                  <h3 className="text-base font-bold text-white group-hover:text-[#d4af37] transition-colors">
+                  <h3 className="text-base font-bold text-[#10201e] group-hover:text-[#d4af37] transition-colors">
                     {t(step.titleKey)}
                   </h3>
-                  <p className="text-xs text-[#b0a5b5] leading-relaxed">
+                  <p className="text-xs text-[#4a5c59] leading-relaxed">
                     {t(step.descKey)}
                   </p>
                 </div>

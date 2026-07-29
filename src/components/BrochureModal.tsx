@@ -36,7 +36,7 @@ export const BrochureModal: React.FC<BrochureModalProps> = ({ currentLang, onClo
         <button
           onClick={onClose}
           aria-label="Close"
-          className="absolute top-4 right-4 p-2 text-[#a095a5] hover:text-[#d4af37] transition-colors"
+          className="absolute top-4 right-4 p-2 text-[#6b7d7a] hover:text-[#d4af37] transition-colors"
         >
           <X className="w-5 h-5" />
         </button>
@@ -46,10 +46,10 @@ export const BrochureModal: React.FC<BrochureModalProps> = ({ currentLang, onClo
             <div className="w-16 h-16 rounded-full bg-emerald-500/20 text-emerald-400 border border-emerald-500 mx-auto flex items-center justify-center">
               <CheckCircle2 className="w-8 h-8" />
             </div>
-            <h3 className="text-2xl font-serif-luxury font-bold text-white">
+            <h3 className="text-2xl font-serif-luxury font-bold text-[#10201e]">
               Syllabus Sent to WhatsApp!
             </h3>
-            <p className="text-xs text-[#b0a5b5]">
+            <p className="text-xs text-[#4a5c59]">
               Redirecting to download your official 2026 Prospectus PDF...
             </p>
           </div>
@@ -59,17 +59,17 @@ export const BrochureModal: React.FC<BrochureModalProps> = ({ currentLang, onClo
               <div className="w-12 h-12 rounded-full bg-[#d4af37]/20 border border-[#d4af37] mx-auto flex items-center justify-center text-[#d4af37] mb-2">
                 <FileText className="w-6 h-6" />
               </div>
-              <h3 className="text-2xl font-serif-luxury font-bold text-white" id="brochure-modal-title">
+              <h3 className="text-2xl font-serif-luxury font-bold text-[#10201e]" id="brochure-modal-title">
                 {t('modal.brochure_title')}
               </h3>
-              <p className="text-xs text-[#b0a5b5]">
+              <p className="text-xs text-[#4a5c59]">
                 Get instant access to detailed day-wise curriculum, toolkit breakdown & EMI plans.
               </p>
             </div>
 
             <div className="space-y-3 pt-2">
               <div>
-                <label className="block text-xs font-semibold text-[#e0d8ce] mb-1">Your Name</label>
+                <label className="block text-xs font-semibold text-[#10201e] mb-1">Your Name</label>
                 <div className="relative">
                   <User className="w-4 h-4 text-[#d4af37] absolute left-3 top-3" />
                   <input
@@ -78,13 +78,13 @@ export const BrochureModal: React.FC<BrochureModalProps> = ({ currentLang, onClo
                     placeholder="Enter full name"
                     value={name}
                     onChange={(e) => setName(e.target.value)}
-                    className="w-full bg-[#161217] border border-[#d4af37]/20 rounded-xl pl-9 pr-4 py-2.5 text-xs text-white placeholder-[#807585] focus:border-[#d4af37] focus:outline-none"
+                    className="w-full bg-white border border-[#d4af37]/20 rounded-xl pl-9 pr-4 py-2.5 text-xs text-[#10201e] placeholder-[#94a19e] focus:border-[#d4af37] focus:outline-none"
                   />
                 </div>
               </div>
 
               <div>
-                <label className="block text-xs font-semibold text-[#e0d8ce] mb-1">WhatsApp Number</label>
+                <label className="block text-xs font-semibold text-[#10201e] mb-1">WhatsApp Number</label>
                 <div className="relative">
                   <Phone className="w-4 h-4 text-[#d4af37] absolute left-3 top-3" />
                   <input
@@ -93,7 +93,7 @@ export const BrochureModal: React.FC<BrochureModalProps> = ({ currentLang, onClo
                     placeholder="+91 98200 00000"
                     value={phone}
                     onChange={(e) => setPhone(e.target.value)}
-                    className="w-full bg-[#161217] border border-[#d4af37]/20 rounded-xl pl-9 pr-4 py-2.5 text-xs text-white placeholder-[#807585] focus:border-[#d4af37] focus:outline-none"
+                    className="w-full bg-white border border-[#d4af37]/20 rounded-xl pl-9 pr-4 py-2.5 text-xs text-[#10201e] placeholder-[#94a19e] focus:border-[#d4af37] focus:outline-none"
                   />
                 </div>
               </div>

@@ -47,16 +47,46 @@ export const AuthenticShowcase: React.FC<AuthenticShowcaseProps> = ({ currentLan
       location: 'NSSA by Uma Goswami - Andheri East',
       image: '/nail-art-glitter-pink.jpg',
       tag: 'Client Nails'
+    },
+    {
+      title: 'Emerald Gold Vine Hand-Painted Nail Art',
+      location: 'NSSA by Uma Goswami - Andheri East',
+      image: '/nail-art-gold-vine.jpg',
+      tag: 'Handcrafted Result'
+    },
+    {
+      title: 'Royal Purple Glitter Ombre Extension Set',
+      location: 'NSSA by Uma Goswami - Andheri East',
+      image: '/nail-art-purple-glitter.jpg',
+      tag: 'Client Nails'
+    },
+    {
+      title: 'Blue & Gold Chrome Glitter Statement Nails',
+      location: 'NSSA by Uma Goswami - Andheri East',
+      image: '/nail-art-blue-glitter-gold.jpg',
+      tag: 'Real Client Work'
+    },
+    {
+      title: 'Hand-Sculpted 3D & 5D Floral Nail Art',
+      location: 'NSSA by Uma Goswami - Andheri East',
+      image: '/art-3d-5d-flowers.jpg',
+      tag: 'Advanced Artistry'
+    },
+    {
+      title: 'Master-Level Advanced Nail Art Showcase',
+      location: 'NSSA by Uma Goswami - Andheri East',
+      image: '/art-master-advance.jpg',
+      tag: 'Handcrafted Result'
+    },
+    {
+      title: 'Frosted Winter Theme Seasonal Nail Art',
+      location: 'NSSA by Uma Goswami - Andheri East',
+      image: '/art-winter-theme.jpg',
+      tag: 'Seasonal Collection'
     }
   ];
 
   const studentClasses: GalleryItem[] = [
-    {
-      title: 'Live Nail Extension & Sculpting Practical Session',
-      location: 'Andheri East Academy Batch',
-      image: '/certificate-1.jpg',
-      tag: 'Live Practical Session'
-    },
     {
       title: 'NSSA Team & Students - Studio Celebration Day',
       location: 'Andheri East Studio',
@@ -65,6 +95,12 @@ export const AuthenticShowcase: React.FC<AuthenticShowcaseProps> = ({ currentLan
     },
     {
       title: 'Diploma Certificate Handover - Basic to Advance Batch',
+      location: 'Andheri East Academy',
+      image: '/certificate-1.jpg',
+      tag: 'Certified Alumni'
+    },
+    {
+      title: 'Government Authorised Nail Artist Certification',
       location: 'Andheri East Academy',
       image: '/certificate-2.jpg',
       tag: 'Certified Alumni'
@@ -75,6 +111,18 @@ export const AuthenticShowcase: React.FC<AuthenticShowcaseProps> = ({ currentLan
       image: '/graduation-certificate-1.jpg',
       tag: 'Diploma Handover'
     }
+  ];
+
+  const certificatesWall: GalleryItem[] = [
+    { title: 'Diploma & Achievement Certificate #3', location: 'NSSA Andheri East Academy', image: '/certificate-3.jpg', tag: 'Certified Alumni' },
+    { title: 'Diploma & Achievement Certificate #4', location: 'NSSA Andheri East Academy', image: '/certificate-4.jpg', tag: 'Certified Alumni' },
+    { title: 'Diploma & Achievement Certificate #5', location: 'NSSA Andheri East Academy', image: '/certificate-5.jpg', tag: 'Certified Alumni' },
+    { title: 'Diploma & Achievement Certificate #6', location: 'NSSA Andheri East Academy', image: '/certificate-6.jpg', tag: 'Certified Alumni' },
+    { title: 'Diploma & Achievement Certificate #7', location: 'NSSA Andheri East Academy', image: '/certificate-7.jpg', tag: 'Certified Alumni' },
+    { title: 'Diploma & Achievement Certificate #8', location: 'NSSA Andheri East Academy', image: '/certificate-8.jpg', tag: 'Certified Alumni' },
+    { title: 'Diploma & Achievement Certificate #9', location: 'NSSA Andheri East Academy', image: '/certificate-9.jpg', tag: 'Certified Alumni' },
+    { title: 'Diploma & Achievement Certificate #10', location: 'NSSA Andheri East Academy', image: '/certificate-10.jpg', tag: 'Certified Alumni' },
+    { title: 'Diploma & Achievement Certificate #11', location: 'NSSA Andheri East Academy', image: '/certificate-11.jpg', tag: 'Certified Alumni' }
   ];
 
   const studioInteriors: GalleryItem[] = [
@@ -93,19 +141,19 @@ export const AuthenticShowcase: React.FC<AuthenticShowcaseProps> = ({ currentLan
   ];
 
   return (
-    <section id="showcase" className="py-20 bg-[#0d0b0d] relative overflow-hidden">
+    <section id="showcase" className="py-20 bg-white relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto space-y-4">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full border border-[#d4af37]/30 bg-[#161217] text-xs font-semibold text-[#d4af37]">
+          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full border border-[#d4af37]/30 bg-white text-xs font-semibold text-[#d4af37]">
             <Camera className="w-3.5 h-3.5" />
             <span>Authentic Gallery & Real Work Showcase</span>
           </div>
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-serif-luxury font-bold text-white">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-serif-luxury font-bold text-[#10201e]">
             {t('showcase.title')}
           </h2>
-          <p className="text-sm sm:text-base text-[#b0a5b5] leading-relaxed">
+          <p className="text-sm sm:text-base text-[#4a5c59] leading-relaxed">
             {t('showcase.subtitle')}
           </p>
         </div>
@@ -117,7 +165,7 @@ export const AuthenticShowcase: React.FC<AuthenticShowcaseProps> = ({ currentLan
             className={`px-5 py-2.5 rounded-full text-xs font-bold transition-all ${
               activeTab === 'salon'
                 ? 'bg-[#d4af37] text-[#0d0b0d] shadow-lg shadow-[#d4af37]/20'
-                : 'bg-[#161217] text-[#e0d8ce] border border-[#d4af37]/20 hover:border-[#d4af37]'
+                : 'bg-white text-[#10201e] border border-[#d4af37]/20 hover:border-[#d4af37]'
             }`}
           >
             {t('showcase.tab_salon')}
@@ -128,7 +176,7 @@ export const AuthenticShowcase: React.FC<AuthenticShowcaseProps> = ({ currentLan
             className={`px-5 py-2.5 rounded-full text-xs font-bold transition-all ${
               activeTab === 'students'
                 ? 'bg-[#d4af37] text-[#0d0b0d] shadow-lg shadow-[#d4af37]/20'
-                : 'bg-[#161217] text-[#e0d8ce] border border-[#d4af37]/20 hover:border-[#d4af37]'
+                : 'bg-white text-[#10201e] border border-[#d4af37]/20 hover:border-[#d4af37]'
             }`}
           >
             {t('showcase.tab_students')}
@@ -139,7 +187,7 @@ export const AuthenticShowcase: React.FC<AuthenticShowcaseProps> = ({ currentLan
             className={`px-5 py-2.5 rounded-full text-xs font-bold transition-all ${
               activeTab === 'studios'
                 ? 'bg-[#d4af37] text-[#0d0b0d] shadow-lg shadow-[#d4af37]/20'
-                : 'bg-[#161217] text-[#e0d8ce] border border-[#d4af37]/20 hover:border-[#d4af37]'
+                : 'bg-white text-[#10201e] border border-[#d4af37]/20 hover:border-[#d4af37]'
             }`}
           >
             {t('showcase.tab_studios')}
@@ -150,7 +198,7 @@ export const AuthenticShowcase: React.FC<AuthenticShowcaseProps> = ({ currentLan
             className={`px-5 py-2.5 rounded-full text-xs font-bold transition-all ${
               activeTab === 'before_after'
                 ? 'bg-[#d4af37] text-[#0d0b0d] shadow-lg shadow-[#d4af37]/20'
-                : 'bg-[#161217] text-[#e0d8ce] border border-[#d4af37]/20 hover:border-[#d4af37]'
+                : 'bg-white text-[#10201e] border border-[#d4af37]/20 hover:border-[#d4af37]'
             }`}
           >
             {t('showcase.tab_before_after')}
@@ -173,18 +221,18 @@ export const AuthenticShowcase: React.FC<AuthenticShowcaseProps> = ({ currentLan
                     referrerPolicy="no-referrer"
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                   />
-                  <div className="absolute top-4 left-4 bg-[#0d0b0d]/85 backdrop-blur-md px-3.5 py-1.5 rounded-full text-xs font-bold text-[#d4af37] border border-[#d4af37]/30">
+                  <div className="absolute top-4 left-4 bg-white/85 backdrop-blur-md px-3.5 py-1.5 rounded-full text-xs font-bold text-[#d4af37] border border-[#d4af37]/30">
                     ✨ {salonWork[0].tag}
                   </div>
                   <div className="absolute top-4 right-4 bg-black/60 backdrop-blur-md p-2 rounded-full text-white opacity-0 group-hover:opacity-100 transition-opacity">
                     <ZoomIn className="w-4 h-4" />
                   </div>
                 </div>
-                <div className="p-6 bg-[#161217] space-y-2">
-                  <h3 className="text-xl sm:text-2xl font-serif-luxury font-bold text-white group-hover:text-[#d4af37] transition-colors">
+                <div className="p-6 bg-white space-y-2">
+                  <h3 className="text-xl sm:text-2xl font-serif-luxury font-bold text-[#10201e] group-hover:text-[#d4af37] transition-colors">
                     {salonWork[0].title}
                   </h3>
-                  <p className="text-xs text-[#b0a5b5] flex items-center gap-1.5">
+                  <p className="text-xs text-[#4a5c59] flex items-center gap-1.5">
                     <span className="text-[#d4af37]">📍</span> {salonWork[0].location}
                   </p>
                 </div>
@@ -192,7 +240,7 @@ export const AuthenticShowcase: React.FC<AuthenticShowcaseProps> = ({ currentLan
 
               {/* Side Staggered Cards */}
               <div className="md:col-span-5 flex flex-col gap-6">
-                {salonWork.slice(1).map((item, index) => (
+                {salonWork.slice(1, 4).map((item, index) => (
                   <div
                     key={index}
                     onClick={() => setActiveLightbox(item)}
@@ -210,12 +258,37 @@ export const AuthenticShowcase: React.FC<AuthenticShowcaseProps> = ({ currentLan
                       <span className="text-[10px] font-extrabold text-[#d4af37] tracking-wider uppercase block">
                         {item.tag}
                       </span>
-                      <h4 className="text-sm font-bold text-white leading-snug group-hover:text-[#d4af37] transition-colors">
+                      <h4 className="text-sm font-bold text-[#10201e] leading-snug group-hover:text-[#d4af37] transition-colors">
                         {item.title}
                       </h4>
-                      <p className="text-[11px] text-[#a095a5]">
+                      <p className="text-[11px] text-[#6b7d7a]">
                         📍 {item.location}
                       </p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+
+              {/* Additional Real Nail Art Gallery Grid */}
+              <div className="md:col-span-12 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4 mt-2">
+                {salonWork.slice(4).map((item, index) => (
+                  <div
+                    key={index}
+                    onClick={() => setActiveLightbox(item)}
+                    className="glass-card rounded-2xl overflow-hidden group cursor-pointer border border-[#d4af37]/20 hover:border-[#d4af37] transition-all"
+                  >
+                    <div className="relative h-36 sm:h-40 overflow-hidden">
+                      <img
+                        src={item.image}
+                        alt={item.title}
+                        referrerPolicy="no-referrer"
+                        className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                      />
+                      <div className="absolute bottom-0 inset-x-0 bg-gradient-to-t from-black/85 via-black/20 to-transparent p-2.5">
+                        <span className="text-[9px] font-bold text-[#d4af37] uppercase tracking-wider block truncate">
+                          {item.tag}
+                        </span>
+                      </div>
                     </div>
                   </div>
                 ))}
@@ -238,20 +311,45 @@ export const AuthenticShowcase: React.FC<AuthenticShowcaseProps> = ({ currentLan
                       referrerPolicy="no-referrer"
                       className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                     />
-                    <div className="absolute top-3 left-3 bg-[#0d0b0d]/85 backdrop-blur-md px-3 py-1 rounded-full text-[10px] font-bold text-[#d4af37] border border-[#d4af37]/30">
+                    <div className="absolute top-3 left-3 bg-white/85 backdrop-blur-md px-3 py-1 rounded-full text-[10px] font-bold text-[#d4af37] border border-[#d4af37]/30">
                       🎓 {item.tag}
                     </div>
                   </div>
-                  <div className="p-5 space-y-1 bg-[#161217]">
-                    <h3 className="text-sm font-bold text-white group-hover:text-[#d4af37] transition-colors leading-snug">
+                  <div className="p-5 space-y-1 bg-white">
+                    <h3 className="text-sm font-bold text-[#10201e] group-hover:text-[#d4af37] transition-colors leading-snug">
                       {item.title}
                     </h3>
-                    <p className="text-xs text-[#a095a5]">
+                    <p className="text-xs text-[#6b7d7a]">
                       {item.location}
                     </p>
                   </div>
                 </div>
               ))}
+
+              {/* Certificates & Diplomas Wall */}
+              <div className="sm:col-span-2 lg:col-span-4 mt-4">
+                <div className="text-center mb-5">
+                  <span className="text-xs font-bold text-[#d4af37] uppercase tracking-wider">
+                    Certificates & Diplomas Wall
+                  </span>
+                </div>
+                <div className="grid grid-cols-3 sm:grid-cols-5 lg:grid-cols-9 gap-3">
+                  {certificatesWall.map((item, index) => (
+                    <div
+                      key={index}
+                      onClick={() => setActiveLightbox(item)}
+                      className="relative h-24 sm:h-28 rounded-xl overflow-hidden border border-[#d4af37]/20 hover:border-[#d4af37] transition-all cursor-pointer group"
+                    >
+                      <img
+                        src={item.image}
+                        alt={item.title}
+                        referrerPolicy="no-referrer"
+                        className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                      />
+                    </div>
+                  ))}
+                </div>
+              </div>
             </div>
           )}
 
@@ -270,8 +368,8 @@ export const AuthenticShowcase: React.FC<AuthenticShowcaseProps> = ({ currentLan
                       referrerPolicy="no-referrer"
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                     />
-                    <div className="absolute bottom-4 left-4 bg-[#0d0b0d]/85 backdrop-blur-md px-4 py-2 rounded-xl border border-[#d4af37]/30">
-                      <div className="text-sm font-bold text-white">{item.title}</div>
+                    <div className="absolute bottom-4 left-4 bg-white/85 backdrop-blur-md px-4 py-2 rounded-xl border border-[#d4af37]/30">
+                      <div className="text-sm font-bold text-[#10201e]">{item.title}</div>
                       <div className="text-xs text-[#d4af37]">Mumbai & Guwahati Flagship Studios</div>
                     </div>
                   </div>
@@ -287,7 +385,7 @@ export const AuthenticShowcase: React.FC<AuthenticShowcaseProps> = ({ currentLan
                 <span className="text-xs font-bold text-[#d4af37] uppercase tracking-wider block">
                   Interactive Transformation
                 </span>
-                <h3 className="text-xl sm:text-2xl font-serif-luxury font-bold text-white mt-1">
+                <h3 className="text-xl sm:text-2xl font-serif-luxury font-bold text-[#10201e] mt-1">
                   Severely Bitten Nails Rebuilt into Royal Extension Sculpting
                 </h3>
               </div>
@@ -343,7 +441,7 @@ export const AuthenticShowcase: React.FC<AuthenticShowcaseProps> = ({ currentLan
                 </div>
               </div>
 
-              <div className="mt-4 text-center text-xs text-[#b0a5b5] flex items-center justify-center gap-2">
+              <div className="mt-4 text-center text-xs text-[#4a5c59] flex items-center justify-center gap-2">
                 <Sliders className="w-4 h-4 text-[#d4af37]" />
                 <span>Drag the handle left or right to compare before & after transformation</span>
               </div>
@@ -356,7 +454,7 @@ export const AuthenticShowcase: React.FC<AuthenticShowcaseProps> = ({ currentLan
       {/* Lightbox Modal */}
       {activeLightbox && (
         <div className="fixed inset-0 z-50 bg-black/90 backdrop-blur-xl flex items-center justify-center p-4 animate-fadeIn">
-          <div className="relative max-w-4xl w-full bg-[#161217] border border-[#d4af37]/40 rounded-3xl overflow-hidden shadow-2xl">
+          <div className="relative max-w-4xl w-full bg-white border border-[#d4af37]/40 rounded-3xl overflow-hidden shadow-2xl">
             <button
               onClick={() => setActiveLightbox(null)}
               className="absolute top-4 right-4 z-20 w-10 h-10 rounded-full bg-black/80 text-white flex items-center justify-center border border-[#d4af37]/40 hover:bg-[#d4af37] hover:text-black transition-colors"
@@ -371,15 +469,15 @@ export const AuthenticShowcase: React.FC<AuthenticShowcaseProps> = ({ currentLan
                 className="w-full h-full object-contain bg-black"
               />
             </div>
-            <div className="p-6 bg-[#0d0b0d] border-t border-[#d4af37]/20 flex flex-wrap items-center justify-between gap-4">
+            <div className="p-6 bg-white border-t border-[#d4af37]/20 flex flex-wrap items-center justify-between gap-4">
               <div>
                 <span className="text-xs font-bold text-[#d4af37] uppercase tracking-wider block">
                   {activeLightbox.tag}
                 </span>
-                <h3 className="text-lg font-bold text-white mt-0.5">
+                <h3 className="text-lg font-bold text-[#10201e] mt-0.5">
                   {activeLightbox.title}
                 </h3>
-                <p className="text-xs text-[#a095a5] mt-1">
+                <p className="text-xs text-[#6b7d7a] mt-1">
                   📍 {activeLightbox.location}
                 </p>
               </div>

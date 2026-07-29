@@ -18,16 +18,16 @@ export const StudioLocations: React.FC<StudioLocationsProps> = ({ currentLang })
     : studioBranches.filter((b) => b.city === selectedCity);
 
   return (
-    <section id="locations" className="py-24 bg-[#0d0b0d] relative overflow-hidden border-t border-[#d4af37]/15">
+    <section id="locations" className="py-24 bg-white relative overflow-hidden border-t border-[#d4af37]/15">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto space-y-4">
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-[#d4af37]/30 bg-[#161217] text-xs font-semibold text-[#d4af37]">
+          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-[#d4af37]/30 bg-white text-xs font-semibold text-[#d4af37]">
             <MapPin className="w-4 h-4" />
             <span>Luxury Studios & Academies</span>
           </div>
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-serif-luxury font-bold text-white">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-serif-luxury font-bold text-[#10201e]">
             {t('locations.title')}
           </h2>
         </div>
@@ -41,7 +41,7 @@ export const StudioLocations: React.FC<StudioLocationsProps> = ({ currentLang })
               className={`px-5 py-2 rounded-full text-xs font-bold transition-all ${
                 selectedCity === city
                   ? 'bg-[#d4af37] text-[#0d0b0d] shadow-lg shadow-[#d4af37]/20'
-                  : 'bg-[#161217] text-[#e0d8ce] border border-[#d4af37]/20 hover:border-[#d4af37]'
+                  : 'bg-white text-[#10201e] border border-[#d4af37]/20 hover:border-[#d4af37]'
               }`}
             >
               {city === 'All' ? 'All Studios' : city}
@@ -64,31 +64,31 @@ export const StudioLocations: React.FC<StudioLocationsProps> = ({ currentLang })
                     referrerPolicy="no-referrer"
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                   />
-                  <div className="absolute top-3 left-3 bg-[#0d0b0d]/90 backdrop-blur-md px-3 py-1 rounded-full text-xs font-bold text-[#d4af37] border border-[#d4af37]/30">
+                  <div className="absolute top-3 left-3 bg-white/90 backdrop-blur-md px-3 py-1 rounded-full text-xs font-bold text-[#d4af37] border border-[#d4af37]/30">
                     {branch.city} Flagship Studio & Academy
                   </div>
-                  <div className="absolute bottom-3 right-3 bg-[#0d0b0d]/90 backdrop-blur-md px-3 py-1 rounded-full text-xs font-bold text-[#f7e7ce] flex items-center gap-1 border border-[#d4af37]/30">
+                  <div className="absolute bottom-3 right-3 bg-white/90 backdrop-blur-md px-3 py-1 rounded-full text-xs font-bold text-[#0a6b62] flex items-center gap-1 border border-[#d4af37]/30">
                     <Star className="w-3.5 h-3.5 text-[#d4af37] fill-current" />
                     <span>{branch.googleRating}★ ({branch.reviewCount}+ Reviews)</span>
                   </div>
                 </div>
 
                 <div className="p-6 space-y-3">
-                  <h3 className="text-xl font-serif-luxury font-bold text-white">
+                  <h3 className="text-xl font-serif-luxury font-bold text-[#10201e]">
                     {t(branch.areaKey)}
                   </h3>
 
-                  <p className="text-xs text-[#b0a5b5] leading-relaxed flex items-start gap-2">
+                  <p className="text-xs text-[#4a5c59] leading-relaxed flex items-start gap-2">
                     <MapPin className="w-4 h-4 text-[#d4af37] shrink-0 mt-0.5" />
                     <span>{branch.addressKey}</span>
                   </p>
 
-                  <div className="flex items-center gap-2 text-xs text-[#d0c5b8]">
+                  <div className="flex items-center gap-2 text-xs text-[#4a5c59]">
                     <Clock className="w-4 h-4 text-[#d4af37] shrink-0" />
                     <span>{t(branch.timingKey)}</span>
                   </div>
 
-                  <div className="flex items-center gap-2 text-xs text-[#d0c5b8]">
+                  <div className="flex items-center gap-2 text-xs text-[#4a5c59]">
                     <Phone className="w-4 h-4 text-[#d4af37] shrink-0" />
                     <span>{branch.phone}</span>
                   </div>
@@ -99,7 +99,7 @@ export const StudioLocations: React.FC<StudioLocationsProps> = ({ currentLang })
               <div className="p-6 pt-0 grid grid-cols-2 gap-3">
                 <a
                   href={`tel:${branch.phone.replace(/\s+/g, '')}`}
-                  className="py-2.5 rounded-full border border-[#d4af37]/40 bg-[#161217] text-xs font-bold text-[#f7e7ce] hover:bg-[#d4af37]/20 transition-all flex items-center justify-center gap-2"
+                  className="py-2.5 rounded-full border border-[#d4af37]/40 bg-white text-xs font-bold text-[#0a6b62] hover:bg-[#d4af37]/20 transition-all flex items-center justify-center gap-2"
                 >
                   <Phone className="w-3.5 h-3.5 text-[#d4af37]" />
                   <span>Call Studio</span>
