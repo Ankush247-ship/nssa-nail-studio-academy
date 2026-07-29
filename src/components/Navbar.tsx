@@ -1,11 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import { Language } from '../types';
 import { translations } from '../translations';
-import { Sparkles, Globe, Menu, X, Calendar, GraduationCap, Phone, MapPin, ChevronDown } from 'lucide-react';
+import { Sparkles, Globe, Menu, X, Calendar, GraduationCap, Phone, MapPin } from 'lucide-react';
 
 interface NavbarProps {
   currentLang: Language;
   onLanguageChange: (lang: Language) => void;
+  onOpenLanguageSheet: () => void;
   onOpenBooking: () => void;
   onOpenAdmission: () => void;
 }
@@ -13,12 +14,12 @@ interface NavbarProps {
 export const Navbar: React.FC<NavbarProps> = ({
   currentLang,
   onLanguageChange,
+  onOpenLanguageSheet,
   onOpenBooking,
   onOpenAdmission
 }) => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const [langDropdownOpen, setLangDropdownOpen] = useState(false);
 
   const t = (key: string) => translations[currentLang][key] || translations['en'][key] || key;
 
@@ -100,41 +101,15 @@ export const Navbar: React.FC<NavbarProps> = ({
 
           {/* Action Area: Language Switcher & CTAs */}
           <div className="hidden sm:flex items-center gap-3">
-            {/* Multi-Language Dropdown */}
-            <div className="relative">
-              <button
-                onClick={() => setLangDropdownOpen(!langDropdownOpen)}
-                className="flex items-center gap-1.5 px-3 py-1.5 rounded-full border border-[#d4af37]/30 bg-white/80 text-xs font-medium text-[#10201e] hover:border-[#0e8f83] transition-all"
-                aria-label="Select Language"
-              >
-                <span>{currentLangObj.flag}</span>
-                <span>{currentLangObj.name}</span>
-                <ChevronDown className="w-3.5 h-3.5 text-[#d4af37]" />
-              </button>
-
-              {langDropdownOpen && (
-                <div className="absolute right-0 mt-2 w-36 bg-white border border-[#0e8f83]/25 rounded-xl shadow-xl overflow-hidden py-1 z-50 animate-fadeIn">
-                  {languages.map((lang) => (
-                    <button
-                      key={lang.code}
-                      onClick={() => {
-                        onLanguageChange(lang.code);
-                        setLangDropdownOpen(false);
-                      }}
-                      className={`w-full text-left px-3 py-2 text-xs flex items-center justify-between hover:bg-[#0e8f83]/10 transition-colors ${
-                        currentLang === lang.code ? 'text-[#0e8f83] font-bold bg-[#0e8f83]/10' : 'text-[#3c4a48]'
-                      }`}
-                    >
-                      <span className="flex items-center gap-2">
-                        <span>{lang.flag}</span>
-                        <span>{lang.name}</span>
-                      </span>
-                      {currentLang === lang.code && <span className="text-[#d4af37]">✓</span>}
-                    </button>
-                  ))}
-                </div>
-              )}
-            </div>
+            {/* Language Switcher — opens the bottom sheet */}
+            <button
+              onClick={onOpenLanguageSheet}
+              className="flex items-center gap-1.5 px-3 py-1.5 rounded-full border border-[#d4af37]/30 bg-white/80 text-xs font-medium text-[#10201e] hover:border-[#0e8f83] transition-all"
+              aria-label="Choose language"
+            >
+              <span aria-hidden="true">{currentLangObj.flag}</span>
+              <span>{currentLangObj.name}</span>
+            </button>
 
             {/* Book Salon Button */}
             <button
@@ -157,16 +132,13 @@ export const Navbar: React.FC<NavbarProps> = ({
 
           {/* Mobile Menu Toggle */}
           <div className="flex items-center gap-2 lg:hidden">
-            {/* Mobile Quick Language Pill */}
+            {/* Mobile Quick Language Pill — opens the bottom sheet */}
             <button
-              onClick={() => {
-                const langCodes: Language[] = ['en', 'hi', 'mr', 'as'];
-                const nextIdx = (langCodes.indexOf(currentLang) + 1) % langCodes.length;
-                onLanguageChange(langCodes[nextIdx]);
-              }}
+              onClick={onOpenLanguageSheet}
               className="sm:hidden px-2.5 py-1 rounded-full border border-[#0e8f83]/40 bg-white text-[11px] font-semibold text-[#0e8f83] flex items-center gap-1"
+              aria-label="Choose language"
             >
-              <Globe className="w-3 h-3" />
+              <Globe className="w-3 h-3" aria-hidden="true" />
               <span>{currentLangObj.code.toUpperCase()}</span>
             </button>
 

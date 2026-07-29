@@ -6,6 +6,7 @@
 import React, { useState, useEffect } from 'react';
 import { Language } from './types';
 import { Reveal } from './components/Reveal';
+import { LanguageBottomSheet } from './components/LanguageBottomSheet';
 import { Navbar } from './components/Navbar';
 import { Hero } from './components/Hero';
 import { AuthenticShowcase } from './components/AuthenticShowcase';
@@ -42,6 +43,15 @@ export default function App() {
   const [franchiseModalOpen, setFranchiseModalOpen] = useState(false);
   const [brochureModalOpen, setBrochureModalOpen] = useState(false);
 
+  const [languageSheetOpen, setLanguageSheetOpen] = useState(false);
+
+  useEffect(() => {
+    const hasChosenLanguage = localStorage.getItem('nss_lang_chosen');
+    if (!hasChosenLanguage) {
+      setLanguageSheetOpen(true);
+    }
+  }, []);
+
   // Mouse Glow Cursor Tracker
   const [cursorPos, setCursorPos] = useState({ x: -100, y: -100 });
 
@@ -56,6 +66,7 @@ export default function App() {
   const handleLanguageChange = (lang: Language) => {
     setCurrentLang(lang);
     localStorage.setItem('nss_lang', lang);
+    localStorage.setItem('nss_lang_chosen', '1');
   };
 
   const handleOpenServiceBooking = (serviceId: string) => {
@@ -81,6 +92,7 @@ export default function App() {
       <Navbar
         currentLang={currentLang}
         onLanguageChange={handleLanguageChange}
+        onOpenLanguageSheet={() => setLanguageSheetOpen(true)}
         onOpenBooking={() => {
           setSelectedBookingServiceId(undefined);
           setBookingModalOpen(true);
@@ -208,6 +220,21 @@ export default function App() {
         <BrochureModal
           currentLang={currentLang}
           onClose={() => setBrochureModalOpen(false)}
+        />
+      )}
+
+      {languageSheetOpen && (
+        <LanguageBottomSheet
+          currentLang={currentLang}
+          onSelect={(lang) => {
+            handleLanguageChange(lang);
+            setLanguageSheetOpen(false);
+          }}
+          onClose={() => {
+            // Dismissing without an explicit choice still counts as "seen" so it won't nag again
+            localStorage.setItem('nss_lang_chosen', '1');
+            setLanguageSheetOpen(false);
+          }}
         />
       )}
 
