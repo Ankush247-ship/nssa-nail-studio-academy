@@ -1,0 +1,205 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --color-gold: #d4af37;
+    --color-gold-light: #f3e5ab;
+    --color-champagne: #f7e7ce;
+    --color-rose-gold: #e8a7a1;
+    --color-noir: #0d0b0d;
+    --color-noir-card: #161217;
+    --color-noir-border: rgba(212, 175, 55, 0.18);
+  }
+
+  body {
+    background-color: #0d0b0d;
+    color: #f2ede4;
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, .font-serif-luxury {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+  }
+
+  /* Accessibility focus ring */
+  *:focus-visible {
+    outline: 2px solid #d4af37;
+    outline-offset: 3px;
+    border-radius: 2px;
+  }
+}
+
+/* Respect reduced-motion preference across all custom animations */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+  .luxury-cursor-glow {
+    display: none !important;
+  }
+}
+
+/* Custom Luxury Animations & Styles */
+@keyframes goldShimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+@keyframes marquee {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-50%); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.4s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.animate-marquee {
+  display: flex;
+  width: 200%;
+  animation: marquee 25s linear infinite;
+}
+
+.animate-marquee:hover {
+  animation-play-state: paused;
+}
+
+.text-gold-gradient {
+  background: linear-gradient(135deg, #f7e7ce 0%, #d4af37 50%, #aa7c11 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-rose-gradient {
+  background: linear-gradient(135deg, #fce4ec 0%, #f48fb1 50%, #c2185b 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.bg-gold-shimmer {
+  background: linear-gradient(90deg, #d4af37 0%, #fff2be 50%, #d4af37 100%);
+  background-size: 200% 100%;
+  animation: goldShimmer 4s infinite linear;
+}
+
+.glass-card {
+  background: rgba(22, 18, 23, 0.78);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(212, 175, 55, 0.16);
+  box-shadow: 0 10px 30px -15px rgba(0, 0, 0, 0.7);
+}
+
+.glass-card-hover {
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.glass-card-hover:hover {
+  transform: translateY(-5px);
+  border-color: rgba(212, 175, 55, 0.45);
+  box-shadow: 0 20px 40px -15px rgba(212, 175, 55, 0.18);
+}
+
+/* Subtle image vignette overlay */
+.image-vignette {
+  position: relative;
+}
+.image-vignette::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(13, 11, 13, 0.85) 0%, rgba(13, 11, 13, 0.2) 60%, transparent 100%);
+  pointer-events: none;
+}
+
+/* Section texture backgrounds */
+.bg-noir-deep {
+  background-color: #0b090b;
+}
+
+.bg-noir-espresso {
+  background-color: #120e13;
+}
+
+.bg-noir-charcoal {
+  background-color: #161217;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0d0b0d;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #2a222c;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #d4af37;
+}
+
+/* Consistent 8px-based section rhythm */
+.section-y {
+  padding-top: clamp(4rem, 6vw, 6rem); /* 64px - 96px, 8px increments */
+  padding-bottom: clamp(4rem, 6vw, 6rem);
+}
+
+/* Expensive-feeling button micro-interaction: soft glow lift + ripple-ready */
+.btn-luxury {
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.35s cubic-bezier(0.16, 1, 0.3, 1), filter 0.35s ease;
+}
+.btn-luxury:hover {
+  transform: translateY(-2px);
+}
+.btn-luxury:active {
+  transform: translateY(0) scale(0.98);
+}
+.btn-luxury::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.35) 0%, transparent 60%);
+  opacity: 0;
+  transform: scale(0.6);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  pointer-events: none;
+}
+.btn-luxury:active::after {
+  opacity: 1;
+  transform: scale(1.4);
+  transition: opacity 0s, transform 0s;
+}
+
+/* Custom cursor glow effect on desktop */
+@media (min-width: 1024px) {
+  .luxury-cursor-glow {
+    position: fixed;
+    pointer-events: none;
+    z-index: 9999;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(212, 175, 55, 0.08) 0%, rgba(0,0,0,0) 70%);
+    transform: translate(-50%, -50%);
+    transition: width 0.3s, height 0.3s;
+  }
+}

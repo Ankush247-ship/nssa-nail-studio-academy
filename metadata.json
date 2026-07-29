@@ -1,0 +1,6 @@
+{
+  "name": "Nail Style Studio Academy",
+  "description": "Luxury Nail Salon, Bridal Nail Art Studio & Govt. Recognized Professional Nail Academy in Mumbai & Guwahati.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
