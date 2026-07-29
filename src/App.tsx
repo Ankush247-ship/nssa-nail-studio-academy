@@ -5,6 +5,10 @@
 
 import React, { useState, useEffect } from 'react';
 import { Language } from './types';
+<<<<<<< HEAD
+=======
+import { Reveal } from './components/Reveal';
+>>>>>>> dc318a4e2fed61e23bfee9cb40bcb5ac77ac8174
 import { Navbar } from './components/Navbar';
 import { Hero } from './components/Hero';
 import { AuthenticShowcase } from './components/AuthenticShowcase';
@@ -106,6 +110,7 @@ export default function App() {
         />
 
         {/* 2. Authentic Work & Real Transformations Showcase */}
+<<<<<<< HEAD
         <AuthenticShowcase currentLang={currentLang} />
 
         {/* 3. Salon Services Menu */}
@@ -150,6 +155,60 @@ export default function App() {
 
         {/* 10. Testimonials & FAQ */}
         <TestimonialsFAQ currentLang={currentLang} />
+=======
+        <Reveal as="section"><AuthenticShowcase currentLang={currentLang} /></Reveal>
+
+        {/* 3. Salon Services Menu */}
+        <Reveal as="section">
+          <SalonServices
+            currentLang={currentLang}
+            onSelectServiceToBook={handleOpenServiceBooking}
+          />
+        </Reveal>
+
+        {/* 4. Academy Courses & Free Toolkit */}
+        <Reveal as="section">
+          <AcademyCourses
+            currentLang={currentLang}
+            onSelectCourseToEnroll={handleOpenCourseEnrollment}
+            onOpenBrochureModal={() => setBrochureModalOpen(true)}
+          />
+        </Reveal>
+
+        {/* 5. 5-Step Learning Roadmap */}
+        <Reveal as="section"><CourseJourney currentLang={currentLang} /></Reveal>
+
+        {/* 6. Master Trainers */}
+        <Reveal as="section"><MasterTrainers currentLang={currentLang} /></Reveal>
+
+        {/* 7. Why Choose Us Highlights */}
+        <Reveal as="section"><WhyChooseUs currentLang={currentLang} /></Reveal>
+
+        {/* 8. Student Placement & Career Success */}
+        <Reveal as="section"><StudentSuccess currentLang={currentLang} /></Reveal>
+
+        {/* 9. Franchise ROI & Business Opportunities */}
+        <Reveal as="section">
+          <FranchiseSection
+            currentLang={currentLang}
+            onOpenFranchiseModal={() => setFranchiseModalOpen(true)}
+          />
+        </Reveal>
+
+        {/* 10. Exhibitions & Masterclass Events */}
+        <Reveal as="section">
+          <EventsSection
+            currentLang={currentLang}
+            onOpenAdmission={() => setAdmissionModalOpen(true)}
+          />
+        </Reveal>
+
+        {/* 11. Studio Locations (Mumbai & Guwahati) */}
+        <Reveal as="section"><StudioLocations currentLang={currentLang} /></Reveal>
+
+        {/* 12. Testimonials & FAQ */}
+        <Reveal as="section"><TestimonialsFAQ currentLang={currentLang} /></Reveal>
+>>>>>>> dc318a4e2fed61e23bfee9cb40bcb5ac77ac8174
       </main>
 
       {/* Footer */}

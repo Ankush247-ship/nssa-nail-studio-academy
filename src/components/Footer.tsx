@@ -36,7 +36,11 @@ export const Footer: React.FC<FooterProps> = ({ currentLang }) => {
               {t('footer.about')}
             </p>
             <div className="flex items-center gap-2 text-xs text-[#d4af37]">
+<<<<<<< HEAD
               <Award className="w-4 h-4 shrink-0" />
+=======
+              <Award className="w-4 h-4 shrink-0" aria-hidden="true" />
+>>>>>>> dc318a4e2fed61e23bfee9cb40bcb5ac77ac8174
               <span>ISO 9001:2015 & Skill India Aligned</span>
             </div>
           </div>
@@ -76,6 +80,7 @@ export const Footer: React.FC<FooterProps> = ({ currentLang }) => {
               <div>Email: info@nailstylestudio.com</div>
             </div>
             <div className="flex items-center gap-3 pt-2">
+<<<<<<< HEAD
               <a href="#" className="w-8 h-8 rounded-full bg-[#161217] border border-[#d4af37]/30 flex items-center justify-center text-[#d4af37] hover:border-[#d4af37]">
                 <Instagram className="w-4 h-4" />
               </a>
@@ -84,6 +89,16 @@ export const Footer: React.FC<FooterProps> = ({ currentLang }) => {
               </a>
               <a href="#" className="w-8 h-8 rounded-full bg-[#161217] border border-[#d4af37]/30 flex items-center justify-center text-[#d4af37] hover:border-[#d4af37]">
                 <Youtube className="w-4 h-4" />
+=======
+              <a href="#" aria-label="Follow us on Instagram" className="w-8 h-8 rounded-full bg-[#161217] border border-[#d4af37]/30 flex items-center justify-center text-[#d4af37] hover:border-[#d4af37]">
+                <Instagram className="w-4 h-4" aria-hidden="true" />
+              </a>
+              <a href="#" aria-label="Follow us on Facebook" className="w-8 h-8 rounded-full bg-[#161217] border border-[#d4af37]/30 flex items-center justify-center text-[#d4af37] hover:border-[#d4af37]">
+                <Facebook className="w-4 h-4" aria-hidden="true" />
+              </a>
+              <a href="#" aria-label="Subscribe on YouTube" className="w-8 h-8 rounded-full bg-[#161217] border border-[#d4af37]/30 flex items-center justify-center text-[#d4af37] hover:border-[#d4af37]">
+                <Youtube className="w-4 h-4" aria-hidden="true" />
+>>>>>>> dc318a4e2fed61e23bfee9cb40bcb5ac77ac8174
               </a>
             </div>
           </div>

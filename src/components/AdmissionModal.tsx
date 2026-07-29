@@ -1,4 +1,8 @@
 import React, { useState } from 'react';
+<<<<<<< HEAD
+=======
+import { useModalA11y } from '../hooks/useModalA11y';
+>>>>>>> dc318a4e2fed61e23bfee9cb40bcb5ac77ac8174
 import { Language, AdmissionFormData } from '../types';
 import { translations } from '../translations';
 import { academyCourses, studioBranches } from '../data/content';
@@ -12,6 +16,10 @@ interface AdmissionModalProps {
 
 export const AdmissionModal: React.FC<AdmissionModalProps> = ({ currentLang, initialCourseId, onClose }) => {
   const t = (key: string) => translations[currentLang][key] || translations['en'][key] || key;
+<<<<<<< HEAD
+=======
+  useModalA11y(onClose);
+>>>>>>> dc318a4e2fed61e23bfee9cb40bcb5ac77ac8174
 
   const [formData, setFormData] = useState<AdmissionFormData>({
     name: '',
@@ -41,11 +49,19 @@ export const AdmissionModal: React.FC<AdmissionModalProps> = ({ currentLang, ini
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-md animate-fadeIn">
+<<<<<<< HEAD
       <div className="relative w-full max-w-lg glass-card rounded-3xl border border-[#d4af37]/40 p-6 sm:p-8 shadow-2xl overflow-hidden max-h-[90vh] overflow-y-auto">
+=======
+      <div role="dialog" aria-modal="true" aria-labelledby="admission-modal-title" className="relative w-full max-w-lg glass-card rounded-3xl border border-[#d4af37]/40 p-6 sm:p-8 shadow-2xl overflow-hidden max-h-[90vh] overflow-y-auto">
+>>>>>>> dc318a4e2fed61e23bfee9cb40bcb5ac77ac8174
         
         {/* Close Button */}
         <button
           onClick={onClose}
+<<<<<<< HEAD
+=======
+          aria-label="Close"
+>>>>>>> dc318a4e2fed61e23bfee9cb40bcb5ac77ac8174
           className="absolute top-4 right-4 p-2 text-[#a095a5] hover:text-[#d4af37] transition-colors"
         >
           <X className="w-5 h-5" />
@@ -70,7 +86,11 @@ export const AdmissionModal: React.FC<AdmissionModalProps> = ({ currentLang, ini
                 <Gift className="w-3 h-3" />
                 <span>Includes Free ₹15,000 International Kit</span>
               </div>
+<<<<<<< HEAD
               <h3 className="text-2xl font-serif-luxury font-bold text-white pt-1">
+=======
+              <h3 className="text-2xl font-serif-luxury font-bold text-white pt-1" id="admission-modal-title">
+>>>>>>> dc318a4e2fed61e23bfee9cb40bcb5ac77ac8174
                 {t('modal.admission_title')}
               </h3>
             </div>

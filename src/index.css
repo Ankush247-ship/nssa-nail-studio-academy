@@ -26,6 +26,25 @@
   *:focus-visible {
     outline: 2px solid #d4af37;
     outline-offset: 3px;
+<<<<<<< HEAD
+=======
+    border-radius: 2px;
+  }
+}
+
+/* Respect reduced-motion preference across all custom animations */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+  .luxury-cursor-glow {
+    display: none !important;
+>>>>>>> dc318a4e2fed61e23bfee9cb40bcb5ac77ac8174
   }
 }
 
@@ -139,6 +158,43 @@
   background: #d4af37;
 }
 
+<<<<<<< HEAD
+=======
+/* Consistent 8px-based section rhythm */
+.section-y {
+  padding-top: clamp(4rem, 6vw, 6rem); /* 64px - 96px, 8px increments */
+  padding-bottom: clamp(4rem, 6vw, 6rem);
+}
+
+/* Expensive-feeling button micro-interaction: soft glow lift + ripple-ready */
+.btn-luxury {
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.35s cubic-bezier(0.16, 1, 0.3, 1), filter 0.35s ease;
+}
+.btn-luxury:hover {
+  transform: translateY(-2px);
+}
+.btn-luxury:active {
+  transform: translateY(0) scale(0.98);
+}
+.btn-luxury::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.35) 0%, transparent 60%);
+  opacity: 0;
+  transform: scale(0.6);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  pointer-events: none;
+}
+.btn-luxury:active::after {
+  opacity: 1;
+  transform: scale(1.4);
+  transition: opacity 0s, transform 0s;
+}
+
+>>>>>>> dc318a4e2fed61e23bfee9cb40bcb5ac77ac8174
 /* Custom cursor glow effect on desktop */
 @media (min-width: 1024px) {
   .luxury-cursor-glow {

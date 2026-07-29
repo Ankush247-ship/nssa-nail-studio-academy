@@ -1,4 +1,8 @@
 import React, { useState } from 'react';
+<<<<<<< HEAD
+=======
+import { useModalA11y } from '../hooks/useModalA11y';
+>>>>>>> dc318a4e2fed61e23bfee9cb40bcb5ac77ac8174
 import { Language, BookingFormData } from '../types';
 import { translations } from '../translations';
 import { salonServices, studioBranches } from '../data/content';
@@ -12,6 +16,10 @@ interface BookingModalProps {
 
 export const BookingModal: React.FC<BookingModalProps> = ({ currentLang, initialServiceId, onClose }) => {
   const t = (key: string) => translations[currentLang][key] || translations['en'][key] || key;
+<<<<<<< HEAD
+=======
+  useModalA11y(onClose);
+>>>>>>> dc318a4e2fed61e23bfee9cb40bcb5ac77ac8174
 
   const [formData, setFormData] = useState<BookingFormData>({
     name: '',
@@ -45,11 +53,19 @@ export const BookingModal: React.FC<BookingModalProps> = ({ currentLang, initial
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-md animate-fadeIn">
+<<<<<<< HEAD
       <div className="relative w-full max-w-lg glass-card rounded-3xl border border-[#d4af37]/40 p-6 sm:p-8 shadow-2xl overflow-hidden max-h-[90vh] overflow-y-auto">
+=======
+      <div role="dialog" aria-modal="true" aria-labelledby="booking-modal-title" className="relative w-full max-w-lg glass-card rounded-3xl border border-[#d4af37]/40 p-6 sm:p-8 shadow-2xl overflow-hidden max-h-[90vh] overflow-y-auto">
+>>>>>>> dc318a4e2fed61e23bfee9cb40bcb5ac77ac8174
         
         {/* Close Button */}
         <button
           onClick={onClose}
+<<<<<<< HEAD
+=======
+          aria-label="Close"
+>>>>>>> dc318a4e2fed61e23bfee9cb40bcb5ac77ac8174
           className="absolute top-4 right-4 p-2 text-[#a095a5] hover:text-[#d4af37] transition-colors"
         >
           <X className="w-5 h-5" />
@@ -73,7 +89,11 @@ export const BookingModal: React.FC<BookingModalProps> = ({ currentLang, initial
               <span className="text-[10px] font-bold text-[#d4af37] uppercase tracking-wider">
                 Luxury Salon Concierge
               </span>
+<<<<<<< HEAD
               <h3 className="text-2xl font-serif-luxury font-bold text-white">
+=======
+              <h3 className="text-2xl font-serif-luxury font-bold text-white" id="booking-modal-title">
+>>>>>>> dc318a4e2fed61e23bfee9cb40bcb5ac77ac8174
                 {t('modal.book_title')}
               </h3>
             </div>
