@@ -47,27 +47,63 @@ export const AuthenticShowcase: React.FC<AuthenticShowcaseProps> = ({ currentLan
       location: 'NSSA by Uma Goswami - Andheri East',
       image: '/nail-art-glitter-pink.jpg',
       tag: 'Client Nails'
+    },
+    {
+      title: 'Golden Vine 3D Floral Nail Art with Enamel Flowers',
+      location: 'NSSA by Uma Goswami - Andheri East',
+      image: '/nail-art-gold-vine.jpg',
+      tag: 'Client Nails'
+    },
+    {
+      title: 'Icy Blue Glitter Ombre with Gold Foil & Crystal Accent',
+      location: 'NSSA by Uma Goswami - Andheri East',
+      image: '/nail-art-blue-glitter-gold.jpg',
+      tag: 'Client Nails'
+    },
+    {
+      title: 'Lavender Shimmer Gel with Chrome Swirl Detailing',
+      location: 'NSSA by Uma Goswami - Andheri East',
+      image: '/nail-art-purple-glitter.jpg',
+      tag: 'Client Nails'
+    },
+    {
+      title: 'Master Craft Winter Theme - Hand Painted Snowscape Art',
+      location: 'NSSA by Uma Goswami - Andheri East',
+      image: '/art-winter-theme.jpg',
+      tag: 'Master Craft Art'
+    },
+    {
+      title: 'Master Advance In-Built Pressed Flower Nail Art',
+      location: 'NSSA by Uma Goswami - Andheri East',
+      image: '/art-master-advance.jpg',
+      tag: 'Master Advance'
+    },
+    {
+      title: '3D & 5D Sculpted Floral and Butterfly Nail Art',
+      location: 'NSSA by Uma Goswami - Andheri East',
+      image: '/art-3d-5d-flowers.jpg',
+      tag: '3D & 5D Art'
     }
   ];
 
   const studentClasses: GalleryItem[] = [
     {
-      title: 'E-File Cuticle Prep & Russian Manicure Practice',
-      location: 'Guwahati Academy Batch',
-      image: 'https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&q=80&w=1200',
+      title: 'Live Nail Extension & Sculpting Practical Session',
+      location: 'Andheri East Academy Batch',
+      image: '/certificate-1.jpg',
       tag: 'Live Practical Session'
     },
     {
-      title: 'Master Educator Guiding Apex C-Curve Building',
-      location: 'Mumbai Academy Batch',
-      image: 'https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?auto=format&fit=crop&q=80&w=1200',
-      tag: '1-on-1 Mentorship'
+      title: 'NSSA Team & Students - Studio Celebration Day',
+      location: 'Andheri East Studio',
+      image: '/team-group-photo.jpg',
+      tag: 'Our NSSA Family'
     },
     {
-      title: '3D Gel Flower Sculpting & Airbrushing Workshop',
-      location: 'Academy Batch',
-      image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=1200',
-      tag: 'Advanced Artistry'
+      title: 'Diploma Certificate Handover - Basic to Advance Batch',
+      location: 'Andheri East Academy',
+      image: '/certificate-2.jpg',
+      tag: 'Certified Alumni'
     },
     {
       title: 'Student Graduation Ceremony & Free Kit Handover',
