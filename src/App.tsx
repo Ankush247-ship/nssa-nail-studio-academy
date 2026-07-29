@@ -5,10 +5,7 @@
 
 import React, { useState, useEffect } from 'react';
 import { Language } from './types';
-<<<<<<< HEAD
-=======
 import { Reveal } from './components/Reveal';
->>>>>>> dc318a4e2fed61e23bfee9cb40bcb5ac77ac8174
 import { Navbar } from './components/Navbar';
 import { Hero } from './components/Hero';
 import { AuthenticShowcase } from './components/AuthenticShowcase';
@@ -110,52 +107,6 @@ export default function App() {
         />
 
         {/* 2. Authentic Work & Real Transformations Showcase */}
-<<<<<<< HEAD
-        <AuthenticShowcase currentLang={currentLang} />
-
-        {/* 3. Salon Services Menu */}
-        <SalonServices
-          currentLang={currentLang}
-          onSelectServiceToBook={handleOpenServiceBooking}
-        />
-
-        {/* 4. Academy Courses & Free Toolkit */}
-        <AcademyCourses
-          currentLang={currentLang}
-          onSelectCourseToEnroll={handleOpenCourseEnrollment}
-          onOpenBrochureModal={() => setBrochureModalOpen(true)}
-        />
-
-        {/* 5. 5-Step Learning Roadmap */}
-        <CourseJourney currentLang={currentLang} />
-
-        {/* 6. Master Trainers */}
-        <MasterTrainers currentLang={currentLang} />
-
-        {/* 7. Why Choose Us Highlights */}
-        <WhyChooseUs currentLang={currentLang} />
-
-        {/* 8. Student Placement & Career Success */}
-        <StudentSuccess currentLang={currentLang} />
-
-        {/* 9. Franchise ROI & Business Opportunities */}
-        <FranchiseSection
-          currentLang={currentLang}
-          onOpenFranchiseModal={() => setFranchiseModalOpen(true)}
-        />
-
-        {/* 10. Exhibitions & Masterclass Events */}
-        <EventsSection
-          currentLang={currentLang}
-          onOpenAdmission={() => setAdmissionModalOpen(true)}
-        />
-
-        {/* 11. Studio Locations (Mumbai & Guwahati) */}
-        <StudioLocations currentLang={currentLang} />
-
-        {/* 10. Testimonials & FAQ */}
-        <TestimonialsFAQ currentLang={currentLang} />
-=======
         <Reveal as="section"><AuthenticShowcase currentLang={currentLang} /></Reveal>
 
         {/* 3. Salon Services Menu */}
@@ -208,7 +159,6 @@ export default function App() {
 
         {/* 12. Testimonials & FAQ */}
         <Reveal as="section"><TestimonialsFAQ currentLang={currentLang} /></Reveal>
->>>>>>> dc318a4e2fed61e23bfee9cb40bcb5ac77ac8174
       </main>
 
       {/* Footer */}

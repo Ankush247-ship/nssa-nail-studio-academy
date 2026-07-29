@@ -1,8 +1,5 @@
 import React, { useState } from 'react';
-<<<<<<< HEAD
-=======
 import { useModalA11y } from '../hooks/useModalA11y';
->>>>>>> dc318a4e2fed61e23bfee9cb40bcb5ac77ac8174
 import { Language } from '../types';
 import { translations } from '../translations';
 import { X, Download, Phone, User, CheckCircle2, FileText } from 'lucide-react';
@@ -14,10 +11,7 @@ interface BrochureModalProps {
 
 export const BrochureModal: React.FC<BrochureModalProps> = ({ currentLang, onClose }) => {
   const t = (key: string) => translations[currentLang][key] || translations['en'][key] || key;
-<<<<<<< HEAD
-=======
   useModalA11y(onClose);
->>>>>>> dc318a4e2fed61e23bfee9cb40bcb5ac77ac8174
 
   const [name, setName] = useState('');
   const [phone, setPhone] = useState('');
@@ -37,18 +31,11 @@ export const BrochureModal: React.FC<BrochureModalProps> = ({ currentLang, onClo
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-md animate-fadeIn">
-<<<<<<< HEAD
-      <div className="relative w-full max-w-md glass-card rounded-3xl border border-[#d4af37]/40 p-6 sm:p-8 shadow-2xl overflow-hidden">
-        
-        <button
-          onClick={onClose}
-=======
       <div role="dialog" aria-modal="true" aria-labelledby="brochure-modal-title" className="relative w-full max-w-md glass-card rounded-3xl border border-[#d4af37]/40 p-6 sm:p-8 shadow-2xl overflow-hidden">
         
         <button
           onClick={onClose}
           aria-label="Close"
->>>>>>> dc318a4e2fed61e23bfee9cb40bcb5ac77ac8174
           className="absolute top-4 right-4 p-2 text-[#a095a5] hover:text-[#d4af37] transition-colors"
         >
           <X className="w-5 h-5" />
@@ -72,11 +59,7 @@ export const BrochureModal: React.FC<BrochureModalProps> = ({ currentLang, onClo
               <div className="w-12 h-12 rounded-full bg-[#d4af37]/20 border border-[#d4af37] mx-auto flex items-center justify-center text-[#d4af37] mb-2">
                 <FileText className="w-6 h-6" />
               </div>
-<<<<<<< HEAD
-              <h3 className="text-2xl font-serif-luxury font-bold text-white">
-=======
               <h3 className="text-2xl font-serif-luxury font-bold text-white" id="brochure-modal-title">
->>>>>>> dc318a4e2fed61e23bfee9cb40bcb5ac77ac8174
                 {t('modal.brochure_title')}
               </h3>
               <p className="text-xs text-[#b0a5b5]">

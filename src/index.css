@@ -26,8 +26,6 @@
   *:focus-visible {
     outline: 2px solid #d4af37;
     outline-offset: 3px;
-<<<<<<< HEAD
-=======
     border-radius: 2px;
   }
 }
@@ -44,7 +42,6 @@
   }
   .luxury-cursor-glow {
     display: none !important;
->>>>>>> dc318a4e2fed61e23bfee9cb40bcb5ac77ac8174
   }
 }
 
@@ -158,8 +155,6 @@
   background: #d4af37;
 }
 
-<<<<<<< HEAD
-=======
 /* Consistent 8px-based section rhythm */
 .section-y {
   padding-top: clamp(4rem, 6vw, 6rem); /* 64px - 96px, 8px increments */
@@ -194,7 +189,6 @@
   transition: opacity 0s, transform 0s;
 }
 
->>>>>>> dc318a4e2fed61e23bfee9cb40bcb5ac77ac8174
 /* Custom cursor glow effect on desktop */
 @media (min-width: 1024px) {
   .luxury-cursor-glow {

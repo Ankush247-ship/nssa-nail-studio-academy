@@ -139,24 +139,12 @@ export const TestimonialsFAQ: React.FC<TestimonialsFAQProps> = ({ currentLang })
                 >
                   <button
                     onClick={() => setOpenFaqIndex(isOpen ? null : index)}
-<<<<<<< HEAD
-=======
                     aria-expanded={isOpen}
                     aria-controls={`faq-panel-${index}`}
->>>>>>> dc318a4e2fed61e23bfee9cb40bcb5ac77ac8174
                     className="w-full p-5 text-left flex items-center justify-between gap-4 font-bold text-sm text-white hover:text-[#d4af37] transition-colors"
                   >
                     <span>{faq.question}</span>
                     {isOpen ? (
-<<<<<<< HEAD
-                      <ChevronUp className="w-5 h-5 text-[#d4af37] shrink-0" />
-                    ) : (
-                      <ChevronDown className="w-5 h-5 text-[#d4af37] shrink-0" />
-                    )}
-                  </button>
-                  {isOpen && (
-                    <div className="px-5 pb-5 text-xs text-[#b0a5b5] leading-relaxed border-t border-[#d4af37]/10 pt-3 animate-fadeIn">
-=======
                       <ChevronUp className="w-5 h-5 text-[#d4af37] shrink-0" aria-hidden="true" />
                     ) : (
                       <ChevronDown className="w-5 h-5 text-[#d4af37] shrink-0" aria-hidden="true" />
@@ -164,7 +152,6 @@ export const TestimonialsFAQ: React.FC<TestimonialsFAQProps> = ({ currentLang })
                   </button>
                   {isOpen && (
                     <div id={`faq-panel-${index}`} className="px-5 pb-5 text-xs text-[#b0a5b5] leading-relaxed border-t border-[#d4af37]/10 pt-3 animate-fadeIn">
->>>>>>> dc318a4e2fed61e23bfee9cb40bcb5ac77ac8174
                       {faq.answer}
                     </div>
                   )}
