@@ -42,7 +42,7 @@ export const Navbar: React.FC<NavbarProps> = ({
   return (
     <header className="fixed top-0 left-0 right-0 z-50 transition-all duration-300">
       {/* Top Urgent Announcement Banner */}
-      <div className="bg-gradient-to-r from-[#1c141d] via-[#2a1e2d] to-[#1c141d] border-b border-[#d4af37]/20 py-1.5 px-4 text-xs text-[#f7e7ce] text-center flex items-center justify-center gap-2 overflow-hidden">
+      <div className="bg-gradient-to-r from-[#0a6b62] via-[#0e8f83] to-[#0a6b62] border-b border-[#d4af37]/30 py-1.5 px-4 text-xs text-white text-center flex items-center justify-center gap-2 overflow-hidden">
         <Sparkles className="w-3.5 h-3.5 text-[#d4af37] animate-pulse shrink-0" />
         <span className="font-medium tracking-wide truncate">{t('announcement.ticker')}</span>
       </div>
@@ -51,8 +51,8 @@ export const Navbar: React.FC<NavbarProps> = ({
       <nav
         className={`transition-all duration-300 ${
           isScrolled
-            ? 'bg-[#0d0b0d]/90 backdrop-blur-md border-b border-[#d4af37]/20 py-3 shadow-2xl'
-            : 'bg-gradient-to-b from-[#0d0b0d]/80 to-transparent py-4'
+            ? 'bg-white/90 backdrop-blur-md border-b border-[#0e8f83]/20 py-3 shadow-lg'
+            : 'bg-gradient-to-b from-white/90 to-white/40 py-4'
         }`}
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between">
@@ -64,7 +64,7 @@ export const Navbar: React.FC<NavbarProps> = ({
               </div>
             </div>
             <div>
-              <span className="font-serif-luxury text-xl sm:text-2xl font-bold tracking-wide text-white block group-hover:text-[#d4af37] transition-colors">
+              <span className="font-serif-luxury text-xl sm:text-2xl font-bold tracking-wide text-[#10201e] block group-hover:text-[#0e8f83] transition-colors">
                 NAIL STYLE STUDIO
               </span>
               <span className="text-[10px] tracking-widest text-[#d4af37] uppercase font-semibold block -mt-1">
@@ -74,26 +74,26 @@ export const Navbar: React.FC<NavbarProps> = ({
           </a>
 
           {/* Desktop Navigation Links */}
-          <div className="hidden lg:flex items-center gap-6 text-sm font-medium text-[#e0d8ce]">
-            <a href="#services" className="hover:text-[#d4af37] transition-colors">
+          <div className="hidden lg:flex items-center gap-6 text-sm font-medium text-[#3c4a48]">
+            <a href="#services" className="hover:text-[#0e8f83] transition-colors">
               {t('nav.salon_services')}
             </a>
-            <a href="#courses" className="hover:text-[#d4af37] transition-colors">
+            <a href="#courses" className="hover:text-[#0e8f83] transition-colors">
               {t('nav.academy_courses')}
             </a>
-            <a href="#showcase" className="hover:text-[#d4af37] transition-colors">
+            <a href="#showcase" className="hover:text-[#0e8f83] transition-colors">
               {t('nav.real_gallery')}
             </a>
-            <a href="#trainers" className="hover:text-[#d4af37] transition-colors">
+            <a href="#trainers" className="hover:text-[#0e8f83] transition-colors">
               {t('nav.trainers')}
             </a>
-            <a href="#franchise" className="hover:text-[#d4af37] transition-colors">
+            <a href="#franchise" className="hover:text-[#0e8f83] transition-colors">
               {t('nav.franchise')}
             </a>
-            <a href="#reviews" className="hover:text-[#d4af37] transition-colors">
+            <a href="#reviews" className="hover:text-[#0e8f83] transition-colors">
               {t('nav.reviews')}
             </a>
-            <a href="#locations" className="hover:text-[#d4af37] transition-colors">
+            <a href="#locations" className="hover:text-[#0e8f83] transition-colors">
               {t('nav.studio_tour')}
             </a>
           </div>
@@ -104,7 +104,7 @@ export const Navbar: React.FC<NavbarProps> = ({
             <div className="relative">
               <button
                 onClick={() => setLangDropdownOpen(!langDropdownOpen)}
-                className="flex items-center gap-1.5 px-3 py-1.5 rounded-full border border-[#d4af37]/30 bg-[#161217]/80 text-xs font-medium text-[#f7e7ce] hover:border-[#d4af37] transition-all"
+                className="flex items-center gap-1.5 px-3 py-1.5 rounded-full border border-[#d4af37]/30 bg-white/80 text-xs font-medium text-[#10201e] hover:border-[#0e8f83] transition-all"
                 aria-label="Select Language"
               >
                 <span>{currentLangObj.flag}</span>
@@ -113,7 +113,7 @@ export const Navbar: React.FC<NavbarProps> = ({
               </button>
 
               {langDropdownOpen && (
-                <div className="absolute right-0 mt-2 w-36 bg-[#161217] border border-[#d4af37]/30 rounded-xl shadow-2xl overflow-hidden py-1 z-50 animate-fadeIn">
+                <div className="absolute right-0 mt-2 w-36 bg-white border border-[#0e8f83]/25 rounded-xl shadow-xl overflow-hidden py-1 z-50 animate-fadeIn">
                   {languages.map((lang) => (
                     <button
                       key={lang.code}
@@ -121,8 +121,8 @@ export const Navbar: React.FC<NavbarProps> = ({
                         onLanguageChange(lang.code);
                         setLangDropdownOpen(false);
                       }}
-                      className={`w-full text-left px-3 py-2 text-xs flex items-center justify-between hover:bg-[#d4af37]/10 transition-colors ${
-                        currentLang === lang.code ? 'text-[#d4af37] font-bold bg-[#d4af37]/15' : 'text-[#e0d8ce]'
+                      className={`w-full text-left px-3 py-2 text-xs flex items-center justify-between hover:bg-[#0e8f83]/10 transition-colors ${
+                        currentLang === lang.code ? 'text-[#0e8f83] font-bold bg-[#0e8f83]/10' : 'text-[#3c4a48]'
                       }`}
                     >
                       <span className="flex items-center gap-2">
@@ -139,7 +139,7 @@ export const Navbar: React.FC<NavbarProps> = ({
             {/* Book Salon Button */}
             <button
               onClick={onOpenBooking}
-              className="px-4 py-2 rounded-full border border-[#d4af37]/40 bg-[#161217] text-xs font-semibold text-[#f7e7ce] hover:bg-[#d4af37]/20 transition-all flex items-center gap-1.5 shadow-md hover:shadow-[#d4af37]/20"
+              className="px-4 py-2 rounded-full border border-[#0e8f83]/40 bg-white text-xs font-semibold text-[#10201e] hover:bg-[#0e8f83]/10 transition-all flex items-center gap-1.5 shadow-md hover:shadow-[#d4af37]/20"
             >
               <Calendar className="w-3.5 h-3.5 text-[#d4af37]" />
               <span>{t('nav.book_salon')}</span>
@@ -148,7 +148,7 @@ export const Navbar: React.FC<NavbarProps> = ({
             {/* Join Academy Primary Gold CTA */}
             <button
               onClick={onOpenAdmission}
-              className="px-4 py-2 rounded-full bg-gradient-to-r from-[#d4af37] via-[#e5c158] to-[#aa7c11] text-xs font-bold text-[#0d0b0d] hover:brightness-110 transition-all flex items-center gap-1.5 shadow-lg shadow-[#d4af37]/20 active:scale-95"
+              className="px-4 py-2 rounded-full bg-gradient-to-r from-[#d4af37] via-[#e5c158] to-[#aa7c11] text-xs font-bold text-[#10201e] hover:brightness-110 transition-all flex items-center gap-1.5 shadow-lg shadow-[#d4af37]/20 active:scale-95"
             >
               <GraduationCap className="w-3.5 h-3.5" />
               <span>{t('nav.join_academy')}</span>
@@ -164,7 +164,7 @@ export const Navbar: React.FC<NavbarProps> = ({
                 const nextIdx = (langCodes.indexOf(currentLang) + 1) % langCodes.length;
                 onLanguageChange(langCodes[nextIdx]);
               }}
-              className="sm:hidden px-2.5 py-1 rounded-full border border-[#d4af37]/40 bg-[#161217] text-[11px] font-semibold text-[#d4af37] flex items-center gap-1"
+              className="sm:hidden px-2.5 py-1 rounded-full border border-[#0e8f83]/40 bg-white text-[11px] font-semibold text-[#0e8f83] flex items-center gap-1"
             >
               <Globe className="w-3 h-3" />
               <span>{currentLangObj.code.toUpperCase()}</span>
@@ -172,7 +172,7 @@ export const Navbar: React.FC<NavbarProps> = ({
 
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              className="p-2 text-[#f7e7ce] hover:text-[#d4af37] transition-colors"
+              className="p-2 text-[#10201e] hover:text-[#0e8f83] transition-colors"
               aria-label="Toggle Mobile Navigation"
             >
               {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
@@ -183,60 +183,60 @@ export const Navbar: React.FC<NavbarProps> = ({
 
       {/* Mobile Drawer Menu */}
       {mobileMenuOpen && (
-        <div className="lg:hidden fixed inset-x-0 top-[88px] bg-[#0d0b0d]/95 backdrop-blur-xl border-b border-[#d4af37]/30 p-6 shadow-2xl flex flex-col gap-4 animate-slideDown z-40">
+        <div className="lg:hidden fixed inset-x-0 top-[88px] bg-white/98 backdrop-blur-xl border-b border-[#0e8f83]/25 p-6 shadow-2xl flex flex-col gap-4 animate-slideDown z-40">
           <a
             href="#services"
             onClick={() => setMobileMenuOpen(false)}
-            className="text-base font-medium text-[#e0d8ce] hover:text-[#d4af37]"
+            className="text-base font-medium text-[#3c4a48] hover:text-[#d4af37]"
           >
             {t('nav.salon_services')}
           </a>
           <a
             href="#courses"
             onClick={() => setMobileMenuOpen(false)}
-            className="text-base font-medium text-[#e0d8ce] hover:text-[#d4af37]"
+            className="text-base font-medium text-[#3c4a48] hover:text-[#d4af37]"
           >
             {t('nav.academy_courses')}
           </a>
           <a
             href="#showcase"
             onClick={() => setMobileMenuOpen(false)}
-            className="text-base font-medium text-[#e0d8ce] hover:text-[#d4af37]"
+            className="text-base font-medium text-[#3c4a48] hover:text-[#d4af37]"
           >
             {t('nav.real_gallery')}
           </a>
           <a
             href="#trainers"
             onClick={() => setMobileMenuOpen(false)}
-            className="text-base font-medium text-[#e0d8ce] hover:text-[#d4af37]"
+            className="text-base font-medium text-[#3c4a48] hover:text-[#d4af37]"
           >
             {t('nav.trainers')}
           </a>
           <a
             href="#franchise"
             onClick={() => setMobileMenuOpen(false)}
-            className="text-base font-medium text-[#e0d8ce] hover:text-[#d4af37]"
+            className="text-base font-medium text-[#3c4a48] hover:text-[#d4af37]"
           >
             {t('nav.franchise')}
           </a>
           <a
             href="#reviews"
             onClick={() => setMobileMenuOpen(false)}
-            className="text-base font-medium text-[#e0d8ce] hover:text-[#d4af37]"
+            className="text-base font-medium text-[#3c4a48] hover:text-[#d4af37]"
           >
             {t('nav.reviews')}
           </a>
           <a
             href="#locations"
             onClick={() => setMobileMenuOpen(false)}
-            className="text-base font-medium text-[#e0d8ce] hover:text-[#d4af37]"
+            className="text-base font-medium text-[#3c4a48] hover:text-[#d4af37]"
           >
             {t('nav.studio_tour')}
           </a>
 
           {/* Language Selector Mobile Grid */}
           <div className="pt-2 border-t border-[#d4af37]/20">
-            <span className="text-xs text-[#a095a5] uppercase tracking-wider mb-2 block">Choose Language</span>
+            <span className="text-xs text-[#6b7d7a] uppercase tracking-wider mb-2 block">Choose Language</span>
             <div className="grid grid-cols-2 gap-2">
               {languages.map((l) => (
                 <button
@@ -247,8 +247,8 @@ export const Navbar: React.FC<NavbarProps> = ({
                   }}
                   className={`px-3 py-2 rounded-lg border text-xs flex items-center gap-2 ${
                     currentLang === l.code
-                      ? 'border-[#d4af37] bg-[#d4af37]/20 text-[#d4af37] font-bold'
-                      : 'border-[#d4af37]/20 bg-[#161217] text-[#e0d8ce]'
+                      ? 'border-[#0e8f83] bg-[#0e8f83]/10 text-[#0e8f83] font-bold'
+                      : 'border-[#0e8f83]/20 bg-white text-[#3c4a48]'
                   }`}
                 >
                   <span>{l.flag}</span>
@@ -264,7 +264,7 @@ export const Navbar: React.FC<NavbarProps> = ({
                 setMobileMenuOpen(false);
                 onOpenBooking();
               }}
-              className="w-full py-3 rounded-xl border border-[#d4af37]/40 bg-[#161217] text-xs font-bold text-[#f7e7ce] flex items-center justify-center gap-2"
+              className="w-full py-3 rounded-xl border border-[#0e8f83]/40 bg-white text-xs font-bold text-[#10201e] flex items-center justify-center gap-2"
             >
               <Calendar className="w-4 h-4 text-[#d4af37]" />
               <span>{t('nav.book_salon')}</span>
@@ -275,7 +275,7 @@ export const Navbar: React.FC<NavbarProps> = ({
                 setMobileMenuOpen(false);
                 onOpenAdmission();
               }}
-              className="w-full py-3 rounded-xl bg-gradient-to-r from-[#d4af37] to-[#aa7c11] text-xs font-bold text-[#0d0b0d] flex items-center justify-center gap-2 shadow-lg shadow-[#d4af37]/20"
+              className="w-full py-3 rounded-xl bg-gradient-to-r from-[#d4af37] to-[#aa7c11] text-xs font-bold text-[#10201e] flex items-center justify-center gap-2 shadow-lg shadow-[#d4af37]/20"
             >
               <GraduationCap className="w-4 h-4" />
               <span>{t('nav.join_academy')}</span>

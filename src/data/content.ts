@@ -127,7 +127,7 @@ export const masterTrainers: MasterTrainer[] = [
     name: 'Uma Goswami',
     roleKey: 'Founder & International Master Educator',
     experienceYears: 15,
-    image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=800',
+    image: '/uma-goswami-founder.jpg',
     specializationKey: 'Master Nail Educator, Celebrity Nail Artist & Salon Franchise Mentor',
     certifications: ['Govt. Authorised Master Educator', 'Internationally Certified Nail Tech', '15+ Years Industry Experience'],
     quoteKey: '"At Nail Style Studio Academy, we don\'t just teach nail extensions—we empower women and aspiring artists to build flourishing, financially independent beauty careers."'

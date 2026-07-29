@@ -41,7 +41,8 @@ export const MasterTrainers: React.FC<MasterTrainersProps> = ({ currentLang }) =
                   <div className="relative w-28 h-28 sm:w-32 sm:h-32 rounded-2xl overflow-hidden border-2 border-[#d4af37] shrink-0">
                     <img
                       src={trainer.image}
-                      alt={trainer.name}
+                      alt={`${trainer.name}, ${t(trainer.roleKey)} at Nail Style Studio Academy`}
+                      loading="lazy"
                       referrerPolicy="no-referrer"
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                     />

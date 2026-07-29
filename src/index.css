@@ -2,18 +2,33 @@
 
 @layer base {
   :root {
+    /* Brand core */
     --color-gold: #d4af37;
     --color-gold-light: #f3e5ab;
     --color-champagne: #f7e7ce;
     --color-rose-gold: #e8a7a1;
-    --color-noir: #0d0b0d;
-    --color-noir-card: #161217;
-    --color-noir-border: rgba(212, 175, 55, 0.18);
+    --color-teal: #0e8f83;
+    --color-teal-deep: #0a6b62;
+    --color-teal-light: #e6f7f5;
+    --color-teal-border: rgba(14, 143, 131, 0.22);
+
+    /* Surface & text (light theme) */
+    --color-surface: #ffffff;
+    --color-surface-alt: #f7fdfc;
+    --color-surface-card: #ffffff;
+    --color-ink: #10201e;
+    --color-ink-muted: #4a5c59;
+    --color-ink-soft: #6b7d7a;
+
+    /* Legacy aliases kept for components not yet migrated */
+    --color-noir: #ffffff;
+    --color-noir-card: #ffffff;
+    --color-noir-border: rgba(14, 143, 131, 0.18);
   }
 
   body {
-    background-color: #0d0b0d;
-    color: #f2ede4;
+    background-color: #ffffff;
+    color: #10201e;
     font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
     overflow-x: hidden;
   }
@@ -24,7 +39,7 @@
 
   /* Accessibility focus ring */
   *:focus-visible {
-    outline: 2px solid #d4af37;
+    outline: 2px solid #0e8f83;
     outline-offset: 3px;
     border-radius: 2px;
   }
@@ -94,11 +109,11 @@
 }
 
 .glass-card {
-  background: rgba(22, 18, 23, 0.78);
+  background: rgba(255, 255, 255, 0.82);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
-  border: 1px solid rgba(212, 175, 55, 0.16);
-  box-shadow: 0 10px 30px -15px rgba(0, 0, 0, 0.7);
+  border: 1px solid rgba(14, 143, 131, 0.18);
+  box-shadow: 0 10px 30px -15px rgba(16, 32, 30, 0.18);
 }
 
 .glass-card-hover {
@@ -107,8 +122,8 @@
 
 .glass-card-hover:hover {
   transform: translateY(-5px);
-  border-color: rgba(212, 175, 55, 0.45);
-  box-shadow: 0 20px 40px -15px rgba(212, 175, 55, 0.18);
+  border-color: rgba(212, 175, 55, 0.55);
+  box-shadow: 0 20px 40px -15px rgba(14, 143, 131, 0.22);
 }
 
 /* Subtle image vignette overlay */
@@ -119,21 +134,21 @@
   content: '';
   position: absolute;
   inset: 0;
-  background: linear-gradient(to top, rgba(13, 11, 13, 0.85) 0%, rgba(13, 11, 13, 0.2) 60%, transparent 100%);
+  background: linear-gradient(to top, rgba(10, 20, 19, 0.75) 0%, rgba(10, 20, 19, 0.15) 60%, transparent 100%);
   pointer-events: none;
 }
 
 /* Section texture backgrounds */
 .bg-noir-deep {
-  background-color: #0b090b;
+  background-color: #f7fdfc;
 }
 
 .bg-noir-espresso {
-  background-color: #120e13;
+  background-color: #ffffff;
 }
 
 .bg-noir-charcoal {
-  background-color: #161217;
+  background-color: #f0faf9;
 }
 
 /* Scrollbar styling */
@@ -143,11 +158,11 @@
 }
 
 ::-webkit-scrollbar-track {
-  background: #0d0b0d;
+  background: #f0faf9;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #2a222c;
+  background: #b8ded9;
   border-radius: 4px;
 }
 
@@ -198,7 +213,7 @@
     width: 300px;
     height: 300px;
     border-radius: 50%;
-    background: radial-gradient(circle, rgba(212, 175, 55, 0.08) 0%, rgba(0,0,0,0) 70%);
+    background: radial-gradient(circle, rgba(14, 143, 131, 0.10) 0%, rgba(0,0,0,0) 70%);
     transform: translate(-50%, -50%);
     transition: width 0.3s, height 0.3s;
   }
