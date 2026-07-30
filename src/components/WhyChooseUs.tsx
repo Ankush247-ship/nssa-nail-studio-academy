@@ -43,8 +43,8 @@ export const WhyChooseUs: React.FC<WhyChooseUsProps> = ({ currentLang }) => {
     },
     {
       icon: Store,
-      title: 'Franchise Support',
-      description: 'Turnkey franchise model with complete interior design, staff hiring, inventory, and marketing guidance.'
+      title: 'Business Launch Mentorship',
+      description: 'Step-by-step guidance on pricing, client acquisition, and setup so you can launch your own profitable nail studio.'
     },
     {
       icon: UserCheck,
@@ -70,7 +70,7 @@ export const WhyChooseUs: React.FC<WhyChooseUsProps> = ({ currentLang }) => {
             Excellence in Nail Artistry & Education
           </h2>
           <p className="text-sm sm:text-base text-[#4a5c59] leading-relaxed">
-            We don't just teach nail art—we build high-earning beauty entrepreneurs and deliver luxury salon results.
+            We don't just teach nail art—we build high-earning beauty entrepreneurs ready for real careers.
           </p>
         </div>
 

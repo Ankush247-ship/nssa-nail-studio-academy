@@ -9,7 +9,7 @@ interface TestimonialsFAQProps {
 }
 
 export const TestimonialsFAQ: React.FC<TestimonialsFAQProps> = ({ currentLang }) => {
-  const [faqTab, setFaqTab] = useState<'all' | 'salon' | 'academy' | 'franchise'>('all');
+  const [faqTab, setFaqTab] = useState<'all' | 'admission' | 'course'>('all');
   const [openFaqIndex, setOpenFaqIndex] = useState<number | null>(0);
 
   const t = (key: string) => translations[currentLang][key] || translations['en'][key] || key;
@@ -19,7 +19,7 @@ export const TestimonialsFAQ: React.FC<TestimonialsFAQProps> = ({ currentLang })
     : faqItems.filter((f) => f.category === faqTab);
 
   return (
-    <section id="reviews" className="py-24 bg-white relative overflow-hidden border-t border-[#d4af37]/15">
+    <section id="reviews" className="py-24 bg-white relative overflow-hidden border-t border-[#d4af37]/15 scroll-mt-24">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
         {/* Testimonials Header */}
@@ -29,7 +29,7 @@ export const TestimonialsFAQ: React.FC<TestimonialsFAQProps> = ({ currentLang })
             <span>2,500+ Verified 5-Star Reviews</span>
           </div>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-serif-luxury font-bold text-[#10201e]">
-            Loved by Brides, Clients & Master Alumni
+            Loved by Our Graduates & Alumni
           </h2>
         </div>
 
@@ -95,7 +95,7 @@ export const TestimonialsFAQ: React.FC<TestimonialsFAQProps> = ({ currentLang })
         </div>
 
         {/* FAQ Section */}
-        <div className="mt-24 pt-12 border-t border-[#d4af37]/20">
+        <div id="faq" className="mt-24 pt-12 border-t border-[#d4af37]/20 scroll-mt-24">
           <div className="text-center max-w-3xl mx-auto space-y-4">
             <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-[#d4af37]/30 bg-white text-xs font-semibold text-[#d4af37]">
               <HelpCircle className="w-4 h-4" />
@@ -110,9 +110,8 @@ export const TestimonialsFAQ: React.FC<TestimonialsFAQProps> = ({ currentLang })
           <div className="mt-8 flex justify-center gap-2">
             {[
               { id: 'all', label: 'All FAQs' },
-              { id: 'salon', label: t('faq.cat_salon') },
-              { id: 'academy', label: t('faq.cat_academy') },
-              { id: 'franchise', label: t('faq.cat_franchise') }
+              { id: 'admission', label: t('faq.cat_admission') },
+              { id: 'course', label: t('faq.cat_course') }
             ].map((tab) => (
               <button
                 key={tab.id}

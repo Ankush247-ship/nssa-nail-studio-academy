@@ -1,7 +1,7 @@
 import React from 'react';
 import { Language } from '../types';
 import { translations } from '../translations';
-import { Award, MapPin, Phone, Instagram, Facebook, Youtube } from 'lucide-react';
+import { Award, MapPin, Instagram, Facebook, Youtube } from 'lucide-react';
 
 interface FooterProps {
   currentLang: Language;
@@ -14,7 +14,7 @@ export const Footer: React.FC<FooterProps> = ({ currentLang }) => {
     <footer className="bg-[#f7fdfc] border-t border-[#d4af37]/20 pt-16 pb-24 md:pb-12 text-[#6b7d7a]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 pb-12 border-b border-[#d4af37]/15">
-          
+
           {/* Brand Info */}
           <div className="space-y-4">
             <div className="flex items-center gap-3">
@@ -25,10 +25,10 @@ export const Footer: React.FC<FooterProps> = ({ currentLang }) => {
               </div>
               <div>
                 <span className="font-serif-luxury text-lg font-bold text-[#10201e] block">
-                  NAIL STYLE STUDIO
+                  NSSA
                 </span>
                 <span className="text-[10px] tracking-widest text-[#d4af37] uppercase font-semibold block -mt-1">
-                  ACADEMY & SALON
+                  Nail Style Studio Academy
                 </span>
               </div>
             </div>
@@ -37,7 +37,7 @@ export const Footer: React.FC<FooterProps> = ({ currentLang }) => {
             </p>
             <div className="flex items-center gap-2 text-xs text-[#d4af37]">
               <Award className="w-4 h-4 shrink-0" aria-hidden="true" />
-              <span>ISO 9001:2015 & Skill India Aligned</span>
+              <span>Govt. Authorised & Internationally Certified</span>
             </div>
           </div>
 
@@ -45,25 +45,25 @@ export const Footer: React.FC<FooterProps> = ({ currentLang }) => {
           <div className="space-y-3">
             <h4 className="text-sm font-bold text-[#10201e] uppercase tracking-wider">Quick Links</h4>
             <ul className="space-y-2 text-xs">
-              <li><a href="#services" className="hover:text-[#d4af37] transition-colors">{t('nav.salon_services')}</a></li>
               <li><a href="#courses" className="hover:text-[#d4af37] transition-colors">{t('nav.academy_courses')}</a></li>
               <li><a href="#showcase" className="hover:text-[#d4af37] transition-colors">{t('nav.real_gallery')}</a></li>
               <li><a href="#trainers" className="hover:text-[#d4af37] transition-colors">{t('nav.trainers')}</a></li>
-              <li><a href="#franchise" className="hover:text-[#d4af37] transition-colors">{t('nav.franchise')}</a></li>
+              <li><a href="#reviews" className="hover:text-[#d4af37] transition-colors">{t('nav.reviews')}</a></li>
+              <li><a href="#faq" className="hover:text-[#d4af37] transition-colors">{t('nav.faq')}</a></li>
             </ul>
           </div>
 
-          {/* Studio Locations */}
+          {/* Academy Locations */}
           <div className="space-y-3">
-            <h4 className="text-sm font-bold text-[#10201e] uppercase tracking-wider">Studios & Academies</h4>
+            <h4 className="text-sm font-bold text-[#10201e] uppercase tracking-wider">Academy Locations</h4>
             <div className="space-y-2 text-xs">
               <div className="flex items-start gap-2">
                 <MapPin className="w-4 h-4 text-[#d4af37] shrink-0 mt-0.5" />
-                <span>Mumbai: Lokhandwala (Andheri W) & Turner Rd (Bandra W)</span>
+                <span>Mumbai: Andheri East & Andheri West</span>
               </div>
               <div className="flex items-start gap-2">
                 <MapPin className="w-4 h-4 text-[#d4af37] shrink-0 mt-0.5" />
-                <span>Guwahati: G.S. Road (Christian Basti) & Zoo Road</span>
+                <span>Guwahati: G.S. Road (Christian Basti)</span>
               </div>
             </div>
           </div>
@@ -72,7 +72,7 @@ export const Footer: React.FC<FooterProps> = ({ currentLang }) => {
           <div className="space-y-3">
             <h4 className="text-sm font-bold text-[#10201e] uppercase tracking-wider">Connect With Us</h4>
             <div className="text-xs space-y-1">
-              <div>Phone: +91 98200 12345 / +91 88110 54321</div>
+              <div>Phone: +91 98200 12345</div>
               <div>Email: info@nailstylestudio.com</div>
             </div>
             <div className="flex items-center gap-3 pt-2">

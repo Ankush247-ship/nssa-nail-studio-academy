@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Language } from '../types';
 import { translations } from '../translations';
-import { Sparkles, Globe, Menu, X, Calendar, GraduationCap, Phone, MapPin } from 'lucide-react';
+import { Sparkles, Globe, Menu, X, Calendar, GraduationCap } from 'lucide-react';
 
 interface NavbarProps {
   currentLang: Language;
@@ -40,6 +40,14 @@ export const Navbar: React.FC<NavbarProps> = ({
 
   const currentLangObj = languages.find((l) => l.code === currentLang) || languages[0];
 
+  const navLinks = [
+    { href: '#courses', key: 'nav.academy_courses' },
+    { href: '#showcase', key: 'nav.real_gallery' },
+    { href: '#trainers', key: 'nav.trainers' },
+    { href: '#reviews', key: 'nav.reviews' },
+    { href: '#faq', key: 'nav.faq' }
+  ];
+
   return (
     <header className="fixed top-0 left-0 right-0 z-50 transition-all duration-300">
       {/* Top Urgent Announcement Banner */}
@@ -66,37 +74,21 @@ export const Navbar: React.FC<NavbarProps> = ({
             </div>
             <div>
               <span className="font-serif-luxury text-xl sm:text-2xl font-bold tracking-wide text-[#10201e] block group-hover:text-[#0e8f83] transition-colors">
-                NAIL STYLE STUDIO
+                NSSA
               </span>
               <span className="text-[10px] tracking-widest text-[#d4af37] uppercase font-semibold block -mt-1">
-                ACADEMY & SALON
+                Nail Style Studio Academy
               </span>
             </div>
           </a>
 
           {/* Desktop Navigation Links */}
           <div className="hidden lg:flex items-center gap-6 text-sm font-medium text-[#3c4a48]">
-            <a href="#services" className="hover:text-[#0e8f83] transition-colors">
-              {t('nav.salon_services')}
-            </a>
-            <a href="#courses" className="hover:text-[#0e8f83] transition-colors">
-              {t('nav.academy_courses')}
-            </a>
-            <a href="#showcase" className="hover:text-[#0e8f83] transition-colors">
-              {t('nav.real_gallery')}
-            </a>
-            <a href="#trainers" className="hover:text-[#0e8f83] transition-colors">
-              {t('nav.trainers')}
-            </a>
-            <a href="#franchise" className="hover:text-[#0e8f83] transition-colors">
-              {t('nav.franchise')}
-            </a>
-            <a href="#reviews" className="hover:text-[#0e8f83] transition-colors">
-              {t('nav.reviews')}
-            </a>
-            <a href="#locations" className="hover:text-[#0e8f83] transition-colors">
-              {t('nav.studio_tour')}
-            </a>
+            {navLinks.map((link) => (
+              <a key={link.href} href={link.href} className="hover:text-[#0e8f83] transition-colors">
+                {t(link.key)}
+              </a>
+            ))}
           </div>
 
           {/* Action Area: Language Switcher & CTAs */}
@@ -111,16 +103,16 @@ export const Navbar: React.FC<NavbarProps> = ({
               <span>{currentLangObj.name}</span>
             </button>
 
-            {/* Book Salon Button */}
+            {/* Book Free Counselling */}
             <button
               onClick={onOpenBooking}
               className="px-4 py-2 rounded-full border border-[#0e8f83]/40 bg-white text-xs font-semibold text-[#10201e] hover:bg-[#0e8f83]/10 transition-all flex items-center gap-1.5 shadow-md hover:shadow-[#d4af37]/20"
             >
               <Calendar className="w-3.5 h-3.5 text-[#d4af37]" />
-              <span>{t('nav.book_salon')}</span>
+              <span>{t('nav.book_counselling')}</span>
             </button>
 
-            {/* Join Academy Primary Gold CTA */}
+            {/* Join Next Batch Primary Gold CTA */}
             <button
               onClick={onOpenAdmission}
               className="px-4 py-2 rounded-full bg-gradient-to-r from-[#d4af37] via-[#e5c158] to-[#aa7c11] text-xs font-bold text-[#10201e] hover:brightness-110 transition-all flex items-center gap-1.5 shadow-lg shadow-[#d4af37]/20 active:scale-95"
@@ -156,55 +148,16 @@ export const Navbar: React.FC<NavbarProps> = ({
       {/* Mobile Drawer Menu */}
       {mobileMenuOpen && (
         <div className="lg:hidden fixed inset-x-0 top-[88px] bg-white/98 backdrop-blur-xl border-b border-[#0e8f83]/25 p-6 shadow-2xl flex flex-col gap-4 animate-slideDown z-40">
-          <a
-            href="#services"
-            onClick={() => setMobileMenuOpen(false)}
-            className="text-base font-medium text-[#3c4a48] hover:text-[#d4af37]"
-          >
-            {t('nav.salon_services')}
-          </a>
-          <a
-            href="#courses"
-            onClick={() => setMobileMenuOpen(false)}
-            className="text-base font-medium text-[#3c4a48] hover:text-[#d4af37]"
-          >
-            {t('nav.academy_courses')}
-          </a>
-          <a
-            href="#showcase"
-            onClick={() => setMobileMenuOpen(false)}
-            className="text-base font-medium text-[#3c4a48] hover:text-[#d4af37]"
-          >
-            {t('nav.real_gallery')}
-          </a>
-          <a
-            href="#trainers"
-            onClick={() => setMobileMenuOpen(false)}
-            className="text-base font-medium text-[#3c4a48] hover:text-[#d4af37]"
-          >
-            {t('nav.trainers')}
-          </a>
-          <a
-            href="#franchise"
-            onClick={() => setMobileMenuOpen(false)}
-            className="text-base font-medium text-[#3c4a48] hover:text-[#d4af37]"
-          >
-            {t('nav.franchise')}
-          </a>
-          <a
-            href="#reviews"
-            onClick={() => setMobileMenuOpen(false)}
-            className="text-base font-medium text-[#3c4a48] hover:text-[#d4af37]"
-          >
-            {t('nav.reviews')}
-          </a>
-          <a
-            href="#locations"
-            onClick={() => setMobileMenuOpen(false)}
-            className="text-base font-medium text-[#3c4a48] hover:text-[#d4af37]"
-          >
-            {t('nav.studio_tour')}
-          </a>
+          {navLinks.map((link) => (
+            <a
+              key={link.href}
+              href={link.href}
+              onClick={() => setMobileMenuOpen(false)}
+              className="text-base font-medium text-[#3c4a48] hover:text-[#d4af37]"
+            >
+              {t(link.key)}
+            </a>
+          ))}
 
           {/* Language Selector Mobile Grid */}
           <div className="pt-2 border-t border-[#d4af37]/20">
@@ -239,7 +192,7 @@ export const Navbar: React.FC<NavbarProps> = ({
               className="w-full py-3 rounded-xl border border-[#0e8f83]/40 bg-white text-xs font-bold text-[#10201e] flex items-center justify-center gap-2"
             >
               <Calendar className="w-4 h-4 text-[#d4af37]" />
-              <span>{t('nav.book_salon')}</span>
+              <span>{t('nav.book_counselling')}</span>
             </button>
 
             <button

@@ -94,30 +94,101 @@ export const salonServices: SalonService[] = [
 export const academyCourses: AcademyCourse[] = [
   {
     id: 'basic-to-advance',
-    titleKey: 'Basic to Advance Nail Course',
-    badgeKey: 'FLAGSHIP ACADEMY COURSE',
+    titleKey: 'course.basic_advance.title',
+    badgeKey: 'course.badge.flagship',
     durationDays: 30,
     practicalHours: 120,
-    originalFee: 25000,
-    discountedFee: 15000,
+    originalFee: 30000,
+    discountedFee: 30000,
     kitIncluded: true,
     kitValue: 3000,
     nextBatch: 'New Batch Starts Every Monday',
     seatsLeft: 4,
     image: '/course-poster-15000.jpg',
     curriculumKeys: [
-      'Basic Nail Art & Color Blending',
-      'Nail Extensions (Gel & Acrylic)',
-      'Gel Polish Application & Art',
-      'Acrylic Nails Sculpting & Apex Building',
-      'Salon Hygiene & Sanitization Protocols',
-      'Client Handling & Consultation Skills',
-      'Government Authorised Certification',
-      'Free Starter Kit + Products Worth ₹3,000',
-      'EMI Facility Available',
-      '100% Placement Guidance & Salon Launch'
+      'course.basic_advance.c1',
+      'course.basic_advance.c2',
+      'course.basic_advance.c3',
+      'course.basic_advance.c4',
+      'course.basic_advance.c5',
+      'course.basic_advance.c6',
+      'course.basic_advance.c7',
+      'course.basic_advance.c8',
+      'course.basic_advance.c9',
+      'course.basic_advance.c10'
     ],
-    certificationNameKey: 'Govt. Authorised Professional Nail Artist Certification'
+    certificationNameKey: 'course.basic_advance.cert'
+  },
+  {
+    id: 'beginner-level',
+    titleKey: 'course.beginner.title',
+    badgeKey: 'course.badge.starter',
+    durationDays: 12,
+    practicalHours: 48,
+    originalFee: 15000,
+    discountedFee: 15000,
+    kitIncluded: true,
+    kitValue: 1500,
+    nextBatch: 'New Batch Starts Every Monday',
+    seatsLeft: 6,
+    image: '/nail-art-glitter-pink.jpg',
+    curriculumKeys: [
+      'course.beginner.c1',
+      'course.beginner.c2',
+      'course.beginner.c3',
+      'course.beginner.c4',
+      'course.beginner.c5',
+      'course.beginner.c6'
+    ],
+    certificationNameKey: 'course.beginner.cert'
+  },
+  {
+    id: 'basic-to-diploma',
+    titleKey: 'course.diploma.title',
+    badgeKey: 'course.badge.comprehensive',
+    durationDays: 60,
+    practicalHours: 220,
+    originalFee: 60000,
+    discountedFee: 60000,
+    kitIncluded: true,
+    kitValue: 5000,
+    nextBatch: 'New Batch Starts Every Monday',
+    seatsLeft: 4,
+    image: '/art-3d-5d-flowers.jpg',
+    curriculumKeys: [
+      'course.diploma.c1',
+      'course.diploma.c2',
+      'course.diploma.c3',
+      'course.diploma.c4',
+      'course.diploma.c5',
+      'course.diploma.c6',
+      'course.diploma.c7',
+      'course.diploma.c8'
+    ],
+    certificationNameKey: 'course.diploma.cert'
+  },
+  {
+    id: 'international-artist',
+    titleKey: 'course.international.title',
+    badgeKey: 'course.badge.elite',
+    durationDays: 30,
+    practicalHours: 130,
+    originalFee: 75000,
+    discountedFee: 75000,
+    kitIncluded: true,
+    kitValue: 8000,
+    nextBatch: 'New Batch Starts Every Monday',
+    seatsLeft: 3,
+    image: '/art-master-advance.jpg',
+    curriculumKeys: [
+      'course.international.c1',
+      'course.international.c2',
+      'course.international.c3',
+      'course.international.c4',
+      'course.international.c5',
+      'course.international.c6'
+    ],
+    certificationNameKey: 'course.international.cert'
   }
 ];
 
@@ -125,22 +196,12 @@ export const masterTrainers: MasterTrainer[] = [
   {
     id: 'uma-goswami',
     name: 'Uma Goswami',
-    roleKey: 'Founder & International Master Educator',
+    roleKey: 'trainer.uma.role',
     experienceYears: 15,
     image: '/uma-goswami-founder.jpg',
-    specializationKey: 'Master Nail Educator, Celebrity Nail Artist & Salon Franchise Mentor',
-    certifications: ['Govt. Authorised Master Educator', 'Internationally Certified Nail Tech', '15+ Years Industry Experience'],
-    quoteKey: '"At Nail Style Studio Academy, we don\'t just teach nail extensions—we empower women and aspiring artists to build flourishing, financially independent beauty careers."'
-  },
-  {
-    id: 'ananya-sharma',
-    name: 'Ananya Sharma',
-    roleKey: 'Senior Academy Educator',
-    experienceYears: 8,
-    image: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&q=80&w=800',
-    specializationKey: '3D Artistry, Polygel & Airbrush Specialist',
-    certifications: ['Master Polygel Specialist', 'Airbrush Nail Art Educator', 'Russian Cuticle Master'],
-    quoteKey: '"Every student receives personal 1-on-1 attention until their extension apex and cuticle sealing are 100% flawless."'
+    specializationKey: 'trainer.uma.spec',
+    certifications: ['trainer.uma.cert1', 'trainer.uma.cert2', 'trainer.uma.cert3'],
+    quoteKey: 'trainer.uma.quote'
   }
 ];
 
@@ -222,49 +283,48 @@ export const studioBranches: StudioBranch[] = [
 export const testimonials: Testimonial[] = [
   {
     id: 't1',
-    name: 'Pooja Mehta',
-    location: 'Mumbai (Andheri East)',
-    roleKey: 'Verified Salon Client',
-    rating: 5,
-    avatar: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=200',
-    reviewKey: 'Nail Style Studio Academy in Andheri East is top-notch! Uma Goswami ma\'am\'s team created my wedding nail extensions. The quality was outstanding and lasted 4+ weeks. Highly recommended!',
-    type: 'client',
-    resultImage: 'https://images.unsplash.com/photo-1519014816548-bf5fe059798b?auto=format&fit=crop&q=80&w=600',
-    verified: true
-  },
-  {
-    id: 't2',
     name: 'Riniki Kalita',
     location: 'Guwahati Branch',
-    roleKey: 'Basic to Advance Course Graduate',
+    roleKey: 'Basic to Advance Graduate',
     rating: 5,
     avatar: 'https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&q=80&w=200',
-    reviewKey: 'I enrolled in the 30-day Basic to Advance Nail Course for ₹15,000. I received a free starter kit with products worth ₹3,000. The 100% practical training gave me complete confidence. I now run my own setup!',
+    reviewKey: 'I enrolled in the Basic to Advance Nail Course. I received a free starter kit and the 100% practical training under Uma ma\'am gave me complete confidence. I now run my own setup!',
     type: 'student',
     resultImage: 'https://images.unsplash.com/photo-1604654894610-df63bc536371?auto=format&fit=crop&q=80&w=600',
     verified: true
   },
   {
-    id: 't3',
+    id: 't2',
     name: 'Simran Grover',
     location: 'Mumbai (Andheri)',
     roleKey: 'Placed at Premium Salon',
     rating: 5,
     avatar: 'https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&q=80&w=200',
-    reviewKey: 'The placement team at Nail Style Studio Academy helped me secure interviews immediately after certification. Great faculty, government authorized certificate, and hands-on client practice!',
+    reviewKey: 'The placement team at NSSA helped me secure interviews immediately after certification. Great faculty, government authorised certificate, and hands-on client practice!',
     type: 'student',
     resultImage: 'https://images.unsplash.com/photo-1632345031435-8727f6897d53?auto=format&fit=crop&q=80&w=600',
     verified: true
   },
   {
-    id: 't4',
-    name: 'Neha Kulkarni',
-    location: 'Ghatkopar East Branch',
-    roleKey: 'Regular Nail Spa Client',
+    id: 't3',
+    name: 'Priyanka Das',
+    location: 'International Artist Course Alumni',
+    roleKey: 'Now a Freelance Master Artist',
     rating: 5,
     avatar: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&q=80&w=200',
-    reviewKey: 'Cleanest nail salon in Ghatkopar East! Friendly staff, genuine products, and reasonable pricing for gel polish and nail extensions. 5 stars!',
-    type: 'client',
+    reviewKey: 'The International Artist Course pushed my skills to a competition standard. I now take freelance bridal bookings charging ₹3,000+ per client.',
+    type: 'student',
+    verified: true
+  },
+  {
+    id: 't4',
+    name: 'Anjali Sharma',
+    location: 'Basic to Diploma Alumni',
+    roleKey: 'Studio Owner, Mumbai',
+    rating: 5,
+    avatar: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=200',
+    reviewKey: 'The Basic to Diploma course covered everything from technique to business setup. Within 2 months of graduating, I launched my own nail studio.',
+    type: 'student',
     verified: true
   }
 ];
@@ -290,33 +350,33 @@ export const beforeAfterPairs: BeforeAfterPair[] = [
 
 export const faqItems = [
   {
-    category: 'salon',
-    question: 'Where is Nail Style Studio Academy located in Mumbai?',
-    answer: 'Our main Mumbai branch is located at Shop No. 2, Shri Sai Darshan Welfare Society, Sahar Road, Andheri East, Mumbai, Maharashtra. We also have branches in Andheri West (Lokhandwala) and Ghatkopar East, as well as Guwahati.'
-  },
-  {
-    category: 'salon',
-    question: 'How long do Gel and Acrylic nail extensions last?',
-    answer: 'Our signature gel and acrylic extensions last 4 to 5 weeks with zero chipping before needing a quick fill. We use high quality imported non-toxic products.'
-  },
-  {
-    category: 'academy',
+    category: 'admission',
     question: 'What is the fee and duration for the Basic to Advance Nail Course?',
-    answer: 'The flagship Basic to Advance Nail Course duration is 30 Days and the fee is ₹15,000. It includes basic nail art, extensions, gel polish, acrylics, hygiene, client handling, government authorised certificate, EMI facility, placement guidance, and a starter kit with products worth ₹3,000!'
+    answer: 'The flagship Basic to Advance course runs for 30 Days and costs ₹30,000. It includes nail art, extensions, gel polish, acrylics, hygiene, client handling, a government authorised certificate, EMI facility, placement guidance, and a starter kit.'
   },
   {
-    category: 'academy',
+    category: 'admission',
+    question: 'Which course should I choose if I am a complete beginner?',
+    answer: 'Start with the 12-day Beginner Level course to build foundational skills. If you want a full career-ready program, the 30-day Basic to Advance or the 60-day Basic to Diploma course is the better fit.'
+  },
+  {
+    category: 'admission',
     question: 'Is EMI available for academy course fees?',
-    answer: 'Yes! Flexible EMI facilities and easy installment options are available for all our students so you can start learning without financial stress.'
+    answer: 'Yes, flexible EMI facilities and easy installment options are available for all students so they can start learning without financial stress.'
   },
   {
-    category: 'academy',
-    question: 'Is Nail Style Studio Academy Government Authorised?',
-    answer: 'Yes! Nail Style Studio Academy is a Government Authorised Training Centre with internationally certified trainers led by Founder Uma Goswami.'
+    category: 'course',
+    question: 'Is NSSA Government Authorised?',
+    answer: 'Yes, NSSA is a Government Authorised Training Centre with internationally certified trainers led by Founder Uma Goswami.'
   },
   {
-    category: 'franchise',
-    question: 'How can I apply for a Nail Style Studio Franchise?',
-    answer: 'We provide full business support, staff training, marketing assistance, branding, and setup guidance. You can apply directly through our Franchise form or call us at 9372233042 / 9136924076.'
+    category: 'course',
+    question: 'Do I get a professional toolkit with the course?',
+    answer: 'Yes, every enrolled student receives a professional starter toolkit as part of their course, so you can start practicing and taking clients right away.'
+  },
+  {
+    category: 'course',
+    question: 'What kind of career or income can I expect after certification?',
+    answer: 'Graduates typically earn ₹30,000 to ₹80,000+ per month as employed artists, or ₹1,000 to ₹3,500+ per client and ₹1 to ₹3 Lakh+ monthly revenue running their own nail business. Earnings vary based on skills, pricing, location & clientele.'
   }
 ];

@@ -19,7 +19,7 @@ export const StickyMobileBar: React.FC<StickyMobileBarProps> = ({ currentLang, o
         className="flex-1 py-2 px-2 rounded-xl border border-[#d4af37]/40 bg-white text-[10px] font-bold text-[#0a6b62] flex items-center justify-center gap-1 shadow-md active:scale-95"
       >
         <Calendar className="w-3.5 h-3.5 text-[#d4af37]" />
-        <span>Book Salon</span>
+        <span>{t('sticky.counselling')}</span>
       </button>
 
       <button
@@ -27,11 +27,11 @@ export const StickyMobileBar: React.FC<StickyMobileBarProps> = ({ currentLang, o
         className="flex-1 py-2 px-2 rounded-xl bg-gradient-to-r from-[#d4af37] via-[#f3e5ab] to-[#aa7c11] text-[10px] font-bold text-[#0d0b0d] flex items-center justify-center gap-1 shadow-lg shadow-[#d4af37]/25 active:scale-95"
       >
         <GraduationCap className="w-3.5 h-3.5" />
-        <span>Join Academy</span>
+        <span>{t('sticky.join_batch')}</span>
       </button>
 
       <a
-        href="tel:9372233042"
+        href="tel:9820012345"
         className="w-9 h-9 rounded-xl bg-white border border-[#d4af37]/40 flex items-center justify-center text-[#d4af37] shrink-0 shadow-lg active:scale-95"
         aria-label="Call Now"
       >
@@ -39,7 +39,7 @@ export const StickyMobileBar: React.FC<StickyMobileBarProps> = ({ currentLang, o
       </a>
 
       <a
-        href="https://wa.me/919372233042?text=Hello%20Nail%20Style%20Studio%20Academy!%20I%20want%20to%20enquire%20about%20salon%20booking%20/ %20academy%20courses."
+        href="https://wa.me/919820012345?text=Hello%20NSSA!%20I%20want%20to%20enquire%20about%20nail%20academy%20courses."
         target="_blank"
         rel="noreferrer"
         className="w-9 h-9 rounded-xl bg-emerald-600 flex items-center justify-center text-white shrink-0 shadow-lg active:scale-95"

@@ -14,13 +14,23 @@ export const translations: Record<Language, Record<string, string>> = {
     'nav.reviews': 'Reviews',
     'nav.faq': 'FAQ',
     'nav.book_salon': 'Book Salon',
-    'nav.join_academy': 'Join Academy',
+    'nav.book_counselling': 'Book Free Counselling',
+    'nav.join_academy': 'Join Next Batch',
 
     // Hero Section
-    'hero.badge': 'Govt. Authorised & ISO 9001:2015 Certified',
+    'hero.badge': "⭐ India's Trusted Nail Educator",
+    'hero.headline': 'Learn from Industry-Renowned Nail Educator',
+    'hero.name': 'Uma Goswami',
+    'hero.subtitle': 'Founder • Principal Educator • International Master Nail Trainer',
+    'hero.description': 'With 15+ years of industry experience, Uma Goswami has trained thousands of aspiring nail artists and helped students build successful careers and profitable nail businesses across India.',
+    'hero.cta_primary': 'Join Next Batch',
+    'hero.cta_secondary': 'Book Free Counselling',
+    'hero.trust_students': '5000+ Students Trained',
+    'hero.trust_govt': 'Government Authorised Master Educator',
+    'hero.trust_international': 'Internationally Certified Nail Trainer',
+    'hero.trust_experience': '15+ Years Experience',
     'hero.title_p1': 'The Art of Haute Couture',
     'hero.title_p2': 'Nail Extensions & Master Academy',
-    'hero.subtitle': 'Experience Dior-standard luxury salon services in Mumbai & Guwahati or launch a high-earning career as a certified Master Nail Artist.',
     'hero.cta_book': 'Book VIP Salon Appointment',
     'hero.cta_academy': 'Explore Certified Courses',
     'hero.google_reviews': '4.9★ Google Rating (2,500+ Verified Client Reviews)',
@@ -39,6 +49,26 @@ export const translations: Record<Language, Record<string, string>> = {
     'trust.practical_training': '100% Hands-On Practical Training',
     'trust.placement_support': '100% Job & Salon Launch Support',
     'trust.toolkit_included': 'Free ₹15,000 Professional Toolkit',
+
+    // Enquiry Form
+    'enquiry.badge': 'Limited Seats Available',
+    'enquiry.title': 'Get Free Course Counselling',
+    'enquiry.subtitle': 'Share your details and our admission team will call you within 30 minutes with batch dates, fees, and course guidance.',
+    'enquiry.success_title': 'Enquiry Received!',
+    'enquiry.name_placeholder': 'Your Full Name',
+    'enquiry.phone_placeholder': 'WhatsApp Number',
+    'enquiry.course_label': 'Course Interested In',
+    'enquiry.submit': 'Submit Enquiry',
+    'enquiry.privacy_note': 'We respect your privacy. No spam, ever.',
+
+    // Career Benefits
+    'benefits.income.title': 'Learn a High-Income Skill',
+    'benefits.income.desc': 'Earn ₹30,000–₹80,000+ per month*',
+    'benefits.perclient.title': 'Earn More Per Client',
+    'benefits.perclient.desc': 'Charge ₹1,000–₹3,500+ for premium nail services*',
+    'benefits.business.title': 'Build Your Own Nail Business',
+    'benefits.business.desc': 'Potential to generate ₹1–₹3 Lakh+ monthly revenue*',
+    'benefits.footer_note': '*Earnings vary based on skills, pricing, location & clientele.',
 
     // Authentic Showcase
     'showcase.title': 'Real Salon Results & Student Transformations',
@@ -88,8 +118,56 @@ export const translations: Record<Language, Record<string, string>> = {
     'courses.kit_label': 'Included Professional Toolkit:',
     'courses.enroll_now': 'Enroll Now',
     'courses.download_syllabus': 'Download Syllabus',
+    'courses.days_label': 'Days',
+    'courses.other_courses_title': 'Other Courses',
+    'course.badge.flagship': 'FLAGSHIP COURSE',
+    'course.badge.starter': 'GREAT FOR STARTERS',
+    'course.badge.comprehensive': 'MOST COMPREHENSIVE',
+    'course.badge.elite': 'ELITE MASTERCLASS',
 
-    // Course Titles & Descriptions
+    'course.basic_advance.title': 'Basic to Advance',
+    'course.basic_advance.cert': 'Govt. Authorised Professional Nail Artist Certification',
+    'course.basic_advance.c1': 'Basic Nail Art & Color Blending',
+    'course.basic_advance.c2': 'Nail Extensions (Gel & Acrylic)',
+    'course.basic_advance.c3': 'Gel Polish Application & Art',
+    'course.basic_advance.c4': 'Acrylic Nails Sculpting & Apex Building',
+    'course.basic_advance.c5': 'Salon Hygiene & Sanitization Protocols',
+    'course.basic_advance.c6': 'Client Handling & Consultation Skills',
+    'course.basic_advance.c7': 'Government Authorised Certification',
+    'course.basic_advance.c8': 'Free Starter Kit + Products Worth ₹3,000',
+    'course.basic_advance.c9': 'EMI Facility Available',
+    'course.basic_advance.c10': '100% Placement Guidance & Business Launch',
+
+    'course.beginner.title': 'Beginner Level',
+    'course.beginner.cert': 'Certificate of Completion',
+    'course.beginner.c1': 'Nail Structure & Basic Anatomy',
+    'course.beginner.c2': 'Filing, Shaping & Cuticle Care',
+    'course.beginner.c3': 'Gel Polish Application',
+    'course.beginner.c4': 'Basic Nail Art & Color Theory',
+    'course.beginner.c5': 'Hygiene & Sanitization Essentials',
+    'course.beginner.c6': 'Certificate of Completion',
+
+    'course.diploma.title': 'Basic to Diploma',
+    'course.diploma.cert': 'Govt. Authorised Diploma in Professional Nail Artistry',
+    'course.diploma.c1': 'Everything in Basic to Advance',
+    'course.diploma.c2': 'Advanced Acrylic & Polygel Sculpting',
+    'course.diploma.c3': '3D & 5D Floral Nail Art',
+    'course.diploma.c4': 'Chrome, Ombre & Airbrush Techniques',
+    'course.diploma.c5': 'Salon Management & Client Retention',
+    'course.diploma.c6': 'Business Setup & Pricing Strategy',
+    'course.diploma.c7': 'Government Authorised Diploma Certification',
+    'course.diploma.c8': '100% Placement Guidance & Business Launch',
+
+    'course.international.title': 'International Artist Course',
+    'course.international.cert': 'Internationally Certified Master Nail Artist Diploma',
+    'course.international.c1': 'Global Competition-Standard Nail Artistry',
+    'course.international.c2': 'Advanced 3D Sculpting & Encapsulation',
+    'course.international.c3': 'International Trend Styling & Editorial Art',
+    'course.international.c4': 'Master Chrome, Cat-Eye & Aura Techniques',
+    'course.international.c5': 'Personal Portfolio & Photography Guidance',
+    'course.international.c6': 'Internationally Recognised Master Certification',
+
+    // Course Titles & Descriptions (legacy — kept for reference, unused)
     'course.master_diploma_title': 'International Master Nail Artist Diploma',
     'course.master_diploma_badge': 'FLAGSHIP CAREER PROGRAM',
     'course.master_diploma_cert': 'Govt. & International Accredited Diploma',
@@ -119,8 +197,16 @@ export const translations: Record<Language, Record<string, string>> = {
     'journey.step5_desc': 'Get interviewed by top luxury salons (Lakme, Lookwell, Enrich) or get 1-on-1 mentorship to open your own profitable studio.',
 
     // Master Trainers
-    'trainers.title': 'Learn from Celebrity Master Nail Educators',
-    'trainers.subtitle': 'Our trainers bring 10+ years of global experience, having styled Bollywood celebrities, brides, and top fashion models.',
+    'trainers.badge': 'Meet Your Educator',
+    'trainers.title': 'Learn from an Industry-Renowned Master Educator',
+    'trainers.subtitle': 'Uma Goswami brings 15+ years of global experience training thousands of aspiring nail artists across India.',
+    'trainers.single_face_note': 'Every student is trained personally under Uma Goswami — no substitute educators.',
+    'trainer.uma.role': 'Founder • Principal Educator • International Master Nail Trainer',
+    'trainer.uma.spec': 'With 15+ years of industry experience, Uma Goswami has trained thousands of aspiring nail artists and helped students build successful careers and profitable nail businesses across India.',
+    'trainer.uma.quote': '"At NSSA, we don\'t just teach nail extensions—we empower aspiring artists to build flourishing, financially independent careers."',
+    'trainer.uma.cert1': '5000+ Students Trained',
+    'trainer.uma.cert2': 'Government Authorised Master Educator',
+    'trainer.uma.cert3': 'Internationally Certified Nail Trainer',
     'trainer1.role': 'Founder & Master Director',
     'trainer1.spec': 'Celebrity Bridal Specialist & International Educator',
     'trainer1.quote': '"Nail artistry is not just beauty—it is precision engineering and self-expression. We train our students to be high-earning artists."',
@@ -158,9 +244,15 @@ export const translations: Record<Language, Record<string, string>> = {
     'faq.cat_salon': 'Salon Appointments',
     'faq.cat_academy': 'Academy & Courses',
     'faq.cat_franchise': 'Franchise Business',
+    'faq.cat_admission': 'Admission',
+    'faq.cat_course': 'Courses & Certification',
+
+    // Sticky Mobile Bar
+    'sticky.counselling': 'Free Counselling',
+    'sticky.join_batch': 'Join Next Batch',
 
     // Modals
-    'modal.book_title': 'Book Luxury Salon Appointment',
+    'modal.book_title': 'Book Your Free Counselling Call',
     'modal.admission_title': 'Enroll in Nail Academy Batch',
     'modal.franchise_title': 'Franchise Partner Application',
     'modal.brochure_title': 'Download Course Syllabus & Fee Details',
@@ -168,8 +260,8 @@ export const translations: Record<Language, Record<string, string>> = {
     'modal.success_msg': 'Thank you! Your request has been created. Redirecting to WhatsApp for instant confirmation...',
 
     // Footer
-    'footer.about': 'Nail Style Studio Academy is India’s premier luxury nail salon chain and Govt. recognized nail art academy in Mumbai & Guwahati.',
-    'footer.rights': '© 2026 Nail Style Studio Academy. All Rights Reserved. ISO 9001:2015 Certified.'
+    'footer.about': "NSSA (Nail Style Studio Academy) is India's premier Government Authorised nail art academy, led by Founder Uma Goswami.",
+    'footer.rights': '© 2026 Nail Style Studio Academy. All Rights Reserved. Government Authorised Training Centre.'
   },
 
   hi: {
@@ -185,13 +277,23 @@ export const translations: Record<Language, Record<string, string>> = {
     'nav.reviews': 'समीक्षाएं',
     'nav.faq': 'सवाल-जवाब',
     'nav.book_salon': 'अपॉइंटमेंट लें',
-    'nav.join_academy': 'अकादमी ज्वाइन करें',
+    'nav.book_counselling': 'मुफ़्त काउंसलिंग बुक करें',
+    'nav.join_academy': 'अगला बैच जॉइन करें',
 
     // Hero Section
-    'hero.badge': 'सरकारी अधिकृत और ISO 9001:2015 प्रमाणित',
+    'hero.badge': '⭐ भारत की विश्वसनीय नेल एजुकेटर',
+    'hero.headline': 'भारत की जानी-मानी नेल एजुकेटर से सीखें',
+    'hero.name': 'उमा गोस्वामी',
+    'hero.subtitle': 'संस्थापक • प्रिंसिपल एजुकेटर • इंटरनेशनल मास्टर नेल ट्रेनर',
+    'hero.description': '15+ वर्षों के उद्योग अनुभव के साथ, उमा गोस्वामी ने हजारों इच्छुक नेल आर्टिस्ट को प्रशिक्षित किया है और छात्रों को पूरे भारत में सफल करियर और लाभदायक नेल व्यवसाय बनाने में मदद की है।',
+    'hero.cta_primary': 'अगला बैच जॉइन करें',
+    'hero.cta_secondary': 'मुफ़्त काउंसलिंग बुक करें',
+    'hero.trust_students': '5000+ प्रशिक्षित छात्र',
+    'hero.trust_govt': 'सरकारी अधिकृत मास्टर एजुकेटर',
+    'hero.trust_international': 'अंतर्राष्ट्रीय प्रमाणित नेल ट्रेनर',
+    'hero.trust_experience': '15+ वर्षों का अनुभव',
     'hero.title_p1': 'हौते कॉउचर की कला',
     'hero.title_p2': 'नेल एक्सटेंशन एवं मास्टर अकादमी',
-    'hero.subtitle': 'मुंबई और गुवाहाटी में डियोर-मानक लक्जरी सैलून सेवाओं का अनुभव करें या प्रमाणित मास्टर नेल आर्टिस्ट के रूप में उच्च-कमाई वाले करियर की शुरुआत करें।',
     'hero.cta_book': 'VIP सैलून अपॉइंटमेंट बुक करें',
     'hero.cta_academy': 'प्रमाणित पाठ्यक्रम देखें',
     'hero.google_reviews': '4.9★ गूगल रेटिंग (2,500+ सत्यापित समीक्षाएं)',
@@ -210,6 +312,26 @@ export const translations: Record<Language, Record<string, string>> = {
     'trust.practical_training': '100% प्रैक्टिकल लाइव ट्रेनिंग',
     'trust.placement_support': '100% जॉब और सैलून सेटअप सपोर्ट',
     'trust.toolkit_included': 'मुफ्त ₹15,000 प्रोफेशनल टूलकिट',
+
+    // Enquiry Form
+    'enquiry.badge': 'सीमित सीटें उपलब्ध',
+    'enquiry.title': 'मुफ़्त कोर्स काउंसलिंग प्राप्त करें',
+    'enquiry.subtitle': 'अपनी जानकारी साझा करें, हमारी एडमिशन टीम 30 मिनट में आपको बैच तारीखों, फीस और कोर्स मार्गदर्शन के साथ कॉल करेगी।',
+    'enquiry.success_title': 'पूछताछ प्राप्त हुई!',
+    'enquiry.name_placeholder': 'आपका पूरा नाम',
+    'enquiry.phone_placeholder': 'व्हाट्सएप नंबर',
+    'enquiry.course_label': 'रुचि का कोर्स',
+    'enquiry.submit': 'पूछताछ सबमिट करें',
+    'enquiry.privacy_note': 'हम आपकी गोपनीयता का सम्मान करते हैं। कभी स्पैम नहीं।',
+
+    // Career Benefits
+    'benefits.income.title': 'उच्च-आय कौशल सीखें',
+    'benefits.income.desc': '₹30,000–₹80,000+ प्रति माह कमाएं*',
+    'benefits.perclient.title': 'प्रति क्लाइंट अधिक कमाएं',
+    'benefits.perclient.desc': 'प्रीमियम नेल सेवाओं के लिए ₹1,000–₹3,500+ चार्ज करें*',
+    'benefits.business.title': 'अपना खुद का नेल बिज़नेस बनाएं',
+    'benefits.business.desc': '₹1–₹3 लाख+ मासिक राजस्व की संभावना*',
+    'benefits.footer_note': '*कमाई कौशल, मूल्य निर्धारण, स्थान और ग्राहकों पर निर्भर करती है।',
 
     // Authentic Showcase
     'showcase.title': 'वास्तविक सैलून परिणाम और छात्र परिवर्तन',
@@ -259,6 +381,54 @@ export const translations: Record<Language, Record<string, string>> = {
     'courses.kit_label': 'शामिल मुफ़्त टूलकिट:',
     'courses.enroll_now': 'अभी एडमिशन लें',
     'courses.download_syllabus': 'सिलेबस डाउनलोड करें',
+    'courses.days_label': 'दिन',
+    'courses.other_courses_title': 'अन्य पाठ्यक्रम',
+    'course.badge.flagship': 'प्रमुख कोर्स',
+    'course.badge.starter': 'शुरुआती लोगों के लिए बेहतरीन',
+    'course.badge.comprehensive': 'सबसे व्यापक',
+    'course.badge.elite': 'एलीट मास्टरक्लास',
+
+    'course.basic_advance.title': 'बेसिक टू एडवांस',
+    'course.basic_advance.cert': 'सरकारी अधिकृत प्रोफेशनल नेल आर्टिस्ट प्रमाणन',
+    'course.basic_advance.c1': 'बेसिक नेल आर्ट और कलर ब्लेंडिंग',
+    'course.basic_advance.c2': 'नेल एक्सटेंशन (जेल और एक्रिलिक)',
+    'course.basic_advance.c3': 'जेल पॉलिश एप्लीकेशन और आर्ट',
+    'course.basic_advance.c4': 'एक्रिलिक नेल्स स्कल्प्टिंग और अपेक्स बिल्डिंग',
+    'course.basic_advance.c5': 'सैलून हाइजीन और सैनिटाइजेशन प्रोटोकॉल',
+    'course.basic_advance.c6': 'क्लाइंट हैंडलिंग और कंसल्टेशन स्किल्स',
+    'course.basic_advance.c7': 'सरकारी अधिकृत प्रमाणन',
+    'course.basic_advance.c8': '₹3,000 मूल्य का मुफ्त स्टार्टर किट',
+    'course.basic_advance.c9': 'EMI सुविधा उपलब्ध',
+    'course.basic_advance.c10': '100% प्लेसमेंट मार्गदर्शन और व्यवसाय लॉन्च',
+
+    'course.beginner.title': 'बिगिनर लेवल',
+    'course.beginner.cert': 'पूर्णता प्रमाणपत्र',
+    'course.beginner.c1': 'नाखून संरचना और बेसिक एनाटॉमी',
+    'course.beginner.c2': 'फाइलिंग, शेपिंग और क्यूटिकल केयर',
+    'course.beginner.c3': 'जेल पॉलिश एप्लीकेशन',
+    'course.beginner.c4': 'बेसिक नेल आर्ट और कलर थ्योरी',
+    'course.beginner.c5': 'हाइजीन और सैनिटाइजेशन बुनियादी बातें',
+    'course.beginner.c6': 'पूर्णता प्रमाणपत्र',
+
+    'course.diploma.title': 'बेसिक टू डिप्लोमा',
+    'course.diploma.cert': 'सरकारी अधिकृत प्रोफेशनल नेल आर्टिस्ट्री डिप्लोमा',
+    'course.diploma.c1': 'बेसिक टू एडवांस की सभी बातें',
+    'course.diploma.c2': 'एडवांस्ड एक्रिलिक और पॉलिजेल स्कल्प्टिंग',
+    'course.diploma.c3': '3D और 5D फ्लोरल नेल आर्ट',
+    'course.diploma.c4': 'क्रोम, ओम्ब्रे और एयरब्रश तकनीकें',
+    'course.diploma.c5': 'सैलून प्रबंधन और क्लाइंट रिटेंशन',
+    'course.diploma.c6': 'बिज़नेस सेटअप और प्राइसिंग स्ट्रेटेजी',
+    'course.diploma.c7': 'सरकारी अधिकृत डिप्लोमा प्रमाणन',
+    'course.diploma.c8': '100% प्लेसमेंट मार्गदर्शन और व्यवसाय लॉन्च',
+
+    'course.international.title': 'इंटरनेशनल आर्टिस्ट कोर्स',
+    'course.international.cert': 'अंतर्राष्ट्रीय प्रमाणित मास्टर नेल आर्टिस्ट डिप्लोमा',
+    'course.international.c1': 'ग्लोबल कॉम्पिटिशन-स्टैंडर्ड नेल आर्टिस्ट्री',
+    'course.international.c2': 'एडवांस्ड 3D स्कल्प्टिंग और एनकैप्सुलेशन',
+    'course.international.c3': 'इंटरनेशनल ट्रेंड स्टाइलिंग और एडिटोरियल आर्ट',
+    'course.international.c4': 'मास्टर क्रोम, कैट-आई और ऑरा तकनीकें',
+    'course.international.c5': 'पर्सनल पोर्टफोलियो और फोटोग्राफी मार्गदर्शन',
+    'course.international.c6': 'अंतर्राष्ट्रीय स्तर पर मान्यता प्राप्त मास्टर प्रमाणन',
 
     // Course Titles & Descriptions
     'course.master_diploma_title': 'इंटरनेशनल मास्टर नेल आर्टिस्ट डिप्लोमा',
@@ -290,8 +460,16 @@ export const translations: Record<Language, Record<string, string>> = {
     'journey.step5_desc': 'शीर्ष लक्जरी सैलून में इंटरव्यू पाएं या अपना खुद का लाभदायक स्टूडियो खोलने के लिए व्यक्तिगत सलाह लें।',
 
     // Master Trainers
-    'trainers.title': 'सेलिब्रिटी मास्टर नेल एजुकेटर से सीखें',
-    'trainers.subtitle': 'हमारे प्रशिक्षकों के पास 10+ वर्षों का वैश्विक अनुभव है, जिन्होंने बॉलीवुड अभिनेत्रियों और शीर्ष मॉडलों के लिए काम किया है।',
+    'trainers.badge': 'अपनी एजुकेटर से मिलें',
+    'trainers.title': 'एक प्रतिष्ठित मास्टर एजुकेटर से सीखें',
+    'trainers.subtitle': 'उमा गोस्वामी पूरे भारत में हजारों इच्छुक नेल आर्टिस्ट को प्रशिक्षित करने का 15+ वर्षों का वैश्विक अनुभव लाती हैं।',
+    'trainers.single_face_note': 'हर छात्र को व्यक्तिगत रूप से उमा गोस्वामी द्वारा प्रशिक्षित किया जाता है — कोई विकल्प एजुकेटर नहीं।',
+    'trainer.uma.role': 'संस्थापक • प्रिंसिपल एजुकेटर • इंटरनेशनल मास्टर नेल ट्रेनर',
+    'trainer.uma.spec': '15+ वर्षों के उद्योग अनुभव के साथ, उमा गोस्वामी ने हजारों इच्छुक नेल आर्टिस्ट को प्रशिक्षित किया है और छात्रों को सफल करियर व लाभदायक नेल व्यवसाय बनाने में मदद की है।',
+    'trainer.uma.quote': '"NSSA में, हम केवल नेल एक्सटेंशन नहीं सिखाते—हम इच्छुक कलाकारों को समृद्ध, आर्थिक रूप से स्वतंत्र करियर बनाने के लिए सशक्त बनाते हैं।"',
+    'trainer.uma.cert1': '5000+ प्रशिक्षित छात्र',
+    'trainer.uma.cert2': 'सरकारी अधिकृत मास्टर एजुकेटर',
+    'trainer.uma.cert3': 'अंतर्राष्ट्रीय प्रमाणित नेल ट्रेनर',
     'trainer1.role': 'संस्थापक और मास्टर निदेशक',
     'trainer1.spec': 'सेलिब्रिटी ब्राइडल स्पेशलिस्ट और इंटरनेशनल एजुकेटर',
     'trainer1.quote': '"नेल आर्ट केवल सुंदरता नहीं है—यह परिशुद्धता और अभिव्यक्ति है। हम अपने छात्रों को उच्च कमाई वाले आर्टिस्ट बनाते हैं।"',
@@ -329,9 +507,15 @@ export const translations: Record<Language, Record<string, string>> = {
     'faq.cat_salon': 'सैलून अपॉइंटमेंट',
     'faq.cat_academy': 'अकादमी और पाठ्यक्रम',
     'faq.cat_franchise': 'फ्रेंचाइज व्यापार',
+    'faq.cat_admission': 'एडमिशन',
+    'faq.cat_course': 'पाठ्यक्रम और प्रमाणन',
+
+    // Sticky Mobile Bar
+    'sticky.counselling': 'मुफ़्त काउंसलिंग',
+    'sticky.join_batch': 'अगला बैच जॉइन करें',
 
     // Modals
-    'modal.book_title': 'लक्जरी सैलून अपॉइंटमेंट बुक करें',
+    'modal.book_title': 'अपनी मुफ़्त काउंसलिंग कॉल बुक करें',
     'modal.admission_title': 'नेल अकादमी बैच में प्रवेश लें',
     'modal.franchise_title': 'फ्रेंचाइज पार्टनर आवेदन',
     'modal.brochure_title': 'पाठ्यक्रम पाठ्यक्रम विवरण डाउनलोड करें',
@@ -339,8 +523,8 @@ export const translations: Record<Language, Record<string, string>> = {
     'modal.success_msg': 'धन्यवाद! आपका अनुरोध प्राप्त हो गया है। व्हाट्सएप पर रीडायरेक्ट किया जा रहा है...',
 
     // Footer
-    'footer.about': 'नेल स्टाइल स्टूडियो अकादमी मुंबई और गुवाहाटी में भारत की प्रमुख लक्जरी नेल सैलून श्रृंखला और सरकारी मान्यता प्राप्त अकादमी है।',
-    'footer.rights': '© 2026 नेल स्टाइल स्टूडियो अकादमी। सर्वाधिकार सुरक्षित। ISO 9001:2015 प्रमाणित।'
+    'footer.about': 'NSSA (नेल स्टाइल स्टूडियो अकादमी) भारत की प्रमुख सरकारी अधिकृत नेल आर्ट अकादमी है, जिसका नेतृत्व संस्थापक उमा गोस्वामी करती हैं।',
+    'footer.rights': '© 2026 नेल स्टाइल स्टूडियो अकादमी। सर्वाधिकार सुरक्षित। सरकारी अधिकृत प्रशिक्षण केंद्र।'
   },
 
   mr: {
@@ -356,13 +540,23 @@ export const translations: Record<Language, Record<string, string>> = {
     'nav.reviews': 'परीक्षणे',
     'nav.faq': 'प्रश्न आणि उत्तरे',
     'nav.book_salon': 'अपॉइंटमेंट घ्या',
-    'nav.join_academy': 'अकॅडमीमध्ये प्रवेश घ्या',
+    'nav.book_counselling': 'मोफत समुपदेशन बुक करा',
+    'nav.join_academy': 'पुढील बॅचमध्ये सामील व्हा',
 
     // Hero Section
-    'hero.badge': 'शासकीय मान्यताप्राप्त आणि ISO 9001:2015 प्रमाणित',
+    'hero.badge': '⭐ भारताच्या विश्वासार्ह नेल एज्युकेटर',
+    'hero.headline': 'भारतातील नामांकित नेल एज्युकेटरकडून शिका',
+    'hero.name': 'उमा गोस्वामी',
+    'hero.subtitle': 'संस्थापिका • प्रिन्सिपल एज्युकेटर • इंटरनॅशनल मास्टर नेल ट्रेनर',
+    'hero.description': '१५+ वर्षांच्या उद्योग अनुभवासह, उमा गोस्वामी यांनी हजारो इच्छुक नेल आर्टिस्टना प्रशिक्षण दिले असून विद्यार्थ्यांना संपूर्ण भारतात यशस्वी कारकीर्द आणि फायदेशीर नेल व्यवसाय उभारण्यास मदत केली आहे.',
+    'hero.cta_primary': 'पुढील बॅचमध्ये सामील व्हा',
+    'hero.cta_secondary': 'मोफत समुपदेशन बुक करा',
+    'hero.trust_students': '५०००+ प्रशिक्षित विद्यार्थी',
+    'hero.trust_govt': 'शासकीय मान्यताप्राप्त मास्टर एज्युकेटर',
+    'hero.trust_international': 'आंतरराष्ट्रीय प्रमाणित नेल ट्रेनर',
+    'hero.trust_experience': '१५+ वर्षांचा अनुभव',
     'hero.title_p1': 'हौते कॉउचर नेल आर्ट',
     'hero.title_p2': 'नेल एक्सटेंशन व मास्टर अकॅडमी',
-    'hero.subtitle': 'मुंबई आणि गुवाहाटीमध्ये डिओर-दर्जाच्या लक्झरी सलून सेवांचा अनुभव घ्या किंवा प्रमाणित मास्टर नेल आर्टिस्ट म्हणून उच्च उत्पन्नाची कारकीर्द सुरू करा.',
     'hero.cta_book': 'VIP सलून अपॉइंटमेंट बुक करा',
     'hero.cta_academy': 'प्रमाणित कोर्सेस पहा',
     'hero.google_reviews': '४.९★ गूगल रेटिंग (२,५००+ पुनरावलोकने)',
@@ -381,6 +575,26 @@ export const translations: Record<Language, Record<string, string>> = {
     'trust.practical_training': '१००% प्रत्यक्ष प्रात्यक्षिक प्रशिक्षण',
     'trust.placement_support': '१००% नोकरी आणि सलून सुरू करण्यासाठी मदत',
     'trust.toolkit_included': 'मोफत ₹१५,००० प्रोफेश्नल टूलकिट',
+
+    // Enquiry Form
+    'enquiry.badge': 'मर्यादित जागा उपलब्ध',
+    'enquiry.title': 'मोफत कोर्स समुपदेशन मिळवा',
+    'enquiry.subtitle': 'तुमची माहिती द्या, आमची अ‍ॅडमिशन टीम ३० मिनिटांत बॅचच्या तारखा, फी आणि कोर्स मार्गदर्शनासह तुम्हाला कॉल करेल.',
+    'enquiry.success_title': 'चौकशी प्राप्त झाली!',
+    'enquiry.name_placeholder': 'तुमचे पूर्ण नाव',
+    'enquiry.phone_placeholder': 'व्हॉट्सॲप नंबर',
+    'enquiry.course_label': 'स्वारस्य असलेला कोर्स',
+    'enquiry.submit': 'चौकशी सबमिट करा',
+    'enquiry.privacy_note': 'आम्ही तुमच्या गोपनीयतेचा आदर करतो. कधीही स्पॅम नाही.',
+
+    // Career Benefits
+    'benefits.income.title': 'उच्च-उत्पन्न कौशल्य शिका',
+    'benefits.income.desc': '₹३०,०००–₹८०,०००+ दरमहा कमवा*',
+    'benefits.perclient.title': 'प्रति ग्राहक अधिक कमवा',
+    'benefits.perclient.desc': 'प्रीमियम नेल सेवांसाठी ₹१,०००–₹३,५००+ आकारा*',
+    'benefits.business.title': 'तुमचा स्वतःचा नेल व्यवसाय उभारा',
+    'benefits.business.desc': '₹१–₹३ लाख+ मासिक महसुलाची शक्यता*',
+    'benefits.footer_note': '*उत्पन्न कौशल्य, किंमत, स्थान आणि ग्राहकांवर अवलंबून असते.',
 
     // Authentic Showcase
     'showcase.title': 'वास्तविक सलून निकाल आणि विद्यार्थ्यांचे यश',
@@ -430,6 +644,54 @@ export const translations: Record<Language, Record<string, string>> = {
     'courses.kit_label': 'समाविष्ट मोफत टूलकिट:',
     'courses.enroll_now': 'आत्ताच प्रवेश घ्या',
     'courses.download_syllabus': 'अभ्यासक्रम डाउनलोड करा',
+    'courses.days_label': 'दिवस',
+    'courses.other_courses_title': 'इतर कोर्सेस',
+    'course.badge.flagship': 'प्रमुख कोर्स',
+    'course.badge.starter': 'नवशिक्यांसाठी उत्तम',
+    'course.badge.comprehensive': 'सर्वात व्यापक',
+    'course.badge.elite': 'एलिट मास्टरक्लास',
+
+    'course.basic_advance.title': 'बेसिक टू अ‍ॅडव्हान्स',
+    'course.basic_advance.cert': 'शासकीय मान्यताप्राप्त प्रोफेशनल नेल आर्टिस्ट प्रमाणपत्र',
+    'course.basic_advance.c1': 'बेसिक नेल आर्ट आणि कलर ब्लेंडिंग',
+    'course.basic_advance.c2': 'नेल एक्सटेंशन (जेल आणि ॲक्रेलिक)',
+    'course.basic_advance.c3': 'जेल पॉलिश अ‍ॅप्लिकेशन आणि आर्ट',
+    'course.basic_advance.c4': 'ॲक्रेलिक नेल्स स्कल्प्टिंग आणि अपेक्स बिल्डिंग',
+    'course.basic_advance.c5': 'सलून हायजीन आणि सॅनिटायझेशन प्रोटोकॉल',
+    'course.basic_advance.c6': 'क्लायंट हाताळणी आणि सल्ला कौशल्ये',
+    'course.basic_advance.c7': 'शासकीय मान्यताप्राप्त प्रमाणपत्र',
+    'course.basic_advance.c8': '₹३,००० किमतीचे मोफत स्टार्टर किट',
+    'course.basic_advance.c9': 'EMI सुविधा उपलब्ध',
+    'course.basic_advance.c10': '१००% प्लेसमेंट मार्गदर्शन आणि व्यवसाय सुरुवात',
+
+    'course.beginner.title': 'बिगिनर लेव्हल',
+    'course.beginner.cert': 'पूर्णत्व प्रमाणपत्र',
+    'course.beginner.c1': 'नखांची रचना आणि मूलभूत शरीररचना',
+    'course.beginner.c2': 'फायलिंग, शेपिंग आणि क्युटिकल केअर',
+    'course.beginner.c3': 'जेल पॉलिश अ‍ॅप्लिकेशन',
+    'course.beginner.c4': 'बेसिक नेल आर्ट आणि कलर थिअरी',
+    'course.beginner.c5': 'हायजीन आणि सॅनिटायझेशन मूलतत्त्वे',
+    'course.beginner.c6': 'पूर्णत्व प्रमाणपत्र',
+
+    'course.diploma.title': 'बेसिक टू डिप्लोमा',
+    'course.diploma.cert': 'शासकीय मान्यताप्राप्त प्रोफेशनल नेल आर्टिस्ट्री डिप्लोमा',
+    'course.diploma.c1': 'बेसिक टू अ‍ॅडव्हान्समधील सर्व गोष्टी',
+    'course.diploma.c2': 'अ‍ॅडव्हान्स्ड ॲक्रेलिक आणि पॉलिजेल स्कल्प्टिंग',
+    'course.diploma.c3': '3D आणि 5D फ्लोरल नेल आर्ट',
+    'course.diploma.c4': 'क्रोम, ओम्ब्रे आणि एअरब्रश तंत्रे',
+    'course.diploma.c5': 'सलून व्यवस्थापन आणि क्लायंट रिटेन्शन',
+    'course.diploma.c6': 'व्यवसाय सेटअप आणि किंमत रणनीती',
+    'course.diploma.c7': 'शासकीय मान्यताप्राप्त डिप्लोमा प्रमाणपत्र',
+    'course.diploma.c8': '१००% प्लेसमेंट मार्गदर्शन आणि व्यवसाय सुरुवात',
+
+    'course.international.title': 'इंटरनॅशनल आर्टिस्ट कोर्स',
+    'course.international.cert': 'आंतरराष्ट्रीय प्रमाणित मास्टर नेल आर्टिस्ट डिप्लोमा',
+    'course.international.c1': 'ग्लोबल स्पर्धा-स्तरीय नेल आर्टिस्ट्री',
+    'course.international.c2': 'अ‍ॅडव्हान्स्ड 3D स्कल्प्टिंग आणि एन्कॅप्स्युलेशन',
+    'course.international.c3': 'इंटरनॅशनल ट्रेंड स्टायलिंग आणि एडिटोरियल आर्ट',
+    'course.international.c4': 'मास्टर क्रोम, कॅट-आय आणि ऑरा तंत्रे',
+    'course.international.c5': 'पर्सनल पोर्टफोलिओ आणि फोटोग्राफी मार्गदर्शन',
+    'course.international.c6': 'आंतरराष्ट्रीय स्तरावर मान्यताप्राप्त मास्टर प्रमाणपत्र',
 
     // Course Titles & Descriptions
     'course.master_diploma_title': 'इंटरनॅशनल मास्टर नेल आर्टिस्ट डिप्लोमा',
@@ -461,8 +723,16 @@ export const translations: Record<Language, Record<string, string>> = {
     'journey.step5_desc': 'मोठ्या लक्झरी सलूनमध्ये मुलाखत मिळवा किंवा स्वतःचे सलून सुरू करण्यासाठी व्यक्तिगत मार्गदर्शन मिळवा.',
 
     // Master Trainers
-    'trainers.title': 'सेलिब्रेटी मास्टर नेल ट्रेनर्सकडून शिका',
-    'trainers.subtitle': 'आमच्या शिक्षकांना १०+ वर्षांचा जागतिक अनुभव आहे, ज्यांनी बॉलीवूड अभिनेत्री आणि मॉडेल्ससाठी काम केले आहे.',
+    'trainers.badge': 'तुमच्या एज्युकेटरला भेटा',
+    'trainers.title': 'नामांकित मास्टर एज्युकेटरकडून शिका',
+    'trainers.subtitle': 'उमा गोस्वामी संपूर्ण भारतात हजारो इच्छुक नेल आर्टिस्टना प्रशिक्षण देण्याचा १५+ वर्षांचा जागतिक अनुभव घेऊन येतात.',
+    'trainers.single_face_note': 'प्रत्येक विद्यार्थ्याला वैयक्तिकरित्या उमा गोस्वामी यांच्याकडूनच प्रशिक्षण दिले जाते — कोणतेही पर्यायी एज्युकेटर नाहीत.',
+    'trainer.uma.role': 'संस्थापिका • प्रिन्सिपल एज्युकेटर • इंटरनॅशनल मास्टर नेल ट्रेनर',
+    'trainer.uma.spec': '१५+ वर्षांच्या उद्योग अनुभवासह, उमा गोस्वामी यांनी हजारो इच्छुक नेल आर्टिस्टना प्रशिक्षण दिले असून विद्यार्थ्यांना यशस्वी कारकीर्द व फायदेशीर व्यवसाय उभारण्यास मदत केली आहे.',
+    'trainer.uma.quote': '"NSSA मध्ये, आम्ही फक्त नेल एक्सटेंशन शिकवत नाही—आम्ही इच्छुक कलाकारांना समृद्ध, आर्थिकदृष्ट्या स्वतंत्र कारकीर्द घडवण्यासाठी सक्षम करतो."',
+    'trainer.uma.cert1': '५०००+ प्रशिक्षित विद्यार्थी',
+    'trainer.uma.cert2': 'शासकीय मान्यताप्राप्त मास्टर एज्युकेटर',
+    'trainer.uma.cert3': 'आंतरराष्ट्रीय प्रमाणित नेल ट्रेनर',
     'trainer1.role': 'संस्थापक आणि मास्टर डायरेक्टर',
     'trainer1.spec': 'सेलिब्रेटी ब्राइडल तज्ञ आणि आंतरराष्ट्रीय ट्रेनर',
     'trainer1.quote': '"नेल आर्ट केवळ सौंदर्य नाही—हे अचूक कौशल्य आहे. आम्ही आमच्या विद्यार्थ्यांना यशस्वी आर्टिस्ट बनवतो."',
@@ -500,9 +770,15 @@ export const translations: Record<Language, Record<string, string>> = {
     'faq.cat_salon': 'सलून अपॉइंटमेंट',
     'faq.cat_academy': 'अकॅडमी आणि कोर्सेस',
     'faq.cat_franchise': 'फ्रँचायझी व्यवसाय',
+    'faq.cat_admission': 'प्रवेश',
+    'faq.cat_course': 'कोर्सेस आणि प्रमाणपत्र',
+
+    // Sticky Mobile Bar
+    'sticky.counselling': 'मोफत समुपदेशन',
+    'sticky.join_batch': 'पुढील बॅचमध्ये सामील व्हा',
 
     // Modals
-    'modal.book_title': 'लक्झरी सलून अपॉइंटमेंट बुक करा',
+    'modal.book_title': 'तुमची मोफत समुपदेशन कॉल बुक करा',
     'modal.admission_title': 'नेल अकॅडमी बॅचमध्ये प्रवेश घ्या',
     'modal.franchise_title': 'फ्रँचायझी भागीदार अर्ज',
     'modal.brochure_title': 'अभ्यासक्रम आणि फी तपशील डाउनलोड करा',
@@ -510,8 +786,8 @@ export const translations: Record<Language, Record<string, string>> = {
     'modal.success_msg': 'धन्यवाद! तुमची विनंती प्राप्त झाली आहे. व्हॉट्सॲपवर पाठवले जात आहे...',
 
     // Footer
-    'footer.about': 'नेल स्टाइल स्टुडिओ अकॅडमी ही मुंबई आणि गुवाहाटीमधील भारतातील प्रमुख लक्झरी नेल सलून साखळी आणि शासकीय मान्यताप्राप्त अकॅडमी आहे.',
-    'footer.rights': '© २०२६ नेल स्टाइल स्टुडिओ अकॅडमी. सर्व हक्क राखीव. ISO 9001:2015 प्रमाणित.'
+    'footer.about': 'NSSA (नेल स्टाइल स्टुडिओ अकॅडमी) ही भारतातील एक अग्रगण्य शासकीय मान्यताप्राप्त नेल आर्ट अकॅडमी आहे, जिचे नेतृत्व संस्थापिका उमा गोस्वामी करतात.',
+    'footer.rights': '© २०२६ नेल स्टाइल स्टुडिओ अकॅडमी. सर्व हक्क राखीव. शासकीय मान्यताप्राप्त प्रशिक्षण केंद्र.'
   },
 
   as: {
@@ -527,13 +803,23 @@ export const translations: Record<Language, Record<string, string>> = {
     'nav.reviews': 'মতামত',
     'nav.faq': 'প্ৰশ্নোত্তৰ',
     'nav.book_salon': 'বুক কৰক',
-    'nav.join_academy': 'ভৰ্তি হওক',
+    'nav.book_counselling': 'বিনামূলীয়া পৰামৰ্শ বুক কৰক',
+    'nav.join_academy': 'পৰৱৰ্তী বেচত যোগ দিয়ক',
 
     // Hero Section
-    'hero.badge': 'চৰকাৰী স্বীকৃত আৰু ISO 9001:2015 প্ৰমাণিত',
+    'hero.badge': '⭐ ভাৰতৰ বিশ্বাসযোগ্য নেল এডুকেটৰ',
+    'hero.headline': 'ভাৰতৰ প্ৰখ্যাত নেল এডুকেটৰৰ পৰা শিকক',
+    'hero.name': 'উমা গোস্বামী',
+    'hero.subtitle': 'প্ৰতিষ্ঠাপক • প্ৰিন্সিপেল এডুকেটৰ • ইণ্টাৰনেচনেল মাষ্টাৰ নেল ট্ৰেইনাৰ',
+    'hero.description': '১৫+ বছৰৰ অভিজ্ঞতাৰে, উমা গোস্বামীয়ে হাজাৰ হাজাৰ ইচ্ছুক নেল আৰ্টিষ্টক প্ৰশিক্ষণ দিছে আৰু শিক্ষাৰ্থীসকলক গোটেই ভাৰতত সফল কেৰিয়াৰ আৰু লাভজনক নেল ব্যৱসায় গঢ়াত সহায় কৰিছে।',
+    'hero.cta_primary': 'পৰৱৰ্তী বেচত যোগ দিয়ক',
+    'hero.cta_secondary': 'বিনামূলীয়া পৰামৰ্শ বুক কৰক',
+    'hero.trust_students': '৫০০০+ প্ৰশিক্ষিত শিক্ষাৰ্থী',
+    'hero.trust_govt': 'চৰকাৰী স্বীকৃত মাষ্টাৰ এডুকেটৰ',
+    'hero.trust_international': 'আন্তঃৰাষ্ট্ৰীয় প্ৰমাণিত নেল ট্ৰেইনাৰ',
+    'hero.trust_experience': '১৫+ বছৰৰ অভিজ্ঞতা',
     'hero.title_p1': 'অভিজাত নেল আৰ্টৰ শিল্প',
     'hero.title_p2': 'নেল এক্সটেনচন আৰু মাষ্টাৰ একাডেমী',
-    'hero.subtitle': 'গুৱাহাটী আৰু মুম্বাইত ডিঅ’ৰ-মানসম্পন্ন লাক্সাৰী চেলুন সেৱাৰ অভিজ্ঞতা লওক বা এজন প্ৰমাণিত মাষ্টাৰ নেল আৰ্টিষ্ট হিচাপে সফলতাৰে কেৰিয়াৰ গঢ়ক।',
     'hero.cta_book': 'VIP চেলুন বুকিং কৰক',
     'hero.cta_academy': 'প্ৰমাণিত পাঠ্যক্ৰম চাওক',
     'hero.google_reviews': '৪.৯★ গুগ’ল ৰেটিং (২,৫০০+ সত্যপ্ৰতিয়মান মতামত)',
@@ -552,6 +838,26 @@ export const translations: Record<Language, Record<string, string>> = {
     'trust.practical_training': '১০০% প্ৰেক্টিকেল লাইভ প্ৰশিক্ষণ',
     'trust.placement_support': '১০০% চাকৰি আৰু চেলুন আৰম্ভণিৰ সহায়',
     'trust.toolkit_included': 'বিনামূলীয়া ১৫,০০০ টকাৰ প্ৰফেচনেল তুলকিট',
+
+    // Enquiry Form
+    'enquiry.badge': 'সীমিত আসন উপলব্ধ',
+    'enquiry.title': 'বিনামূলীয়া কোৰ্চ পৰামৰ্শ লওক',
+    'enquiry.subtitle': 'আপোনাৰ তথ্য দিয়ক, আমাৰ ভৰ্তি দলে ৩০ মিনিটৰ ভিতৰত বেচৰ তাৰিখ, ফী আৰু কোৰ্চ সম্পৰ্কীয় তথ্যৰে আপোনাক ফোন কৰিব।',
+    'enquiry.success_title': 'অনুৰোধ গৃহীত হ’ল!',
+    'enquiry.name_placeholder': 'আপোনাৰ সম্পূৰ্ণ নাম',
+    'enquiry.phone_placeholder': 'হোৱাটছএপ নম্বৰ',
+    'enquiry.course_label': 'আগ্ৰহী কোৰ্চ',
+    'enquiry.submit': 'অনুৰোধ পঠিয়াওক',
+    'enquiry.privacy_note': 'আমি আপোনাৰ গোপনীয়তাক সন্মান কৰোঁ। কেতিয়াও স্পেম নাই।',
+
+    // Career Benefits
+    'benefits.income.title': 'এক উচ্চ-উপাৰ্জন দক্ষতা শিকক',
+    'benefits.income.desc': 'মাহে ৩০,০০০–৮০,০০০+ টকা উপাৰ্জন কৰক*',
+    'benefits.perclient.title': 'প্ৰতি গ্ৰাহকৰ পৰা অধিক উপাৰ্জন কৰক',
+    'benefits.perclient.desc': 'প্ৰিমিয়াম নেল সেৱাৰ বাবে ১,০০০–৩,৫০০+ টকা চাৰ্জ কৰক*',
+    'benefits.business.title': 'নিজৰ নেল ব্যৱসায় গঢ়ি তোলক',
+    'benefits.business.desc': 'মাহে ১-৩ লাখ+ টকা উপাৰ্জনৰ সুযোগ*',
+    'benefits.footer_note': '*উপাৰ্জন দক্ষতা, মূল্য, স্থান আৰু গ্ৰাহকৰ ওপৰত নিৰ্ভৰ কৰে।',
 
     // Authentic Showcase
     'showcase.title': 'প্ৰকৃত চেলুনৰ ফলাফল আৰু শিক্ষাৰ্থীৰ বিকাশ',
@@ -601,6 +907,54 @@ export const translations: Record<Language, Record<string, string>> = {
     'courses.kit_label': 'অন্তৰ্ভুক্ত বিনামূলীয়া তুলকিট:',
     'courses.enroll_now': 'এতিয়াই ভৰ্তি হওক',
     'courses.download_syllabus': 'চিলেবাছ ডাউনলোড কৰক',
+    'courses.days_label': 'দিন',
+    'courses.other_courses_title': 'অন্যান্য কোৰ্চ',
+    'course.badge.flagship': 'মুখ্য কোৰ্চ',
+    'course.badge.starter': 'নতুনৰ বাবে উত্তম',
+    'course.badge.comprehensive': 'আটাইতকৈ বিস্তৃত',
+    'course.badge.elite': 'এলিট মাষ্টাৰক্লাছ',
+
+    'course.basic_advance.title': 'বেচিক টু এডভাঞ্চড',
+    'course.basic_advance.cert': 'চৰকাৰী স্বীকৃত প্ৰফেচনেল নেল আৰ্টিষ্ট প্ৰমাণপত্ৰ',
+    'course.basic_advance.c1': 'বেচিক নেল আৰ্ট আৰু কালাৰ ব্লেণ্ডিং',
+    'course.basic_advance.c2': 'নেল এক্সটেনচন (জেল আৰু এক্ৰিলিক)',
+    'course.basic_advance.c3': 'জেল পলিচ এপ্লিকেচন আৰু আৰ্ট',
+    'course.basic_advance.c4': 'এক্ৰিলিক নেল স্কাল্পটিং আৰু এপেক্স বিল্ডিং',
+    'course.basic_advance.c5': 'চেলুন হাইজিন আৰু চেনিটাইজেচন প্ৰটোকল',
+    'course.basic_advance.c6': 'গ্ৰাহক পৰিচালনা আৰু পৰামৰ্শ দক্ষতা',
+    'course.basic_advance.c7': 'চৰকাৰী স্বীকৃত প্ৰমাণপত্ৰ',
+    'course.basic_advance.c8': '৩,০০০ টকা মূল্যৰ বিনামূলীয়া ষ্টাৰ্টাৰ কিট',
+    'course.basic_advance.c9': 'EMI সুবিধা উপলব্ধ',
+    'course.basic_advance.c10': '১০০% চাকৰি সংস্থাপন পৰামৰ্শ আৰু ব্যৱসায় আৰম্ভণি',
+
+    'course.beginner.title': 'বিগিনাৰ লেভেল',
+    'course.beginner.cert': 'সম্পূৰ্ণতাৰ প্ৰমাণপত্ৰ',
+    'course.beginner.c1': 'নখৰ গঠন আৰু মৌলিক এনাটমি',
+    'course.beginner.c2': 'ফাইলিং, শেপিং আৰু কিউটিকেল কেয়াৰ',
+    'course.beginner.c3': 'জেল পলিচ এপ্লিকেচন',
+    'course.beginner.c4': 'বেচিক নেল আৰ্ট আৰু কালাৰ থিয়ৰী',
+    'course.beginner.c5': 'হাইজিন আৰু চেনিটাইজেচনৰ মূল বিষয়',
+    'course.beginner.c6': 'সম্পূৰ্ণতাৰ প্ৰমাণপত্ৰ',
+
+    'course.diploma.title': 'বেচিক টু ডিপ্লমা',
+    'course.diploma.cert': 'চৰকাৰী স্বীকৃত প্ৰফেচনেল নেল আৰ্টিষ্ট্ৰী ডিপ্লমা',
+    'course.diploma.c1': 'বেচিক টু এডভাঞ্চডৰ সকলো বিষয়',
+    'course.diploma.c2': 'এডভাঞ্চড এক্ৰিলিক আৰু পলিজেল স্কাল্পটিং',
+    'course.diploma.c3': '3D আৰু 5D ফ্লৰেল নেল আৰ্ট',
+    'course.diploma.c4': 'ক্ৰোম, অমব্ৰে আৰু এয়াৰব্ৰাছ কৌশল',
+    'course.diploma.c5': 'চেলুন ব্যৱস্থাপনা আৰু গ্ৰাহক ধৰি ৰখা',
+    'course.diploma.c6': 'ব্যৱসায় ছেটআপ আৰু মূল্য নিৰ্ধাৰণ কৌশল',
+    'course.diploma.c7': 'চৰকাৰী স্বীকৃত ডিপ্লমা প্ৰমাণপত্ৰ',
+    'course.diploma.c8': '১০০% চাকৰি সংস্থাপন পৰামৰ্শ আৰু ব্যৱসায় আৰম্ভণি',
+
+    'course.international.title': 'ইণ্টাৰনেচনেল আৰ্টিষ্ট কোৰ্চ',
+    'course.international.cert': 'আন্তঃৰাষ্ট্ৰীয় প্ৰমাণিত মাষ্টাৰ নেল আৰ্টিষ্ট ডিপ্লমা',
+    'course.international.c1': 'গ্লবেল প্ৰতিযোগিতা-মানৰ নেল আৰ্টিষ্ট্ৰী',
+    'course.international.c2': 'এডভাঞ্চড 3D স্কাল্পটিং আৰু এনকেপচুলেচন',
+    'course.international.c3': 'ইণ্টাৰনেচনেল ট্ৰেণ্ড ষ্টাইলিং আৰু এডিটৰিয়েল আৰ্ট',
+    'course.international.c4': 'মাষ্টাৰ ক্ৰোম, কেট-আই আৰু অৰা কৌশল',
+    'course.international.c5': 'ব্যক্তিগত পৰ্টফলিঅ’ আৰু ফটোগ্ৰাফী পৰামৰ্শ',
+    'course.international.c6': 'আন্তঃৰাষ্ট্ৰীয়ভাৱে স্বীকৃত মাষ্টাৰ প্ৰমাণপত্ৰ',
 
     // Course Titles & Descriptions
     'course.master_diploma_title': 'ইণ্টাৰনেচনেল মাষ্টাৰ নেল আৰ্টিষ্ট ডিপ্লমা',
@@ -632,8 +986,16 @@ export const translations: Record<Language, Record<string, string>> = {
     'journey.step5_desc': 'শীৰ্ষ চেলুনত চাকৰিৰ সুবিধা পাওক বা নিজৰ চেলুন আৰম্ভ কৰিবলৈ ব্যক্তিগত পৰামৰ্শ পাওক।',
 
     // Master Trainers
-    'trainers.title': 'অভিজ্ঞ মাষ্টাৰ প্ৰশিক্ষকসকলৰ পৰা শিকক',
-    'trainers.subtitle': 'আমাৰ প্ৰশিক্ষকসকলৰ ১০+ বছৰৰ অভিজ্ঞতা আছে, যিসকলে বহু প্ৰখ্যাত মডেল আৰু অভিনেত্ৰীৰ সৈতে কাম কৰিছে।',
+    'trainers.badge': 'আপোনাৰ এডুকেটৰক লগ পাওক',
+    'trainers.title': 'এগৰাকী প্ৰখ্যাত মাষ্টাৰ এডুকেটৰৰ পৰা শিকক',
+    'trainers.subtitle': 'উমা গোস্বামীয়ে গোটেই ভাৰতত হাজাৰ হাজাৰ ইচ্ছুক নেল আৰ্টিষ্টক প্ৰশিক্ষণ দিয়াৰ ১৫+ বছৰৰ বিশ্বব্যাপী অভিজ্ঞতা লৈ আহিছে।',
+    'trainers.single_face_note': 'প্ৰতিজন শিক্ষাৰ্থীক ব্যক্তিগতভাৱে উমা গোস্বামীয়ে নিজেই প্ৰশিক্ষণ দিয়ে — কোনো বিকল্প এডুকেটৰ নাই।',
+    'trainer.uma.role': 'প্ৰতিষ্ঠাপক • প্ৰিন্সিপেল এডুকেটৰ • ইণ্টাৰনেচনেল মাষ্টাৰ নেল ট্ৰেইনাৰ',
+    'trainer.uma.spec': '১৫+ বছৰৰ অভিজ্ঞতাৰে, উমা গোস্বামীয়ে হাজাৰ হাজাৰ ইচ্ছুক নেল আৰ্টিষ্টক প্ৰশিক্ষণ দিছে আৰু শিক্ষাৰ্থীসকলক সফল কেৰিয়াৰ আৰু লাভজনক ব্যৱসায় গঢ়াত সহায় কৰিছে।',
+    'trainer.uma.quote': '"NSSA ত, আমি কেৱল নেল এক্সটেনচন নিশিকাওঁ—আমি ইচ্ছুক কলাকাৰসকলক সমৃদ্ধ, আৰ্থিকভাৱে স্বনির্ভৰ কেৰিয়াৰ গঢ়াবলৈ সক্ষম কৰি তোলোঁ।"',
+    'trainer.uma.cert1': '৫০০০+ প্ৰশিক্ষিত শিক্ষাৰ্থী',
+    'trainer.uma.cert2': 'চৰকাৰী স্বীকৃত মাষ্টাৰ এডুকেটৰ',
+    'trainer.uma.cert3': 'আন্তঃৰাষ্ট্ৰীয় প্ৰমাণিত নেল ট্ৰেইনাৰ',
     'trainer1.role': 'প্ৰতিষ্ঠাপক আৰু মাষ্টাৰ ডাইৰেক্টৰ',
     'trainer1.spec': 'ব্ৰাইডেল বিশেষজ্ঞ আৰু আন্তঃৰাষ্ট্ৰীয় প্ৰশিক্ষক',
     'trainer1.quote': '"নেল আৰ্ট কেৱল সৌন্দৰ্য্য নহয়—ই এক সূক্ষ্ম কলা। আমি শিক্ষাৰ্থীসকলক আত্মনিৰ্ভৰশীল কৰোঁ।"',
@@ -671,9 +1033,15 @@ export const translations: Record<Language, Record<string, string>> = {
     'faq.cat_salon': 'চেলুন বুকিং',
     'faq.cat_academy': 'একাডেমী আৰু পাঠ্যক্ৰম',
     'faq.cat_franchise': 'ফ্ৰেনচাইজী ব্যৱসায়',
+    'faq.cat_admission': 'ভৰ্তি',
+    'faq.cat_course': 'কোৰ্চ আৰু প্ৰমাণপত্ৰ',
+
+    // Sticky Mobile Bar
+    'sticky.counselling': 'বিনামূলীয়া পৰামৰ্শ',
+    'sticky.join_batch': 'পৰৱৰ্তী বেচত যোগ দিয়ক',
 
     // Modals
-    'modal.book_title': 'লাক্সাৰী চেলুন বুকিং কৰক',
+    'modal.book_title': 'আপোনাৰ বিনামূলীয়া পৰামৰ্শ কল বুক কৰক',
     'modal.admission_title': 'নেল একাডেমীত ভৰ্তি হওক',
     'modal.franchise_title': 'ফ্ৰেনচাইজী পাৰ্টনাৰ আবেদন',
     'modal.brochure_title': 'পাঠ্যক্ৰম আৰু ফীৰ সবিশেষ ডাউনলোড কৰক',
@@ -681,7 +1049,7 @@ export const translations: Record<Language, Record<string, string>> = {
     'modal.success_msg': 'ধন্যবাদ! আপোনাৰ অনুৰোধ গ্ৰহণ কৰা হৈছে। হোৱাটছএপলৈ প্ৰেৰণ কৰা হৈছে...',
 
     // Footer
-    'footer.about': 'নেল ষ্টাইল ষ্টুডিঅ’ একাডেমী গুৱাহাটী আৰু মুম্বাইৰ ভাৰতৰ অন্যতম প্ৰধান লাক্সাৰী নেল চেলুন আৰু চৰকাৰী স্বীকৃত একাডেমী।',
-    'footer.rights': '© ২০২৬ নেল ষ্টাইল ষ্টুডিঅ’ একাডেমী। সর্বস্বত্ব সংৰক্ষিত। ISO 9001:2015 প্ৰমাণিত।'
+    'footer.about': 'NSSA (নেল ষ্টাইল ষ্টুডিঅ’ একাডেমী) হৈছে ভাৰতৰ এক অন্যতম প্ৰধান চৰকাৰী স্বীকৃত নেল আৰ্ট একাডেমী, যাৰ নেতৃত্বত আছে প্ৰতিষ্ঠাপক উমা গোস্বামী।',
+    'footer.rights': '© ২০২৬ নেল ষ্টাইল ষ্টুডিঅ’ একাডেমী। সর্বস্বত্ব সংৰক্ষিত। চৰকাৰী স্বীকৃত প্ৰশিক্ষণ কেন্দ্ৰ।'
   }
 };

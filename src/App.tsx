@@ -9,20 +9,16 @@ import { Reveal } from './components/Reveal';
 import { LanguageBottomSheet } from './components/LanguageBottomSheet';
 import { Navbar } from './components/Navbar';
 import { Hero } from './components/Hero';
+import { EnquiryForm } from './components/EnquiryForm';
 import { AuthenticShowcase } from './components/AuthenticShowcase';
-import { SalonServices } from './components/SalonServices';
 import { AcademyCourses } from './components/AcademyCourses';
 import { CourseJourney } from './components/CourseJourney';
 import { MasterTrainers } from './components/MasterTrainers';
-import { StudentSuccess } from './components/StudentSuccess';
-import { FranchiseSection } from './components/FranchiseSection';
 import { WhyChooseUs } from './components/WhyChooseUs';
-import { EventsSection } from './components/EventsSection';
-import { StudioLocations } from './components/StudioLocations';
+import { StudentSuccess } from './components/StudentSuccess';
 import { TestimonialsFAQ } from './components/TestimonialsFAQ';
 import { BookingModal } from './components/BookingModal';
 import { AdmissionModal } from './components/AdmissionModal';
-import { FranchiseModal } from './components/FranchiseModal';
 import { BrochureModal } from './components/BrochureModal';
 import { StickyMobileBar } from './components/StickyMobileBar';
 import { FloatingWhatsApp } from './components/FloatingWhatsApp';
@@ -35,12 +31,10 @@ export default function App() {
   });
 
   const [bookingModalOpen, setBookingModalOpen] = useState(false);
-  const [selectedBookingServiceId, setSelectedBookingServiceId] = useState<string | undefined>();
 
   const [admissionModalOpen, setAdmissionModalOpen] = useState(false);
   const [selectedAdmissionCourseId, setSelectedAdmissionCourseId] = useState<string | undefined>();
 
-  const [franchiseModalOpen, setFranchiseModalOpen] = useState(false);
   const [brochureModalOpen, setBrochureModalOpen] = useState(false);
 
   const [languageSheetOpen, setLanguageSheetOpen] = useState(false);
@@ -69,11 +63,6 @@ export default function App() {
     localStorage.setItem('nss_lang_chosen', '1');
   };
 
-  const handleOpenServiceBooking = (serviceId: string) => {
-    setSelectedBookingServiceId(serviceId);
-    setBookingModalOpen(true);
-  };
-
   const handleOpenCourseEnrollment = (courseId: string) => {
     setSelectedAdmissionCourseId(courseId);
     setAdmissionModalOpen(true);
@@ -81,7 +70,7 @@ export default function App() {
 
   return (
     <div className="min-h-screen bg-white text-[#10201e] font-sans relative selection:bg-[#d4af37] selection:text-[#0d0b0d]">
-      
+
       {/* Luxury Ambient Glow Cursor on Desktop */}
       <div
         className="luxury-cursor-glow hidden lg:block"
@@ -93,43 +82,32 @@ export default function App() {
         currentLang={currentLang}
         onLanguageChange={handleLanguageChange}
         onOpenLanguageSheet={() => setLanguageSheetOpen(true)}
-        onOpenBooking={() => {
-          setSelectedBookingServiceId(undefined);
-          setBookingModalOpen(true);
-        }}
+        onOpenBooking={() => setBookingModalOpen(true)}
         onOpenAdmission={() => {
           setSelectedAdmissionCourseId(undefined);
           setAdmissionModalOpen(true);
         }}
       />
 
-      {/* Main Content Sections */}
+      {/* Main Content Sections — course lead-generation focused */}
       <main>
         {/* 1. Hero Section */}
         <Hero
           currentLang={currentLang}
-          onOpenBooking={() => {
-            setSelectedBookingServiceId(undefined);
-            setBookingModalOpen(true);
-          }}
+          onOpenBooking={() => setBookingModalOpen(true)}
           onOpenAdmission={() => {
             setSelectedAdmissionCourseId(undefined);
             setAdmissionModalOpen(true);
           }}
         />
 
-        {/* 2. Authentic Work & Real Transformations Showcase */}
+        {/* 2. Enquiry Form — placed immediately after the Hero for maximum conversion */}
+        <EnquiryForm currentLang={currentLang} />
+
+        {/* 3. Real Student Work & Certificate Showcase */}
         <Reveal as="section"><AuthenticShowcase currentLang={currentLang} /></Reveal>
 
-        {/* 3. Salon Services Menu */}
-        <Reveal as="section">
-          <SalonServices
-            currentLang={currentLang}
-            onSelectServiceToBook={handleOpenServiceBooking}
-          />
-        </Reveal>
-
-        {/* 4. Academy Courses & Free Toolkit */}
+        {/* 4. Career Benefits & Academy Courses */}
         <Reveal as="section">
           <AcademyCourses
             currentLang={currentLang}
@@ -141,7 +119,7 @@ export default function App() {
         {/* 5. 5-Step Learning Roadmap */}
         <Reveal as="section"><CourseJourney currentLang={currentLang} /></Reveal>
 
-        {/* 6. Master Trainers */}
+        {/* 6. Meet the Founder — Uma Goswami */}
         <Reveal as="section"><MasterTrainers currentLang={currentLang} /></Reveal>
 
         {/* 7. Why Choose Us Highlights */}
@@ -150,26 +128,7 @@ export default function App() {
         {/* 8. Student Placement & Career Success */}
         <Reveal as="section"><StudentSuccess currentLang={currentLang} /></Reveal>
 
-        {/* 9. Franchise ROI & Business Opportunities */}
-        <Reveal as="section">
-          <FranchiseSection
-            currentLang={currentLang}
-            onOpenFranchiseModal={() => setFranchiseModalOpen(true)}
-          />
-        </Reveal>
-
-        {/* 10. Exhibitions & Masterclass Events */}
-        <Reveal as="section">
-          <EventsSection
-            currentLang={currentLang}
-            onOpenAdmission={() => setAdmissionModalOpen(true)}
-          />
-        </Reveal>
-
-        {/* 11. Studio Locations (Mumbai & Guwahati) */}
-        <Reveal as="section"><StudioLocations currentLang={currentLang} /></Reveal>
-
-        {/* 12. Testimonials & FAQ */}
+        {/* 9. Testimonials & FAQ */}
         <Reveal as="section"><TestimonialsFAQ currentLang={currentLang} /></Reveal>
       </main>
 
@@ -179,10 +138,7 @@ export default function App() {
       {/* Sticky Mobile Navigation Bar */}
       <StickyMobileBar
         currentLang={currentLang}
-        onOpenBooking={() => {
-          setSelectedBookingServiceId(undefined);
-          setBookingModalOpen(true);
-        }}
+        onOpenBooking={() => setBookingModalOpen(true)}
         onOpenAdmission={() => {
           setSelectedAdmissionCourseId(undefined);
           setAdmissionModalOpen(true);
@@ -196,7 +152,6 @@ export default function App() {
       {bookingModalOpen && (
         <BookingModal
           currentLang={currentLang}
-          initialServiceId={selectedBookingServiceId}
           onClose={() => setBookingModalOpen(false)}
         />
       )}
@@ -206,13 +161,6 @@ export default function App() {
           currentLang={currentLang}
           initialCourseId={selectedAdmissionCourseId}
           onClose={() => setAdmissionModalOpen(false)}
-        />
-      )}
-
-      {franchiseModalOpen && (
-        <FranchiseModal
-          currentLang={currentLang}
-          onClose={() => setFranchiseModalOpen(false)}
         />
       )}
 
